@@ -28,3 +28,12 @@
   
   animation: fadeFromBottom 1s ease-out;
 }
+
+.top-header-link > img {
+  margin-right: 1%;
+  margin-top: 140px;
+  float: right;
+  
+  width: 48px;
+  height: 48px;
+}
