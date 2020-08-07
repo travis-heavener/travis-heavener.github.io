@@ -47,12 +47,13 @@
 #main-content-1 {
   width: 100%;
   height: 800px;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
   
   filter: blur(10px);
   background-image: url("icons/summer-family-vacation-2018.jpg");
   border: none;
-}
-
-#main-content-1 > * {
-  filter: blur(0);
 }
