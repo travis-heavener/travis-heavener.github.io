@@ -50,10 +50,12 @@
 }
 
 .background-image {
+  display: block;
+  position: absolute;
+  
   width: 100%;
   height: 100%;
   
   filter: blur(10px);
-  background-image: url("icons/summer-family-vacation-2018.jpg");
   border: none;
 }
