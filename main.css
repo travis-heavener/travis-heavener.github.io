@@ -52,3 +52,7 @@
   background-image: url("icons/summer-family-vacation-2018.jpg");
   border: none;
 }
+
+#main-content-1 > * {
+  filter: blur(0px);
+}
