@@ -3,6 +3,22 @@
   margin: 0;
 }
 
+@media screen and (orientation: portrait) { /*vertical*/
+  #header > h2 {
+    width: 100%;
+    
+    font-size: 35px;
+  }
+}
+
+@media screen and (orientation: landscape) { /*horizontal*/
+  #header > h2 {
+    width: 50%;
+    
+    font-size: 45px;
+  }
+}
+
 /**************HEADER**************/
 
 #header {
@@ -14,19 +30,17 @@
   background-color: #242424;
 }
 
-#header > h2 {
+#header > h2 { /*these elements are controlled by screen orientation*/
   margin-left: 2%;
   margin-top: 75px;
   position: absolute;
   
-  width: 50%;
   height: 50px;
   
   line-height: 50px;
   letter-spacing: 3px;
   
   font-family: Sen, Courier, Tahoma;
-  font-size: 45px;
   color: whitesmoke;
   
   animation: fadeIn 1s ease-out;
