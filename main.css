@@ -41,7 +41,7 @@
   
   filter: brightness(85%);
   
-  transition: 0.3s;
+  animation: zoomIn 0.4s ease-out;
 }
 
 .top-header-link > img:hover {
