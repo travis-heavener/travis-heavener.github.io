@@ -54,5 +54,5 @@
 }
 
 #main-content-1 > * {
-  filter: blur(0px);
+  filter: blur(0);
 }
