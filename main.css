@@ -12,7 +12,7 @@
   background-color: #242424;
 }
 
-#header h2 {
+#header > h2 {
   margin-left: 2%;
   
   height: 100%;
