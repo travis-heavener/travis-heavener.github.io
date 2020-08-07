@@ -8,3 +8,12 @@
     margin-top: 0px;
   }
 }
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.01);
+  }
+  to {
+    transform: scale(1.0);
+  }
+}
