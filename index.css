@@ -1,3 +1,83 @@
 body {
+    --header-height: 68px;
+
     background: radial-gradient(circle at 0%, rgb(86, 80, 112) -50%, rgb(2, 4, 10));
 }
+
+/***************** START HEADER *****************/
+
+#header-content {
+    --font-size: 19px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: calc(2 * var(--font-size));
+
+    width: 100%;
+    height: var(--header-height);
+}
+
+#header-content > .header-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    height: 100%;
+}
+
+#header-content > .header-link-wrapper > a {
+    color: #c4c4c4;
+    font-family: Lexend, sans-serif;
+    font-size: var(--font-size);
+    letter-spacing: calc(0.025 * var(--font-size));
+    text-decoration: none;
+
+    transition: 0.2s color;
+}
+
+#header-content > .header-link-wrapper > a:hover {
+    color: #f7f7f7;
+}
+
+#header-content > .header-link-wrapper > div {
+    position: absolute;
+    bottom: 25%;
+
+    width: 0;
+    height: 3.75%;
+
+    background-color: #f7f7f7;
+
+    pointer-events: none;
+    transition: 0.2s width;
+}
+
+#header-content > .header-link-wrapper:has(a:hover) > div {
+    width: 95%;
+}
+
+/***************** END HEADER *****************/
+/***************** START WELCOME CONTENT *****************/
+
+#welcome-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: calc(100% - var(--header-height));
+
+    background-color: #fff1;
+}
+
+#welcome-content > #welcome-info-content {
+    
+}
+
+/***************** END WELCOME CONTENT *****************/
