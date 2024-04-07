@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         
         <meta charset="utf-8">
@@ -7,57 +7,72 @@
         
         <title>Travis Heavener | Home</title>
 
+        <!-- font preloads -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap">
+
+        <!-- load stylesheets -->
+
         <link rel="stylesheet" href="toolbox.css">
         <link rel="stylesheet" href="index.css">
+
+        <!-- jQuery load -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+                crossorigin="anonymous">
+        </script>
 
     </head>
     <body>
 
-        <!-- centered navigation links -->
-        <div id="header-content">
+        <div id="welcome-div">
+            <div id="title-div">
+                <h1>Travis<br>Heavener</h1>
+                
+                <div id="title-separator" class="no-select">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
-            <div class="header-link-wrapper">
-                <a href="index.html" target="_self">Home</a>
-                <div></div>
-            </div>
-            
-            <div class="header-link-wrapper">
-                <a href="bio/index.html" target="_self">About</a>
-                <div></div>
-            </div>
-            
-            <div class="header-link-wrapper">
-                <a href="resume/index.html" target="_self">Resume</a>
-                <div></div>
-            </div>
-            
-            <div class="header-link-wrapper">
-                <a href="projects/index.html" target="_self">Projects</a>
-                <div></div>
+                <h2>Web Developer</h2>
             </div>
 
+            <div id="info-div">
+                <div id="headshot-wrapper">
+                    <img class="headshot-image" src="res/headshot-1.webp" alt="Travis Heavener high school senior photo.">
+                    <img class="headshot-image" src="res/headshot-2.webp" alt="Travis Heavener high school senior photo.">
+                    <img class="headshot-image" src="res/headshot-3.webp" alt="Travis Heavener high school prom photo.">
+                </div>
+
+                <div id="info-details-div">
+                    <ul id="info-selectors">
+                        <li>
+                            <a href="bio/index.html" target="_self">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="resume/index.html" target="_self">RESUME</a>
+                        </li>
+                        <li>
+                            <a href="projects/index.html" target="_self">PROJECTS</a>
+                        </li>
+                    </ul>
+
+                    <div id="contact-icons">
+                        <img id="contact-github-img" class="no-select" src="res/github-icon.webp" title="Visit GitHub!" alt="GitHub icon.">
+                        <img id="contact-linkedin-img" class="no-select" src="res/linkedin-icon.webp" title="Connect on LinkedIn!" alt="LinkedIn icon.">
+                        <img id="contact-mail-img" class="no-select" src="res/mail-icon.webp" title="Contact via email!" alt="Mail icon.">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="welcome-content">
-            
-            <!-- name & short sentence on left -->
-            <div id="welcome-info-content">
-                <h1>Travis Heavener</h1>
-                <p>A short bit about myself, blah blah blah blah blah blah blah...</p>
-            </div>
+        <div id="contact-div">
 
-            <!-- headshot on right -->
-            <img id="welcome-headshot" src="res/welcome-headshot.png">
-
-        </div>
-
-        <div id="about-content">
-            <!-- whitesmoke background, keep gradient fixed on background -->
-            <!-- link to see resume -->
-        </div>
-
-        <div id="footer-content">
-            <!-- footer & such -->
         </div>
 
         <script src="index.js"></script>
