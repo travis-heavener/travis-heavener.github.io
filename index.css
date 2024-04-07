@@ -4,17 +4,65 @@ body {
     overflow-x: hidden;
 }
 
+/***************** START HEADER CONTENT *****************/
+
+#header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: calc(3 * var(--text-unit));
+
+    width: 100%;
+    height: calc(5 * var(--text-unit));
+}
+
+#header-div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-div a {
+    color: #f9f9f9;
+    font-size: calc(2.33 * var(--text-unit));
+    font-family: "Oswald", monospace;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+#header-div a:hover { color: #ffc49d; }
+
+#header-div a + div {
+    width: 0;
+    height: 0.2em;
+    background-color: #f9f9f9;
+    transition: 0.2s width, 0.2s background-color;
+}
+
+#header-div a:hover + div {
+    width: 100%;
+    background-color: #ffc49d;
+}
+
+@media screen and (orientation: portrait) {
+    #header-div { margin-top: calc(1 * var(--text-unit)); }
+}
+
+/***************** END HEADER CONTENT *****************/
 /***************** START WELCOME CONTENT *****************/
 
 @media screen and (orientation: portrait) {
-    #welcome-div {
-        flex-direction: column !important;
-    }
+    #welcome-div { flex-direction: column; }
+}
+
+@media screen and (orientation: landscape) {
+    #welcome-div { flex-direction: row; }
 }
 
 #welcome-div {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
