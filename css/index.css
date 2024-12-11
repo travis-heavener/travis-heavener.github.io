@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     row-gap: var(--row-gap);
     padding: 6vh 10% 5vh 10%;
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     overflow-x: hidden;
 }
 
