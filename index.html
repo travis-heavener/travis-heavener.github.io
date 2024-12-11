@@ -1,105 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
-        
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Travis Heavener | Home</title>
+        <meta name="author" content="Travis Heavener">
+        <meta name="description" content="Travis Heavener's personal website.">
 
-        <!-- font preloads -->
+        <title>Portfolio | Travis Heavener</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap" as="style">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-        <!-- load stylesheets -->
-
-        <link rel="stylesheet" href="toolbox.css">
-        <link rel="stylesheet" href="index.css">
-
-        <!-- jQuery load -->
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-                crossorigin="anonymous">
-        </script>
-
+        <link rel="stylesheet" href="/css/globals.css">
+        <link rel="stylesheet" href="/css/index.css">
     </head>
     <body>
-
         <div id="header-div">
-            <div>
-                <a href="#" target="_self" title="Visit Home!">Home</a>
-                <div></div>
-            </div>
-            <div>
-                <a href="projects/index.html" target="_self" title="Visit Projects!">Projects</a>
-                <div></div>
-            </div>
-            <div>
-                <a href="projects/index.html" target="_self" title="Visit Blog!">Blog</a>
-                <div></div>
-            </div>
-            <div>
-                <a href="bio/index.html" target="_self" title="Visit Bio!">About</a>
-                <div></div>
-            </div>
-            <div>
-                <a href="resume/index.html" target="_self" title="Visit Resume!">Resume</a>
-                <div></div>
-            </div>
+            <a id="home-anchor" class="header-anchor no-select" href="/">T</a>
+            <a class="header-anchor" href="/resume/">Resume</a>
+            <a class="header-anchor" href="/projects/">Projects</a>
+            <a class="header-anchor" href="/bio/">About</a>
         </div>
-
-        <div id="welcome-div">
-            <div id="title-div">
-                <h1>Travis<br>Heavener</h1>
-                
-                <div id="title-separator" class="no-select">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        <div id="content-div">
+            <div id="content-left">
+                <h1 id="name-display">TRAVIS<br>HEAVENER</h1>
+                <div>
+                    <div class="content-dot"></div>
+                    <div class="content-dot"></div>
+                    <div class="content-dot"></div>
                 </div>
-
-                <h2>Web Developer</h2>
+                <h2 id="job-title-display">Web Developer</h2>
             </div>
-
-            <div id="info-div">
-                <div id="headshot-wrapper">
-                    <img class="headshot-image" src="res/headshot-1.webp" alt="Travis Heavener high school senior photo.">
-                    <img class="headshot-image" src="res/headshot-2.webp" alt="Travis Heavener high school senior photo.">
-                    <img class="headshot-image" src="res/headshot-3.webp" alt="Travis Heavener high school prom photo.">
+            <div id="content-right">
+                <img id="headshot-img" src="/res/headshot.webp" alt="Travis Heavener headshot image.">
+            </div>
+            <div id="content-center">
+                <div id="tagline-content">
+                    <p id="tagline-text">Motivated, passionate web developer and programmer.</p>
+                    <a id="read-more-anchor">Read more</a>
                 </div>
-
-                <div id="info-details-div">
-                    <ul id="info-selectors">
-                        <li><a href="bio/index.html" target="_self" title="Visit Bio!">ABOUT</a></li>
-                        <li><a href="resume/index.html" target="_self" title="Visit Resume!">RESUME</a></li>
-                        <li><a href="projects/index.html" target="_self" title="Visit Projects!">PROJECTS</a></li>
-                    </ul>
-
-                    <div id="contact-icons">
-                        <img id="contact-github-img" class="no-select" src="res/github-icon.webp" title="Visit GitHub!" alt="GitHub icon.">
-                        <img id="contact-linkedin-img" class="no-select" src="res/linkedin-icon.webp" title="Connect on LinkedIn!" alt="LinkedIn icon.">
-                        <img id="contact-mail-img" class="no-select" src="res/mail-icon.webp" title="Contact via email!" alt="Mail icon.">
+                <div id="contact-content">
+                    <h3 id="contact-header">Get in Touch!</h3>
+                    <div class="contact-section">
+                        <a href="https://github.com/travis-heavener">
+                            <img class="contact-img no-select" src="/res/icons/github.webp" alt="GitHub icon.">
+                            <span class="contact-text">@travis-heavener</span>
+                        </a>
+                    </div>
+                    <div class="contact-section">
+                        <a href="https://www.linkedin.com/in/travis-heavener">
+                            <img class="contact-img no-select" src="/res/icons/linkedin.webp" alt="LinkedIn icon.">
+                            <span class="contact-text">@travis-heavener</span>
+                        </a>
+                    </div>
+                    <div class="contact-section">
+                        <a href="mailto:travis.heavener@gmail.com">
+                            <img class="contact-img no-select" src="/res/icons/gmail.webp" alt="Gmail icon.">
+                            <span class="contact-text">travis-heavener@gmail.com</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="current-info-div">
-            <h1>What's Happening?</h1>
-            <p>Travis is currently an RPI first-year IT & Web Sciences student pursuing various personal projects in his downtime.</p>
-        </div>
-
-        <!-- scroll to top button -->
-
-        <div id="scroll-top-btn">
-            <p class="no-select">TOP</p>
-        </div>
-
-        <script src="index.js"></script>
-
     </body>
 </html>
