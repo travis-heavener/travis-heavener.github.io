@@ -6,8 +6,8 @@
 }
 
 html, body {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -65,7 +65,8 @@ body {
     @media (min-width: 780px)  {  :root { --text-unit: 9px; }  }
     @media (min-width: 960px)  {  :root { --text-unit: 10px; }  }
     @media (min-width: 1079px) {  :root { --text-unit: 11px; }  }
-    @media (min-width: 1800px) {  :root { --text-unit: 14px; }  }
+    @media (min-width: 1280px) {  :root { --text-unit: 13px; }  }
+    @media (min-width: 1740px) {  :root { --text-unit: 14px; }  }
     @media (min-width: 1920px) {  :root { --text-unit: 16px; }  }
     @media (min-width: 2100px) {  :root { --text-unit: 19px; }  }
     @media (min-width: 2400px) {  :root { --text-unit: 21px; }  }
