@@ -10,7 +10,20 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            onload="this.onload=null; this.rel='stylesheet'"
+        >
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+                type="text/css"
+            >
+        </noscript>
 
         <link rel="stylesheet" href="/css/globals.css">
         <link rel="stylesheet" href="/css/index.css">
@@ -33,7 +46,15 @@
                 <h2 id="job-title-display">Web Developer</h2>
             </div>
             <div id="content-right">
-                <img id="headshot-img" src="/res/headshot.webp" alt="Travis Heavener headshot image.">
+                <picture>
+                    <source media="(max-width: 389px)" srcset="/res/headshot/128-147.webp">
+                    <source media="(max-width: 1279px)" srcset="/res/headshot/140-161.webp">
+                    <source media="(max-width: 1919px)" srcset="/res/headshot/250-288.webp">
+                    <source media="(max-width: 2559px)" srcset="/res/headshot/290-333.webp">
+                    <source media="(max-width: 3199px)" srcset="/res/headshot/400-460.webp">
+                    <source media="(min-width: 3200px)" srcset="/res/headshot/499-575.webp">
+                    <img id="headshot-img" src="/res/headshot/499-575.webp" alt="Travis Heavener headshot image.">
+                </picture>
             </div>
             <div id="content-center">
                 <div id="tagline-content">
