@@ -228,9 +228,8 @@ body {
 }
 
 @media screen and (orientation: portrait) {
-    #content-left, #content-right {
-        height: 40%;
-    }
+    #content-div { padding-bottom: 10%; }
+    #content-left, #content-right { height: 40%; }
     
     #content-left {
         display: flex;
