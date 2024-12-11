@@ -89,27 +89,28 @@
     margin-top: 0.75em;
     padding: 0.4em 1.1em 0.5em 1.1em;
 
-    background-color: var(--accent-dark);
+    background-color: var(--accent-darkest);
     border-radius: 2em;
     box-shadow: 0.125rem 0.125rem 0.75rem #0004;
 
-    color: #f3f3f3;
+    color: #fdfdfd;
     font-family: "Open Sans", serif;
     font-size: 1.25rem;
-    text-decoration: underline;
     font-weight: 600;
+    text-decoration: underline;
+    text-shadow: 0.075em 0.025em 0.1em #0005;
 
     cursor: pointer;
     transition: 0.15s background-color, 0.15s box-shadow;
 }
 
 #read-more-anchor:hover {
-    background-color: var(--accent-base);
+    background-color: var(--accent-darker);
     box-shadow: 0.125rem 0.125rem 0.75rem #0002;
 }
 
 #read-more-anchor:active {
-    background-color: var(--accent-darker);
+    background-color: var(--accent-darkest2);
     box-shadow: 0.125rem 0.125rem 0.75rem #0006;
 }
 
