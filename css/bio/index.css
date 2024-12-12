@@ -32,7 +32,7 @@ h1 {
 
 .paragraph-text {
     color: #f3f3f3;
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
     font-style: italic;
     font-weight: 300;
@@ -97,5 +97,5 @@ h1 {
         flex-direction: column-reverse;
     }
 
-    .bio-img { max-height: 25rem; }
+    .bio-img { height: 25rem; }
 }
