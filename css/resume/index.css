@@ -1,0 +1,11 @@
+#content-div {
+    --row-gap: 2rem;
+    --inner-content-height: calc(100vh - var(--header-height) - var(--footer-height) - 11vh - var(--row-gap));
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--row-gap);
+    padding: 6vh 10% 5vh 10%;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow-x: hidden;
+}

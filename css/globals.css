@@ -8,6 +8,7 @@
 
 html, body {
     --header-height: 4rem;
+    --footer-height: 3rem;
     min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -109,6 +110,24 @@ body {
 }
 
 #home-anchor::after { content: "ravis H"; }
+
+/* footer styling */
+
+#footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: #0005;
+}
+
+#footer-div > p {
+    color: #f3f3f3;
+    font-family: "Open Sans", serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 /* text unit sizing */
 
