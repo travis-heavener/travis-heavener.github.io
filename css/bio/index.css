@@ -1,0 +1,68 @@
+/* main content styling */
+
+#content-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    padding: 6vh 15% 15vh 15%;
+    min-height: calc(100vh - var(--header-height));
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #fbfbfb;
+    font-family: "Anton", sans-serif;
+    font-size: 4.25rem;
+    font-weight: 400;
+    text-shadow: 0.08em 0.06em 0.03em #0006;
+    line-height: 1.2em;
+}
+
+p {
+    margin-top: 1rem;
+    color: #f3f3f3;
+    font-family: "Open Sans", serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.35em;
+}
+
+p::first-letter { margin-left: 2em; }
+
+.content-section {
+    display: flex;
+    align-items: center;
+    column-gap: 7vw;
+    min-height: 32rem;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section > picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-img {
+    max-height: 30rem;
+    object-fit: contain;
+    aspect-ratio: 68/115;
+}
+
+@media screen and (orientation: portrait) {
+    #content-div {
+        padding: 3vh 8% 14vh 8%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.02em;
+    }
+}
