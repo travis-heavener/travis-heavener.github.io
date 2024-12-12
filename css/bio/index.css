@@ -42,6 +42,11 @@ p {
 p:last-of-type { margin-top: 1.5em; }
 p::first-letter { margin-left: 2em; }
 
+a {
+    color: #6b9af1;
+    font-style: normal;
+}
+
 .content-section {
     display: flex;
     align-items: center;
