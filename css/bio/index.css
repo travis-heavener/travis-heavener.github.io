@@ -69,7 +69,7 @@ h1 {
 }
 
 .bio-img {
-    max-height: 27rem;
+    height: 27rem;
     object-fit: cover;
     aspect-ratio: 0.65;
 
