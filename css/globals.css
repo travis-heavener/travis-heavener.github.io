@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html, body {
@@ -112,37 +113,37 @@ body {
 /* text unit sizing */
 
 @media screen and (orientation: landscape) {
-    @media (max-width: 439px)  {  :root { font-size: 6px; }  }
-    @media (min-width: 440px)  {  :root { font-size: 7px; }  }
-    @media (min-width: 480px)  {  :root { font-size: 8px; }  }
-    @media (min-width: 620px)  {  :root { font-size: 9px; }  }
-    @media (min-width: 780px)  {  :root { font-size: 10px; }  }
-    @media (min-width: 870px)  {  :root { font-size: 11px; }  }
-    @media (min-width: 960px)  {  :root { font-size: 12px; }  }
-    @media (min-width: 1080px) {  :root { font-size: 13px; }  }
-    @media (min-width: 1200px) {  :root { font-size: 14px; }  }
-    @media (min-width: 1500px) {  :root { font-size: 15px; }  }
-    @media (min-width: 1920px) {  :root { font-size: 16px; }  }
-    @media (min-width: 2100px) {  :root { font-size: 19px; }  }
-    @media (min-width: 2400px) {  :root { font-size: 21px; }  }
-    @media (min-width: 2560px) {  :root { font-size: 22px; }  }
-    @media (min-width: 2800px) {  :root { font-size: 24px; }  }
-    @media (min-width: 3800px) {  :root { font-size: 34px; }  }
-    @media (min-width: 5760px) {  :root { font-size: 52px; }  }
+    @media (max-width: 439px)                          {  :root { font-size: 6px; }  }
+    @media (min-width: 440px)  and (max-width: 479px)  {  :root { font-size: 7px; }  }
+    @media (min-width: 480px)  and (max-width: 619px)  {  :root { font-size: 8px; }  }
+    @media (min-width: 620px)  and (max-width: 779px)  {  :root { font-size: 9px; }  }
+    @media (min-width: 780px)  and (max-width: 869px)  {  :root { font-size: 10px; }  }
+    @media (min-width: 870px)  and (max-width: 959px)  {  :root { font-size: 11px; }  }
+    @media (min-width: 960px)  and (max-width: 1079px) {  :root { font-size: 12px; }  }
+    @media (min-width: 1080px) and (max-width: 1199px) {  :root { font-size: 13px; }  }
+    @media (min-width: 1200px) and (max-width: 1499px) {  :root { font-size: 14px; }  }
+    @media (min-width: 1500px) and (max-width: 1919px) {  :root { font-size: 15px; }  }
+    @media (min-width: 1920px) and (max-width: 2099px) {  :root { font-size: 16px; }  }
+    @media (min-width: 2100px) and (max-width: 2399px) {  :root { font-size: 19px; }  }
+    @media (min-width: 2400px) and (max-width: 2559px) {  :root { font-size: 21px; }  }
+    @media (min-width: 2560px) and (max-width: 2799px) {  :root { font-size: 22px; }  }
+    @media (min-width: 2800px) and (max-width: 3799px) {  :root { font-size: 24px; }  }
+    @media (min-width: 3800px) and (max-width: 5760px) {  :root { font-size: 34px; }  }
+    @media (min-width: 5760px)                         {  :root { font-size: 52px; }  }
 }
 
 @media screen and (orientation: portrait) {
-    @media (max-width: 359px)  {  :root { font-size: 12px; }  }
-    @media (min-width: 360px)  {  :root { font-size: 13px; }  }
-    @media (min-width: 370px)  {  :root { font-size: 13.5px; }  }
-    @media (min-width: 380px)  {  :root { font-size: 14px; }  }
-    @media (min-width: 410px)  {  :root { font-size: 15px; }  }
-    @media (min-width: 430px)  {  :root { font-size: 15.5px; }  }
-    @media (min-width: 480px)  {  :root { font-size: 16px; }  }
-    @media (min-width: 576px)  {  :root { font-size: 20px; }  }
-    @media (min-width: 768px)  {  :root { font-size: 24px; }  }
-    @media (min-width: 960px)  {  :root { font-size: 28px; }  }
-    @media (min-width: 1200px) {  :root { font-size: 40px; }  }
+    @media (max-width: 359px)                         {  :root { font-size: 12px; }  }
+    @media (min-width: 360px) and (max-width: 369px)  {  :root { font-size: 13px; }  }
+    @media (min-width: 370px) and (max-width: 379px)  {  :root { font-size: 13.5px; }  }
+    @media (min-width: 380px) and (max-width: 409px)  {  :root { font-size: 14px; }  }
+    @media (min-width: 410px) and (max-width: 429px)  {  :root { font-size: 15px; }  }
+    @media (min-width: 430px) and (max-width: 479px)  {  :root { font-size: 15.5px; }  }
+    @media (min-width: 480px) and (max-width: 575px)  {  :root { font-size: 16px; }  }
+    @media (min-width: 576px) and (max-width: 767px)  {  :root { font-size: 20px; }  }
+    @media (min-width: 768px) and (max-width: 959px)  {  :root { font-size: 24px; }  }
+    @media (min-width: 960px) and (max-width: 1199px) {  :root { font-size: 28px; }  }
+    @media (min-width: 1200px)                        {  :root { font-size: 40px; }  }
 
     #header-div {
         column-gap: 2rem;
