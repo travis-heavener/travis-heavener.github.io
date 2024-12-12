@@ -142,8 +142,7 @@
     width: var(--diameter);
     height: var(--diameter);
     border-radius: 50%;
-    border: 0.25rem solid #f9f9f9;
-    box-shadow: 0 0.25rem 1.5rem #000a;
+    box-shadow: 0 0.1rem 1.25rem #0005;
     cursor: pointer;
 }
 
@@ -170,11 +169,11 @@
     }
     .contact-section:nth-of-type(2) .contact-img { margin-top: 1rem; }
     .contact-img:hover {
-        box-shadow: 0 0.25rem 1.5rem #0004;
+        box-shadow: 0 0 1.25rem #fff9;
         filter: brightness(1);
     }
     .contact-img:active {
-        box-shadow: 0 0.25rem 1.5rem #000d;
+        box-shadow: 0 0 1.5rem #fff2;
         filter: brightness(0.8);
     }
 }
