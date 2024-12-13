@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 6vh 15% 15vh 15%;
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
     overflow-x: hidden;
 }
 
