@@ -24,6 +24,10 @@ html, body {
     --accent-dark: #de8629;
     --accent-base: #ec9a42;
     --accent-lite: #fcb468;
+
+    --anchor-dark: #3f73d3;
+    --anchor-base: #6b9af1;
+    --anchor-lite: #abc8ff;
 }
 
 body {
