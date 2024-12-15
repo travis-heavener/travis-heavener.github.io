@@ -142,7 +142,7 @@
     #npss-desc::after { content: " — Summer 2023"; }
     #hd-desc::after { content: " — 2020 \2013  2023; Summer 2024"; }
     #sprout-desc::after { content: " — Aug. 2021 & Aug. 2022"; }
-    #swim-desc::after { content: " — 2021 \2013  2022"; }
+    #swim-desc::after { content: " — 2020 \2013  2022"; }
     .millenia-prefix::before { content: "'"; }
 
     #skills-list { --num-cols: 2; }
