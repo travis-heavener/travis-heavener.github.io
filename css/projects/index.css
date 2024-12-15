@@ -110,7 +110,7 @@
 
     background-color: #fff2;
     border: var(--border-width) solid #aaa;
-    box-shadow: 0 0.1rem 0.8rem #fff8;
+    box-shadow: 0 0.1rem 0.7rem #fff7;
     border-radius: calc(var(--width) * 0.07);
     overflow: hidden;
 }
@@ -183,7 +183,7 @@
 /* mobile styling */
 
 @media screen and (orientation: portrait) {
-    #content-div { padding: 3vh 8% 14vh 8%; }
+    #content-div { padding: 3vh 8% 8vh 8%; }
 
     #content-div h1 {
         font-size: 3rem;
