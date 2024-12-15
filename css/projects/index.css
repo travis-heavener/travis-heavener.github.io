@@ -80,6 +80,15 @@
     text-shadow: 0.1em 0.1em 0 #0006;
 }
 
+.project-img {
+    width: 100%;
+    height: var(--img-height);
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 33%;
+    border-bottom: calc(0.75 * var(--border-width)) solid #aaa;
+}
+
 .slideshow-3 {
     position: relative;
     width: 100%;
