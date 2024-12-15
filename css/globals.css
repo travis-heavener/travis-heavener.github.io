@@ -117,12 +117,21 @@ body {
     background-color: #0005;
 }
 
-#footer-div > p {
+#footer-div a,
+#footer-div p {
     color: #f3f3f3;
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 300;
 }
+
+#footer-div a {
+    color: var(--anchor-base);
+    transition: 0.1s color;
+}
+
+#footer-div a:hover { color: var(--anchor-lite); }
+#footer-div a:active { color: var(--anchor-dark); }
 
 /* text unit sizing */
 
