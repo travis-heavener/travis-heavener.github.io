@@ -41,6 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // If first dropdown area, focus
-        // if (i === 0) icon.click();
+        if (i === 0) wrapper.click();
     });
 });
