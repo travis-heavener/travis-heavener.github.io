@@ -193,3 +193,10 @@
         left: -1.75rem;
     }
 }
+
+
+/* adjust padding on landscape mobiles */
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    #content-div { padding: 6vh 7% 15vh 7%; }
+}

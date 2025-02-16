@@ -78,3 +78,10 @@ h1 {
 
     .bio-img { height: 25rem; }
 }
+
+
+/* adjust padding on landscape mobiles */
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    #content-div { padding: 6vh 8% 15vh 8%; }
+}

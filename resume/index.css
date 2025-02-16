@@ -126,3 +126,9 @@
     .expected-date::before { content: "Expected "; }
     .millenia-prefix::before { content: "20"; }
 }
+
+/* adjust padding on landscape mobiles */
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    #content-div { padding: 6vh 8% 15vh 8%; }
+}
