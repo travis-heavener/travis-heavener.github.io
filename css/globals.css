@@ -29,6 +29,9 @@ html, body {
     --anchor-dark: #3f73d3;
     --anchor-base: #6b9af1;
     --anchor-lite: #abc8ff;
+
+    /* update scrollbar color */
+    color-scheme: dark;
 }
 
 body {
