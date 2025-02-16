@@ -16,6 +16,7 @@ h1 {
 
 .text-section > p {
     color: #f3f3f3;
+    text-align: justify;
     font: italic 300 1.4rem/1.45em var(--Open-Sans);
 }
 
