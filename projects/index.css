@@ -148,8 +148,8 @@
     height: var(--height);
 
     background-color: #fff2;
-    border: var(--border-width) solid #aaa;
-    box-shadow: 0 0.1rem 0.7rem #fff3;
+    border: var(--border-width) solid var(--accent-lite);
+    box-shadow: 0 0.1rem 0.7rem #0006;
     border-radius: calc(var(--width) * 0.07);
     overflow: hidden;
 }
@@ -166,7 +166,7 @@
     text-shadow: 0.1em 0.05em 0 #0006;
 }
 
-.project-div a { text-decoration-color: var(--accent-lite); }
+.project-div a { text-decoration-color: var(--accent-liter); }
 
 .project-div p {
     margin: 0 0.5rem;
@@ -185,7 +185,7 @@
     object-fit: cover;
     overflow: hidden;
     object-position: 50% 33%;
-    border-bottom: calc(0.75 * var(--border-width)) solid #aaa;
+    border-bottom: calc(0.75 * var(--border-width)) solid var(--accent-liter);
 }
 
 .slideshow-3 {
