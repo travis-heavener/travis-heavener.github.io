@@ -40,7 +40,12 @@
         <link rel="stylesheet" href="/css/globals.css">
         <link rel="stylesheet" href="index.css">
         <noscript>
-            <link rel="stylesheet" href="noscript.css">
+            <style>
+                /* Conditional formatting for browsers w/o JavaScript enabled */
+                .section-wrapper h2 { cursor: default; }
+                .dropdown-icon { display: none; }
+                .projects-row.hidden { display: flex; }
+            </style>
         </noscript>
 
         <script src="/js/globals.js" defer></script>
