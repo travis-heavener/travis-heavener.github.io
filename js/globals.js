@@ -8,10 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const offHandler = () => (timeout !== null) ? clearTimeout(timeout) : null;
         const onHandler = () => {
             timeout = setTimeout(() => {
-                const link = document.createElement("LINK");
-                link.rel = "prefetch";
-                link.href = a.href;
-                document.head.appendChild(link);
+                document.head.insertAdjacentHTML("beforeend", `<link rel="prefetch" href="${a.href}">`);
 
                 // Unbind
                 a.removeEventListener("mouseenter", onHandler);
