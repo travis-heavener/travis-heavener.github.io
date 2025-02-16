@@ -94,11 +94,15 @@
     height: 2rem;
 
     cursor: pointer;
+    filter: drop-shadow(-0.2rem 0 0.05rem #0007);
     transform: rotate(-90deg);
-    transition: 0.15s transform;
+    transition: 0.15s transform, 0.15s filter;
 }
 
-.dropdown-icon.active { transform: rotate(90deg); }
+.dropdown-icon.active {
+    filter: drop-shadow(0.2rem 0 0.05rem #0007);
+    transform: rotate(90deg);
+}
 
 /* projects styling */
 
