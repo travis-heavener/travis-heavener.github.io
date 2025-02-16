@@ -43,7 +43,12 @@
         </noscript>
 
         <link rel="stylesheet" href="/css/globals.css">
-        <link rel="stylesheet" href="/css/projects/index.css">
+        <link rel="stylesheet" href="index.css">
+        <noscript>
+            <link rel="stylesheet" href="noscript.css">
+        </noscript>
+
+        <script src="index.js" defer></script>
     </head>
     <body>
         <div id="header-div">
@@ -60,24 +65,27 @@
                 <div class="content-dot"></div>
             </div>
 
-            <div class="section-wrapper">
-                <a href="#table-of-contents"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
-                <h2 id="table-of-contents">Table of Contents</h2>
-            </div>
+            <noscript>
+                <div class="section-wrapper">
+                    <a href="#table-of-contents"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
+                    <h2 id="table-of-contents">Table of Contents</h2>
+                </div>
 
-            <ul>
-                <li><a href="#2025">2025</a></li>
-                <li><a href="#2024">2024</a></li>
-                <li><a href="#2023">2023</a></li>
-                <li><a href="#2022">2022</a></li>
-                <li><a href="#2020">2020</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#2025">2025</a></li>
+                    <li><a href="#2024">2024</a></li>
+                    <li><a href="#2023">2023</a></li>
+                    <li><a href="#2022">2022</a></li>
+                    <li><a href="#2020">2020</a></li>
+                </ul>
+            </noscript>
 
             <div class="section-wrapper">
                 <a href="#2025"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="2025">2025</h2>
+                <img class="dropdown-icon" src="/res/icons/dropdown.svg" alt="Dropdown icon.">
             </div>
-            <div class="projects-row">
+            <div class="projects-row hidden">
                 <div class="project-div">
                     <img class="project-img" src="/res/projects/2048/thumb1.webp" alt="Screenshot of a nearly-complete 2048 game.">
                     <h3><a href="https://github.com/travis-heavener/2048.js">2048.JS</a></h3>
@@ -93,8 +101,9 @@
             <div class="section-wrapper">
                 <a href="#2024"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="2024">2024</h2>
+                <img class="dropdown-icon" src="/res/icons/dropdown.svg" alt="Dropdown icon.">
             </div>
-            <div class="projects-row">
+            <div class="projects-row hidden">
                 <div class="project-div">
                     <div class="slideshow-3">
                         <img class="project-img" src="/res/projects/mini/thumb1.webp" alt="Screenshot of the Mini Server v2.1's landing page.">
@@ -124,8 +133,9 @@
             <div class="section-wrapper">
                 <a href="#2023"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="2023">2023</h2>
+                <img class="dropdown-icon" src="/res/icons/dropdown.svg" alt="Dropdown icon.">
             </div>
-            <div class="projects-row">
+            <div class="projects-row hidden">
                 <div class="project-div">
                     <img class="project-img" src="/res/projects/cornhole-v5.0/thumb1.webp" alt="Screenshot of the Cornhole Scoreboard v5.0's landing page.">
                     <h3>Cornhole v5.0</h3>
@@ -136,8 +146,9 @@
             <div class="section-wrapper">
                 <a href="#2022"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="2022">2022</h2>
+                <img class="dropdown-icon" src="/res/icons/dropdown.svg" alt="Dropdown icon.">
             </div>
-            <div class="projects-row">
+            <div class="projects-row hidden">
                 <div class="project-div">
                     <div class="slideshow-3">
                         <img class="project-img" src="/res/projects/bingo/thumb1.webp" alt="Screenshot of BinGo's user profile.">
@@ -152,8 +163,9 @@
             <div class="section-wrapper">
                 <a href="#2020"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="2020">2020</h2>
+                <img class="dropdown-icon" src="/res/icons/dropdown.svg" alt="Dropdown icon.">
             </div>
-            <div class="projects-row">
+            <div class="projects-row hidden">
                 <div class="project-div">
                     <img class="project-img" src="/res/icons/site.webp" alt="This website's logo.">
                     <h3><a href="https://github.com/travis-heavener/travis-heavener.github.io">Digital Portfolio</a></h3>

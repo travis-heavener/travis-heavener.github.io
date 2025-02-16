@@ -26,7 +26,7 @@
     border-radius: 50%;
 }
 
-#content-div > ul li {
+#content-div ul li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
@@ -34,16 +34,16 @@
     text-shadow: 0.1em 0.05em 0 #0006;
 }
 
-#content-div > ul a {
+#content-div ul a {
     color: var(--anchor-base);
     text-decoration: underline;
     transition: 0.1s color;
 }
 
-#content-div > ul a:hover { color: var(--anchor-lite); }
-#content-div > ul a:active { color: var(--anchor-dark); }
+#content-div ul a:hover { color: var(--anchor-lite); }
+#content-div ul a:active { color: var(--anchor-dark); }
 
-#content-div > ul li {
+#content-div ul li {
     margin-left: 1.5em;
     color: #e2e2e2;
 }
@@ -55,17 +55,17 @@
 .section-wrapper > a {
     display: none;
     position: absolute;
-    top: 33%;
-    width: 4rem;
-    left: -3rem;
-    height: 1.33rem;
+    top: 30%;
+    width: 2.25rem;
+    left: -2.25rem;
+    height: 1.67rem;
     cursor: pointer;
 }
 
-.section-wrapper img {
+.section-wrapper > a > img {
     position: absolute;
-    height: 100%;
-    right: 2rem;
+    height: 1.33rem;
+    top: 0.17rem;
 }
 
 .section-wrapper:hover > a { display: block; }
@@ -82,7 +82,23 @@
     line-height: 1.5em;
     text-decoration: underline;
     text-decoration-color: var(--accent-dark);
+    cursor: pointer;
 }
+
+/* dropdown icon styling */
+
+.dropdown-icon {
+    position: absolute;
+    top: 25%;
+    left: 6.5rem;
+    height: 2rem;
+
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 0.15s transform;
+}
+
+.dropdown-icon.active { transform: rotate(90deg); }
 
 /* projects styling */
 
@@ -94,6 +110,22 @@
     width: 100%;
     margin-bottom: 1.25rem;
 }
+
+.projects-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
+.projects-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
+
+@keyframes projectsFadeIn {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 22rem;
+    }
+}
+
+.projects-row.hidden { display: none; }
 
 .project-div {
     --width: 16rem;
@@ -191,8 +223,8 @@
     }
 
     .section-wrapper > a {
-        left: -2.325rem;
-        height: 1.25rem;
+        width: 1.75rem;
+        left: -1.75rem;
     }
 
     .projects-row {
