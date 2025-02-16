@@ -10,46 +10,26 @@
 
 h1 {
     color: #fbfbfb;
-    font-family: "Anton", sans-serif;
-    font-size: 4.25rem;
-    font-weight: 400;
+    font: 400 4.25rem/1.2em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
-    line-height: 1.2em;
 }
 
-#content-dot-wrapper { margin: 1rem 0; }
-
-.content-dot {
-    --diameter: 1rem;
-
-    display: inline-block;
-    margin-left: calc(0.25 * var(--diameter));
-    width: var(--diameter);
-    height: var(--diameter);
-    background-color: var(--accent-dark);
-    border-radius: 50%;
-}
-
-.paragraph-text {
+.text-section > p {
     color: #f3f3f3;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.45em;
+    font: italic 300 1.4rem/1.45em var(--Open-Sans);
 }
 
-.paragraph-text:last-of-type { margin-top: 1.5em; }
-.paragraph-text::first-letter { margin-left: 2em; }
+.text-section > p:last-of-type { margin-top: 1.5em; }
+.text-section > p::first-letter { margin-left: 2em; }
 
-.paragraph-text > a {
+.text-section > p > a {
     color: var(--anchor-base);
     font-style: normal;
     transition: 0.1s color;
 }
 
-.paragraph-text > a:hover { color: var(--anchor-lite); }
-.paragraph-text > a:active { color: var(--anchor-dark); }
+.text-section > p > a:hover { color: var(--anchor-lite); }
+.text-section > p > a:active { color: var(--anchor-dark); }
 
 .content-section {
     display: flex;
@@ -60,13 +40,7 @@ h1 {
 
 .content-section:last-of-type { margin-top: 2rem; }
 
-.text-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.content-section > picture {
+.text-section, .content-section > picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +69,7 @@ h1 {
         row-gap: 3rem;
     }
 
-    .paragraph-text { font-size: 1.15rem; }
+    .text-section > p { font-size: 1.15rem; }
 
     .content-section:last-of-type {
         flex-direction: column-reverse;

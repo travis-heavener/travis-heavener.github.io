@@ -7,11 +7,8 @@
 #content-div > h1 {
     margin-bottom: 0.5rem;
     color: #fbfbfb;
-    font-family: "Anton", sans-serif;
-    font-size: 3.5rem;
-    font-weight: 400;
+    font: 400 3.5rem/1.2em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
-    line-height: 1.2em;
 }
 
 /* align with dot's margin-left */
@@ -35,20 +32,16 @@
     right: 2rem;
 }
 
-.section-wrapper:hover > a { display: block; }
+.section-wrapper:hover > a,
 .section-wrapper:active > a { display: block; }
 
 .section-wrapper h2 {
     margin: 0.67rem 0;
 
     color: #e9e9e9;
-    font-family: "Anton", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font: 400 2.5rem/1.5em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
-    line-height: 1.5em;
-    text-decoration: underline;
-    text-decoration-color: var(--accent-dark);
+    text-decoration: underline var(--accent-dark);
 }
 
 #content-div h3 {
@@ -56,48 +49,29 @@
     margin-bottom: 0.15rem;
 
     color: #d9d9d9;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-decoration: underline;
-    text-decoration-color: var(--accent-liter);
+    font: 500 1.3rem var(--Open-Sans);
+    text-decoration: underline var(--accent-liter);
 }
 
-.left-right-text,
-.left-right-text-fixed {
+.broken-text,
+.broken-text-fixed {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.left-right-text-fixed {
+.broken-text-fixed {
     margin: 0.5rem 0;
     align-items: center;
 }
-.left-right-text-fixed > *:first-child { max-width: 60%; }
-.left-right-text-fixed > *:last-child { max-width: 40%; }
-
-#content-dot-wrapper { margin: 1rem 0; }
-
-.content-dot {
-    --diameter: 1rem;
-
-    display: inline-block;
-    margin-left: calc(0.25 * var(--diameter));
-    width: var(--diameter);
-    height: var(--diameter);
-    background-color: var(--accent-dark);
-    border-radius: 50%;
-}
+.broken-text-fixed > *:first-child { max-width: 60%; }
+.broken-text-fixed > *:last-child { max-width: 40%; }
 
 #content-div p,
 #content-div a,
 #content-div li {
     color: #e9e9e9;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.15rem;
-    font-weight: 300;
-    line-height: 1.5em;
+    font: 300 1.15rem/1.5em var(--Open-Sans);
 }
 
 #content-div a {
@@ -134,7 +108,7 @@
         height: 1.25rem;
     }
 
-    .left-right-text:not(.no-block) { display: block; }
+    .broken-text:not(.no-block) { display: block; }
     .hide-mobile { display: none; }
 
     #rpi-desc::after { content: " — Expected May, 2027"; }

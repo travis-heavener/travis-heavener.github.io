@@ -2,7 +2,7 @@
 
 #content-div {
     --row-gap: 2rem;
-    --inner-content-height: calc(100vh - var(--header-height) - var(--footer-height) - 11vh - var(--row-gap));
+    --inner-content-height: calc(89vh - var(--header-height) - var(--footer-height) - var(--row-gap));
 
     display: flex;
     flex-wrap: wrap;
@@ -18,34 +18,19 @@
     padding-top: 2%;
 }
 
-#name-display {
-    color: #fbfbfb;
-    font-family: "Anton", sans-serif;
-    font-size: 5.25rem;
-    font-weight: 400;
+#name-display, #job-title-display {
+    font: 400 5.25rem/1.2em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
-    line-height: 1.2em;
 }
 
-.content-dot {
-    --diameter: 1rem;
-
-    display: inline-block;
-    margin-left: calc(0.25 * var(--diameter));
-    width: var(--diameter);
-    height: var(--diameter);
-    background-color: var(--accent-dark);
-    border-radius: 50%;
-}
+#name-display { color: #fbfbfb; }
 
 #job-title-display {
     color: #d9d9d9;
-    font-family: "Anton", sans-serif;
     font-size: 4.25rem;
-    font-weight: 400;
-    text-shadow: 0.08em 0.06em 0.03em #0006;
-    line-height: 1.2em;
 }
+
+#content-dot-wrapper { margin: 0; }
 
 #content-right {
     display: flex;
@@ -78,25 +63,22 @@
 
 #tagline-text {
     color: #f3f3f3;
-    font-family: "Open Sans", serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 300;
+    font: italic 300 1.5rem var(--Open-Sans);
 }
 
 #read-more-anchor {
+    --shadow-size: 0.125rem 0.125rem 0.75rem;
+
     display: inline-block;
     margin-top: 0.75em;
     padding: 0.4em 1.1em 0.5em 1.1em;
 
     background-color: var(--accent-darkest);
     border-radius: 2em;
-    box-shadow: 0.125rem 0.125rem 0.75rem #0004;
+    box-shadow: var(--shadow-size) #0004;
 
     color: #fdfdfd;
-    font-family: "Open Sans", serif;
-    font-size: 1.25rem;
-    font-weight: 600;
+    font: 600 1.25rem var(--Open-Sans);
     text-decoration: underline;
     text-shadow: 0.075em 0.025em 0.1em #0005;
 
@@ -106,12 +88,12 @@
 
 #read-more-anchor:hover {
     background-color: var(--accent-darker);
-    box-shadow: 0.125rem 0.125rem 0.75rem #0002;
+    box-shadow: var(--shadow-size) #0002;
 }
 
 #read-more-anchor:active {
     background-color: var(--accent-darkest2);
-    box-shadow: 0.125rem 0.125rem 0.75rem #0006;
+    box-shadow: var(--shadow-size) #0006;
 }
 
 /* contact info formatting */
@@ -122,38 +104,16 @@
     column-gap: 2.5rem;
 }
 
-#contact-header {
-    display: none;
-    margin-top: 0.5em;
-    width: 100%;
-
-    color: #f9f9f9;
-    font-family: "Open Sans", serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--accent-dark);
-}
-
 .contact-img {
     --diameter: 5.25rem;
+    --hover-shadow-color: #fff9;
+    --active-shadow-color: #fff3;
 
     width: var(--diameter);
     height: var(--diameter);
     border-radius: 50%;
     box-shadow: 0 0.1rem 1.25rem #0005;
     cursor: pointer;
-}
-
-.contact-text {
-    display: none;
-    color: #f3f3f3;
-    font-family: "Open Sans", serif;
-    font-size: 1.1875rem;
-    font-style: italic;
-    font-weight: 300;
-    text-decoration: underline;
 }
 
 /* portrait & landscape overrides */
@@ -163,17 +123,23 @@
 
     #content-center { min-height: calc(0.4 * var(--inner-content-height)); }
 
+    #contact-header { display: none; }
+    .contact-text { display: none; }
     .contact-img {
         filter: brightness(0.9);
         transition: 0.15s filter, 0.15s box-shadow;
     }
-    .contact-section:nth-of-type(2) .contact-img { margin-top: 1rem; }
+    .contact-section:nth-of-type(2) .contact-img {
+        --hover-shadow-color: #0367a1;
+        --active-shadow-color: #004166;
+        margin-top: 1rem;
+    }
     .contact-img:hover {
-        box-shadow: 0 0 1.25rem #fff9;
+        box-shadow: 0 0 1.25rem var(--hover-shadow-color);
         filter: brightness(1);
     }
     .contact-img:active {
-        box-shadow: 0 0 1.5rem #fff2;
+        box-shadow: 0 0 1rem var(--active-shadow-color);
         filter: brightness(0.8);
     }
 }
@@ -200,7 +166,9 @@
         font-size: 2.25rem;
         letter-spacing: 0.02em;
     }
-    .content-dot { --diameter: 0.625rem; }
+    
+    #content-dot-wrapper > div { --diameter: 0.625rem; }
+    
     #job-title-display {
         font-size: 1.75rem;
         letter-spacing: 0.025em;
@@ -231,8 +199,22 @@
         column-gap: 0.75rem;
     }
 
-    #contact-header { display: block; }
-    .contact-text { display: inline-block; }
+    #contact-header {
+        display: block;
+        margin-top: 0.5em;
+        width: 100%;
+
+        color: #f9f9f9;
+        font: 700 2rem var(--Open-Sans);
+        text-align: center;
+        text-decoration: underline var(--accent-dark);
+    }
+    .contact-text {
+        display: inline-block;
+        color: #f3f3f3;
+        font: 300 italic 1.1875rem var(--Open-Sans);
+        text-decoration: underline;
+    }
     .contact-img {
         --diameter: 2.5rem;
         border-width: 0.125rem;
