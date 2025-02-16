@@ -142,6 +142,8 @@ body {
 
 /* mobile styling */
 
+@media screen and (orientation: landscape) and (max-width: 900px) { :root { font-size: 0.75rem; } }
+
 @media screen and (orientation: portrait) {
     :root { font-size: 0.9rem; }
     body { background: linear-gradient(180deg, var(--g-dark) 0%, var(--g-lite) 100%); }
