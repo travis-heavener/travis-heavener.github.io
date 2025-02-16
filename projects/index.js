@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     [...document.getElementsByClassName("section-wrapper")].forEach(wrapper => {
         // Bind click evts
         const projectsWrapper = wrapper.nextElementSibling;
-        const ANIM_DURATION = 150; // In ms, duration of projects row animation
         let timeout = null;
         
         wrapper.addEventListener("click", function() {
             // Toggle class
             const icon = this.children[2];
-            const isActive = !icon.className.includes("active");
-            if (isActive) {
+            if (!icon.className.includes("active")) {
                 icon.classList.add("active");
                 projectsWrapper.classList.remove("hidden"); // Focus projects row
 
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 timeout = setTimeout(() => {
                     projectsWrapper.classList.remove("animate-in");
                     timeout = null;
-                }, ANIM_DURATION);
+                }, 150);
             } else {
                 icon.classList.remove("active");
                 
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     projectsWrapper.classList.remove("animate-out");
                     projectsWrapper.classList.add("hidden"); // Hide projects row
                     timeout = null;
-                }, ANIM_DURATION * 0.8); // Add buffer to prevent clipping
+                }, 120); // Buffer to prevent clipping
             }
         });
     });
