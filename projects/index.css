@@ -137,7 +137,6 @@
 
 .project-div {
     --width: 16rem;
-    --img-height: calc(0.55 * var(--height));
     --border-width: 0.2rem;
 
     display: flex;
@@ -181,8 +180,8 @@
 }
 
 .project-img {
-    width: 100%;
-    height: var(--img-height);
+    width: var(--width);
+    aspect-ratio: 1.31;
     object-fit: cover;
     overflow: hidden;
     object-position: 50% 33%;
@@ -191,24 +190,13 @@
 
 .slideshow-3 {
     position: relative;
-    width: 100%;
-    height: var(--img-height);
+    width: var(--width);
+    aspect-ratio: 1.31;
 }
 
 .slideshow-3 .project-img {
     --anim-dur: 15s;
-
     position: absolute;
-    left: calc(-1 * var(--border-width));
-
-    width: var(--width);
-    height: var(--img-height);
-    object-fit: cover;
-    overflow: hidden;
-    object-position: 50% 33%;
-
-    border-bottom: calc(0.75 * var(--border-width)) solid #aaa;
-
     animation: var(--anim-dur) slideshow3 0s infinite;
 }
 
