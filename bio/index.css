@@ -58,9 +58,9 @@ h1 {
 }
 
 @media screen and (orientation: portrait) {
-    #content-div { padding: 3vh 8% 14vh 8%; }
+    #content-div { padding: 3vh 8% 8vh 8%; }
 
-    #content-div h1 {
+    h1 {
         font-size: 3rem;
         letter-spacing: 0.02em;
     }
@@ -72,9 +72,7 @@ h1 {
 
     .text-section > p { font-size: 1.15rem; }
 
-    .content-section:last-of-type {
-        flex-direction: column-reverse;
-    }
+    .content-section:last-of-type { flex-direction: column-reverse; }
 
     .bio-img { height: 25rem; }
 }
