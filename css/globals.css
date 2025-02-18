@@ -131,13 +131,17 @@ body {
 
 #content-dot-wrapper > div {
     --diameter: 1rem;
-
+    
     display: inline-block;
     margin-left: calc(0.25 * var(--diameter));
     width: var(--diameter);
     height: var(--diameter);
     background-color: var(--accent-dark);
     border-radius: 50%;
+}
+
+#content-dot-wrapper > div:not(:first-of-type) {
+    margin-left: calc(0.5 * var(--diameter));
 }
 
 /* mobile styling */
