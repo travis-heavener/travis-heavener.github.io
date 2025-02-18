@@ -34,7 +34,7 @@ html, body {
     color-scheme: dark;
 
     /* preset font variables */
-    --Open-Sans: "Open Sans", serif;
+    --Open-Sans: "Open Sans", sans-serif;
     --Anton: "Anton", sans-serif;
 }
 

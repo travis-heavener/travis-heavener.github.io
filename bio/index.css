@@ -36,7 +36,7 @@ h1 {
     display: flex;
     align-items: center;
     column-gap: 7vw;
-    min-height: 32rem;
+    min-height: 34rem;
 }
 
 .content-section:last-of-type { margin-top: 2rem; }
@@ -48,7 +48,7 @@ h1 {
 }
 
 .bio-img {
-    height: 27rem;
+    height: 26rem;
     object-fit: cover;
     aspect-ratio: 0.65;
 
