@@ -1,5 +1,5 @@
 #content-div {
-    padding: 6vh 12% 15vh 12%;
+    padding: 6vh 15% 15vh 15%;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     overflow-x: hidden;
 }
