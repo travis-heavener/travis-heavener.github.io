@@ -211,10 +211,13 @@
     }
     .contact-text {
         display: inline-block;
-        color: #f3f3f3;
+        color: var(--anchor-base);
         font: 300 italic 1.1875rem var(--Open-Sans);
         text-decoration: underline;
+        transition: 0.1s color;
     }
+    .contact-text:hover { color: var(--anchor-lite); }
+    .contact-text:active { color: var(--anchor-dark); }
     .contact-img {
         --diameter: 2.5rem;
         border-width: 0.125rem;
