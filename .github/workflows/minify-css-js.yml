@@ -31,6 +31,7 @@ jobs:
     - run: uglifyjs ./projects/index.js -o  ./projects/index.js
 
     - run: cleancss -o ./css/globals.css    ./css/globals.css
+    - run: cleancss -o ./css/index.css    ./css/index.css
     - run: cleancss -o ./resume/index.css   ./resume/index.css
     - run: cleancss -o ./projects/index.css ./projects/index.css
     - run: cleancss -o ./bio/index.css      ./bio/index.css
