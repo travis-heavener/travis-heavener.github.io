@@ -46,5 +46,5 @@ jobs:
     - run: |
         git config user.name "Travis Heavener"
         git config user.email "travis.heavener@gmail.com"
-        git commit -am "Automated CSS/JS minification of ${{ github.sha }}"
+        git commit -am "Automated minification of ${{ github.sha }}"
         git push --force -u origin main:gh-pages
