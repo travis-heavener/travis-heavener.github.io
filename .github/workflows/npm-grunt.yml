@@ -27,13 +27,13 @@ jobs:
     - run: npm install uglify-js -g
 
     # minify in place
-    - run: uglifyjs ./js/globals.js -o ./js/globals.js
-    - run: uglifyjs ./projects/index.js -o ./projects/index.js
+    - run: uglifyjs ./js/globals.js -o      ./js/globals.js
+    - run: uglifyjs ./projects/index.js -o  ./projects/index.js
 
-    - run: cleancss -o ./css/globals.css ./css/globals.css
-    - run: cleancss -o ./resume/globals.css ./resume/globals.css
-    - run: cleancss -o ./projects/globals.css ./projects/globals.css
-    - run: cleancss -o ./bio/index.css ./bio/index.css
+    - run: cleancss -o ./css/globals.css    ./css/globals.css
+    - run: cleancss -o ./resume/index.css   ./resume/index.css
+    - run: cleancss -o ./projects/index.css ./projects/index.css
+    - run: cleancss -o ./bio/index.css      ./bio/index.css
 
     # push to gh-pages branch
     - run: |
