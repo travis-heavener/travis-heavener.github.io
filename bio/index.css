@@ -17,11 +17,11 @@ h1 {
 .text-section > p {
     color: #f3f3f3;
     text-align: justify;
+    text-indent: 2em;
     font: italic 300 1.4rem/1.45em var(--Open-Sans);
 }
 
 .text-section > p:last-of-type { margin-top: 1.5em; }
-.text-section > p::first-letter { margin-left: 2em; }
 
 .text-section > p > a {
     color: var(--anchor-base);
@@ -36,10 +36,9 @@ h1 {
     display: flex;
     align-items: center;
     column-gap: 7vw;
-    min-height: 34rem;
 }
 
-.content-section:last-of-type { margin-top: 2rem; }
+.content-section:last-of-type { margin-top: 6rem; }
 
 .text-section, .content-section > picture {
     display: flex;
