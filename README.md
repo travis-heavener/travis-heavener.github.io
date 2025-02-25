@@ -10,4 +10,4 @@ From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
 
 > Self-driven CS enthusiast and full-stack web developer currently studying Information Technology and Web Science (ITWS) at Rensselaer Polytechnic Institute. I have a deep passion for programming and spend much of my free time working on various projects and enjoying time with friends. I gained valuable hands-on experience during an internship with Next Phase Solutions and Services in Columbia, MD in the summer of 2023. Additionally, I honed my customer service skills at Hammerdown BBQ from 2020 to 2023, with a brief return in 2024.
 >
-> I have extensive experience with JavaScript and overall web development, and solid backend skills in C++, Java, C, and Python. Proficient in AWS services including DynamoDB, API Gateway, Lambda, and EC2.
+> I have extensive experience with JavaScript and overall web development, and solid backend skills in C++, Java, and Python. Proficient in AWS services including DynamoDB, API Gateway, Lambda, and EC2.
