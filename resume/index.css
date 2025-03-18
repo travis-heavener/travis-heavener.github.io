@@ -113,22 +113,11 @@ li {
     .broken-text:not(.no-block) { display: block; }
     .hide-mobile { display: none; }
 
-    #rpi-desc::after { content: " — Expected May, 2027"; }
-    #hs-desc::after, #acl-desc::after { content: " — June, 2023"; }
-    #npss-desc::after { content: " — Summer 2023"; }
-    #hd-desc::after { content: " — 2020 \2013  2023; Summer 2024"; }
-    #sprout-desc::after { content: " — Aug. 2021 & Aug. 2022"; }
-    #swim-desc::after { content: " — 2020 \2013  2022"; }
-    .millenia-prefix::before { content: "'"; }
-
     #skills-list { --num-cols: 2; }
-    #degree-span::before { content: "B.Sc." }
 }
 
 @media screen and (orientation: landscape) {
-    .expected-date::before { content: "Expected "; }
-    .millenia-prefix::before { content: "20"; }
-    #degree-span::before { content: "Bachelor of Science" }
+    .hide-landscape { display: none; }
 }
 
 /* adjust padding on landscape mobiles */
