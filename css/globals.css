@@ -57,6 +57,8 @@ body {
     -o-user-drag: none;
 }
 
+:focus { outline: 2px solid #fff !important; }
+
 /* header styling */
 
 #header-div {
