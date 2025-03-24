@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
 
-        wrapper.addEventListener("click", toggleFocus);
-        wrapper.children[2].addEventListener("keyup", (e) => (e.code === "Enter") ? toggleFocus.bind(wrapper)() : null);
+        wrapper.addEventListener("click", e => e.target === wrapper.children[1] || e.target === wrapper.children[2] ? toggleFocus.bind(wrapper)() : null);
+        wrapper.children[2].addEventListener("keyup", e => e.code === "Enter" ? toggleFocus.bind(wrapper)() : null);
     });
 });

@@ -17,7 +17,7 @@ h1 {
 .section-wrapper { position: relative; }
 
 .section-wrapper > a {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 33%;
     width: 4rem;
@@ -32,8 +32,9 @@ h1 {
     right: 2rem;
 }
 
-.section-wrapper:hover > a,
-.section-wrapper:active > a { display: block; }
+.section-wrapper > a:focus-visible { opacity: 1; outline: none !important; }
+.section-wrapper > a:focus-visible > img { outline: 2px solid #fff; }
+.section-wrapper:hover > a { opacity: 1; }
 
 h2 {
     display: inline;
