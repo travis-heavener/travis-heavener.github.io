@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Bind click evts
         const projectsWrapper = wrapper.nextElementSibling;
         let timeout = null;
-        
-        wrapper.addEventListener("click", function() {
+
+        const toggleFocus = function() {
             // Toggle class
             const icon = this.children[2];
             if (!icon.className.includes("active")) {
@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     timeout = null;
                 }, 120); // Buffer to prevent clipping
             }
-        });
+        };
+
+        wrapper.addEventListener("click", toggleFocus);
+        wrapper.children[2].addEventListener("keyup", (e) => (e.code === "Enter") ? toggleFocus.bind(wrapper)() : null);
     });
 });

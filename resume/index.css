@@ -36,6 +36,7 @@ h1 {
 .section-wrapper:active > a { display: block; }
 
 h2 {
+    display: inline;
     margin: 0.67rem 0;
 
     color: #e9e9e9;

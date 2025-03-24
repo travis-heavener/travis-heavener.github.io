@@ -49,6 +49,7 @@ ul a:active { color: var(--anchor-dark); }
 .section-wrapper:hover > a { display: block; }
 
 h2 {
+    display: inline;
     margin-top: 0.67rem;
 
     color: #e9e9e9;
