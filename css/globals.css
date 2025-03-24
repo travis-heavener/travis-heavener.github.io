@@ -57,7 +57,7 @@ body {
     -o-user-drag: none;
 }
 
-:focus { outline: 2px solid #fff !important; }
+:focus-visible { outline: 2px solid #fff !important; }
 
 /* header styling */
 
