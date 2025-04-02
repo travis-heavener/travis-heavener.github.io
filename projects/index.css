@@ -139,7 +139,7 @@ h2 {
     text-shadow: 0.1em 0.05em 0 #0006;
 }
 
-.project-div a { text-decoration-color: var(--accent-liter); }
+.project-div a { text-decoration-color: var(--anchor-base); }
 
 .project-div p {
     margin: 0 0.5rem;
