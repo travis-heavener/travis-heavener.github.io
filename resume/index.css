@@ -156,15 +156,20 @@ li {
 }
 
 #skills-list {
-    --num-cols: 3;
-    columns: var(--num-cols);
-    -webkit-columns: var(--num-cols);
-    -moz-columns: var(--num-cols);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.75rem;
+    column-gap: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 
-#skills-list > li {
-    font-size: 1.25rem;
-    font-style: normal;
+#skills-list > img {
+    height: 80px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 0.67rem;
 }
 
 @media screen and (orientation: portrait) {
