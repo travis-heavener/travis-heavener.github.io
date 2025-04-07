@@ -12,7 +12,10 @@ h1 {
 }
 
 /* align with dot's margin-left */
-#email-anchor { margin-left: 0.25rem; }
+#content-div > a {
+    display: block;
+    margin-left: 0.25rem;
+}
 
 .section-wrapper { position: relative; }
 
