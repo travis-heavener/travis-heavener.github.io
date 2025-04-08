@@ -55,6 +55,15 @@
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
 
+#headshot-caption {
+    margin-top: 0.5em;
+    color: #ccc;
+    font: italic 300 1.125rem var(--Open-Sans);
+    text-decoration: none;
+}
+
+#headshot-caption:hover { text-decoration: underline; }
+
 /* center content formatting */
 
 #content-lower {
@@ -193,6 +202,8 @@
         border-width: 0.25rem;
         border-radius: 0.1875rem;
     }
+
+    #headshot-caption { display: none; }
 
     /* Lower content */
     #content-lower {
