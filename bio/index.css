@@ -40,11 +40,13 @@ h1 {
 
 .content-section:last-of-type { margin-top: 6rem; }
 
-.text-section, .content-section > picture {
+.text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+picture { height: 26rem; }
 
 .bio-img {
     height: 26rem;
@@ -73,6 +75,7 @@ h1 {
 
     .content-section:last-of-type { flex-direction: column-reverse; }
 
+    picture { height: 25rem; }
     .bio-img { height: 25rem; }
 }
 
