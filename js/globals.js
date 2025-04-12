@@ -1,24 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-    [...document.getElementsByTagName("a")].forEach(a => {
+    const prefetched = new Set();
+    for (const a of document.getElementsByTagName("a")) {
         // Ignore crossorigin prefetches
         if (!a.href.startsWith(location.origin)) return;
 
         // Prefetch links on hover
-        let timeout = null;
-        const offHandler = () => (timeout !== null) ? clearTimeout(timeout) : null;
+        let timeout;
+        const offHandler = () => clearTimeout(timeout);
         const onHandler = () => {
             timeout = setTimeout(() => {
-                document.head.insertAdjacentHTML("beforeend", `<link rel="prefetch" href="${a.href}">`);
+                if (!prefetched.has(a.href)) {
+                    const link = document.createElement("LINK");
+                    link.rel = "prefetch";
+                    link.href = a.href;
+                    document.head.appendChild(link);
+                    prefetched.add(a.href);
+                }
 
-                // Unbind
                 a.removeEventListener("mouseenter", onHandler);
                 a.removeEventListener("mouseleave", offHandler);
-                timeout = null;
             }, 100); 
         };
 
         // Bind events
         a.addEventListener("mouseenter", onHandler);
         a.addEventListener("mouseleave", offHandler);
-    });
+    }
 });
