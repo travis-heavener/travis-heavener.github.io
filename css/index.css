@@ -43,6 +43,8 @@
     align-items: center;
 }
 
+#content-right > picture { height: 21.25rem; }
+
 #headshot-img {
     height: 21.25rem;
     aspect-ratio: 20/23;
@@ -116,8 +118,14 @@
     column-gap: 2.5rem;
 }
 
-.contact-img {
+#content-lower picture {
     --diameter: 5.25rem;
+    display: block;
+    width: var(--diameter);
+    height: var(--diameter);
+}
+
+.contact-img {
     --hover-shadow-color: #fff9;
     --active-shadow-color: #fff3;
 
@@ -194,6 +202,7 @@
     /* Right content */
     #content-right { justify-content: center; }
 
+    #content-right > picture { width: 45vw; height: auto; }
     #headshot-img {
         margin: 5% 0;
         width: 45vw;
@@ -254,8 +263,8 @@
     }
     .contact-text:hover { color: var(--anchor-lite); }
     .contact-text:active { color: var(--anchor-dark); }
+    #content-lower picture { --diameter: 2.5rem; }
     .contact-img {
-        --diameter: 2.5rem;
         border-width: 0.125rem;
         cursor: default;
     }
