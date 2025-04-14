@@ -115,14 +115,19 @@ h3 {
     text-shadow: 0.1em 0.1em 0 #0006;
 }
 
-.info-div img {
+.info-div picture {
     width: var(--width);
     height: auto;
     aspect-ratio: 2.2;
-    object-fit: cover;
     overflow: hidden;
-    object-position: 50% 33%;
     border-bottom: calc(0.75 * var(--border-width)) solid var(--accent-liter);
+    object-fit: cover;
+}
+
+.info-div img {
+    width: 100%;
+    max-height: 100%;
+    border: none;
 }
 
 .broken-text-fixed {
