@@ -83,7 +83,7 @@ h3 {
     max-width: var(--width);
     height: var(--height);
 
-    background-color: #fff2;
+    background: #fff2;
     border: var(--border-width) solid var(--accent-lite);
     box-shadow: 0 0.1rem 0.7rem #0006;
     border-radius: calc(var(--width) * 0.07);
@@ -163,6 +163,11 @@ a {
     aspect-ratio: 1;
     object-fit: contain;
     border-radius: 0.67rem;
+}
+
+.skill-pad-white {
+    background: #fff;
+    padding: 1%;
 }
 
 @media screen and (orientation: portrait) {
