@@ -51,8 +51,7 @@
     object-fit: cover;
 
     border-radius: 0.25rem;
-    border: 0.375rem solid var(--accent-dark);
-    background-color: var(--accent-lite);
+    background-color: var(--accent-base);
 
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
@@ -208,7 +207,6 @@
         width: 45vw;
         object-fit: contain;
         height: auto;
-        border-width: 0.25rem;
         border-radius: 0.1875rem;
     }
 
