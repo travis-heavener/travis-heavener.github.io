@@ -1,0 +1,59 @@
+name: Minify Assets
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anishathalye/proof-html@v2
+        with:
+          directory: ./
+          enforce_https: false
+
+  minify:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # install deps
+      - run: npm install clean-css-cli -g
+      - run: npm install uglify-js -g
+      - run: npm install html-minifier -g
+
+      # minify in place
+      - run: uglifyjs ./js/globals.js -o      ./js/globals.js
+      - run: uglifyjs ./projects/index.js -o  ./projects/index.js
+
+      - run: cleancss -o ./css/globals.css    ./css/globals.css
+      - run: cleancss -o ./css/index.css      ./css/index.css
+      - run: cleancss -o ./resume/index.css   ./resume/index.css
+      - run: cleancss -o ./projects/index.css ./projects/index.css
+      - run: cleancss -o ./bio/index.css      ./bio/index.css
+
+      - run: html-minifier index.html          -o index.html          --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
+      - run: html-minifier resume/index.html   -o resume/index.html   --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
+      - run: html-minifier projects/index.html -o projects/index.html --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
+      - run: html-minifier bio/index.html      -o bio/index.html      --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
+
+      # push to gh-pages branch
+      - run: |
+          git config user.name "Travis Heavener"
+          git config user.email "travis.heavener@gmail.com"
+          git commit -am "Automated minification of ${{ github.sha }}"
+          git push --force -u origin main:gh-pages
