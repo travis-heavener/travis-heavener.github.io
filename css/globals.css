@@ -79,7 +79,8 @@ body {
     color: #e9e9e9;
     font: 300 1.5rem var(--Open-Sans);
     text-align: center;
-    text-decoration: underline var(--accent-dark);
+    text-decoration: 2px underline var(--accent-dark);
+    text-underline-offset: 2px;
 
     transition: 0.15s color, 0.15s font-weight, 0.15s letter-spacing;
 }
