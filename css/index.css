@@ -117,7 +117,7 @@
     column-gap: 2.5rem;
 }
 
-#content-lower picture {
+#content-lower img {
     --diameter: 5.25rem;
     display: block;
     width: var(--diameter);
@@ -130,9 +130,18 @@
 
     width: var(--diameter);
     height: var(--diameter);
+    background: #fff;
     border-radius: 50%;
+    overflow: visible;
     box-shadow: 0 0.1rem 1.25rem #0005;
     cursor: pointer;
+}
+
+#gh-icon { background: #1b1f23 }
+
+#linkedin-icon {
+    padding: calc(0.1 * var(--diameter));
+    background: #007ebb;
 }
 
 /* portrait & landscape overrides */
