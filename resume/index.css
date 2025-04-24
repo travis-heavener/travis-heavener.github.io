@@ -162,7 +162,8 @@ a {
     width: 100%;
 }
 
-#skills-list > img {
+#skills-list > img,
+#skills-list > svg {
     height: 80px;
     aspect-ratio: 1;
     object-fit: contain;
