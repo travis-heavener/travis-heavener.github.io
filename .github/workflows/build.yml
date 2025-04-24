@@ -15,6 +15,7 @@ jobs:
         with:
           directory: ./
           enforce_https: false
+          disable_external: true
 
   minify:
     runs-on: ubuntu-latest
