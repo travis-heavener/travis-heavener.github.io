@@ -1,4 +1,4 @@
-name: Minify Assets
+name: Minify & Validate
 
 on:
   push:
