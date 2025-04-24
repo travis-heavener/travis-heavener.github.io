@@ -134,7 +134,6 @@
     height: var(--diameter);
     background: #fff;
     border-radius: 50%;
-    overflow: visible;
     box-shadow: 0 0.1rem 1.25rem #0005;
     cursor: pointer;
 }
