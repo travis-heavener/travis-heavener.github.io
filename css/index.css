@@ -124,6 +124,8 @@
     height: var(--diameter);
 }
 
+.contact-section > a { display: block }
+
 .contact-img {
     --hover-shadow-color: #fff9;
     --active-shadow-color: #fff3;
