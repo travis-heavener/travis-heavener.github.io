@@ -122,7 +122,7 @@ h2 {
     max-width: var(--width);
     height: var(--height);
 
-    background-color: #fff2;
+    background: #fff2;
     box-shadow: 0 0.1rem 0.7rem #0006;
     border-radius: calc(var(--width) * 0.07);
     overflow: hidden;

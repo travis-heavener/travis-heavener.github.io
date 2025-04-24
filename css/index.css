@@ -51,7 +51,7 @@
     object-fit: cover;
 
     border-radius: 0.25rem;
-    background-color: var(--accent-base);
+    background: var(--accent-base);
 
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
@@ -86,7 +86,7 @@
     margin-top: 0.75em;
     padding: 0.4em 1.1em 0.5em 1.1em;
 
-    background-color: var(--accent-darkest);
+    background: var(--accent-darkest);
     border-radius: 2em;
     box-shadow: var(--shadow-size) #0004;
 
@@ -96,16 +96,16 @@
     text-shadow: 0.075em 0.025em 0.1em #0005;
 
     cursor: pointer;
-    transition: 0.15s background-color, 0.15s box-shadow;
+    transition: 0.15s background, 0.15s box-shadow;
 }
 
 #read-more-anchor:hover {
-    background-color: var(--accent-darker);
+    background: var(--accent-darker);
     box-shadow: var(--shadow-size) #0002;
 }
 
 #read-more-anchor:active {
-    background-color: var(--accent-darkest2);
+    background: var(--accent-darkest2);
     box-shadow: var(--shadow-size) #0006;
 }
 
