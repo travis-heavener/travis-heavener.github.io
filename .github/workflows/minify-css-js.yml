@@ -1,4 +1,4 @@
-name: NodeJS with Grunt
+name: Minify Assets
 
 on:
   push:
@@ -15,6 +15,10 @@ jobs:
         node-version: [ 22.x ]
 
     steps:
+    - uses: anishathalye/proof-html@v2
+      with:
+        directory: ./
+
     - uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
