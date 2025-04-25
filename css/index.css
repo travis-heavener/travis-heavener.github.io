@@ -117,16 +117,10 @@
     column-gap: 2.5rem;
 }
 
-#content-lower img {
-    --diameter: 5.25rem;
-    display: block;
-    width: var(--diameter);
-    height: var(--diameter);
-}
-
 .contact-section > a { display: block }
 
 .contact-img {
+    --diameter: 5.25rem;
     --hover-shadow-color: #fff9;
     --active-shadow-color: #fff3;
 
