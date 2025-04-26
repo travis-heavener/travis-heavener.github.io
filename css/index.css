@@ -265,8 +265,8 @@
     }
     .contact-text:hover { color: var(--anchor-lite); }
     .contact-text:active { color: var(--anchor-dark); }
-    #content-lower img { --diameter: 3.5rem; }
     .contact-img {
+        --diameter: 3.5rem;
         border-width: 0.125rem;
         cursor: default;
     }
