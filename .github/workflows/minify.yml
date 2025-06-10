@@ -34,7 +34,8 @@ jobs:
       - run: html-minifier bio/index.html      -o bio/index.html      --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
 
       # push to gh-pages branch
-      - run: |
+      - if: github.event_name != 'pull_request'
+        run: |
           git config user.name "Travis Heavener"
           git config user.email "travis.heavener@gmail.com"
           git commit -am "Automated minification of ${{ github.sha }}"
