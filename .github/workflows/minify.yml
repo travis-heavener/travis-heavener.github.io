@@ -10,17 +10,8 @@ jobs:
   minify:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [22.x]
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
 
       # install deps
       - run: npm install clean-css-cli -g
@@ -43,7 +34,8 @@ jobs:
       - run: html-minifier bio/index.html      -o bio/index.html      --collapse-whitespace --html5 --remove-comments --minify-css --minify-js
 
       # push to gh-pages branch
-      - run: |
+      - if: github.event_name != 'pull_request'
+        run: |
           git config user.name "Travis Heavener"
           git config user.email "travis.heavener@gmail.com"
           git commit -am "Automated minification of ${{ github.sha }}"
