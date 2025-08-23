@@ -9,7 +9,7 @@ Travis Heavener's official interactive web portfolio.
 [![pages-build-deployment](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/pages/pages-build-deployment)
 
 ## About
-Travis Heavener (HEAVE-nur) is currently a second-year student at Rensselaer Polytechnic Institute majoring in IT & Web Science. In his spare time, Travis often works on independent programming projects or spending time with friends. Travis is a modest car enthusiast and a longtime swimmer, however his athletic interests have shifted more towards weightlifting in recent years.
+Travis Heavener (HEAVE-nur) is currently a third year student at Rensselaer Polytechnic Institute majoring in IT & Web Science. In his spare time, Travis often works on independent programming projects or spends his time with friends. Travis is a modest car enthusiast and a longtime swimmer, however his athletic interests have shifted towards weightlifting in recent years.
 
 From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
 
