@@ -55,7 +55,9 @@ h2 {
     color: #e9e9e9;
     font: 400 2.5rem/1.5em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
-    text-decoration: 4px underline var(--accent-dark);
+    text-decoration-color: var(--accent-dark); /* Safari hates shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
     text-underline-offset: 2px;
     cursor: pointer;
 }
@@ -137,7 +139,9 @@ h2 {
 }
 
 .project-div a {
-    text-decoration: 2px underline var(--anchor-base);
+    text-decoration-color: var(--accent-base); /* Safari hates shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
     text-underline-offset: 1px;
 }
 
