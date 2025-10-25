@@ -41,8 +41,6 @@ def gen_project_section(data: any, first_row: bool) -> str:
         # Add description
         s += indent(5) + f"""<p>{project['desc']}</p>\n"""
 
-        print(project["title"])
-
         s += indent(4) + """</div>\n"""
 
     # Close projects row
