@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: W3 Validate HTML
-      - uses: anishathalye/proof-html@v2
+        uses: anishathalye/proof-html@v2
         with:
           directory: ./web/
           enforce_https: false
