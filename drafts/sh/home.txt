@@ -1,0 +1,20 @@
+╭──── wowtravis.com ───────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  ▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖        │
+│     TRAVIS HEAVENER                                              ▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌        │
+│      TRAVIS HEAVENER                                                ▐██▌      ▐██▙▄▄▄▟██▌        │
+│     ● ● ●                                                           ▐██▌      ▐██▛▀▀▀▜██▌        │
+│     Full stack developer                                            ▐██▌      ▐██▌   ▐██▌        │
+│                                                                     ▝▀▀▘      ▝▀▀▘   ▝▀▀▘        │
+│     Source: wowtravis.com/this                                                                   │
+│                                                                                                  │
+│     ╭──── Socials ───────────────────────────────┐     ╭──── Directory ────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    LinkedIn │ wowtravis.com/my/linkedin    │     │    curl wowtravis.com/resume      │     │
+│     │    GitHub   │ wowtravis.com/my/github      │     │    curl wowtravis.com/projects    │     │
+│     │    Email    │ mail@wowtravis.com           │     │    curl wowtravis.com/bio         │     │
+│     │                                            │     │                                   │     │
+│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│                                                                                                  │
+│                                                                                Updated Oct. 2025 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯
