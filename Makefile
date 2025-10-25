@@ -14,21 +14,21 @@ clean:
 	@mkdir "docs"
 
 home:
-	@python3 ./tools/load-home.py
+	@python3 ./tools/generate-home.py
 	@echo "✅ Home"
 
 resume:
-	@python3 ./tools/load-resume.py
+	@python3 ./tools/generate-resume.py
 	@echo "✅ Resume"
 
 projects:
-	@python3 ./tools/load-projects.py
+	@python3 ./tools/generate-projects.py
 	@echo "✅ Projects"
 
 bio:
-	@python3 ./tools/load-bio.py
+	@python3 ./tools/generate-bio.py
 	@echo "✅ Bio"
 
 sitemap:
-	@python3 ./tools/load-sitemap.py
+	@python3 ./tools/generate-sitemap.py
 	@echo "✅ Sitemap"
