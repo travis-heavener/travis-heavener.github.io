@@ -7,7 +7,7 @@ def indent(n: int) -> str:
     return " " * (4 * n)
 
 def gen_education_experience(data: any) -> str:
-    s = indent(3) + """<div id="info-row">\n"""
+    s = indent(3) + """<div class="info-row">\n"""
 
     # Add each school
     for school in data:
@@ -84,5 +84,5 @@ if __name__ == "__main__":
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../web/projects/index.html", "w") as f:
+        with open("../web/resume/index.html", "w") as f:
             f.write(contents)
