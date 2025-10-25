@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Make Static Files
+        run: make
+
+  Minify:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      # Install deps
+      - run: npm install clean-css-cli -g
+      - run: npm install uglify-js -g
+      - run: npm install html-minifier -g
+
+      - name: Minify CSS
+        run: |
+          find . -type f -name "*.css" -not -path "*/node_modules/*" -exec cleancss -o {} {} \;
+
+      - name: Minify js
+        run: |
+          find . -type f -name "*.js" -not -path "*/node_modules/*" -exec uglifyjs {} -o {} \;
+
+      - name: Minify HTML
+        run: |
+          find . -type f -name "*.html" -not -path "*/node_modules/*" -exec html-minifier {} -o {} \
+            --collapse-whitespace --html5 --remove-comments --minify-css --minify-js \;
+
+  Validate-HTML:
+    needs: Minify
+    runs-on: ubuntu-latest
+    steps:
+      - name: W3 Validate HTML
+      - uses: anishathalye/proof-html@v2
+        with:
+          directory: ./web/
+          enforce_https: false
+          disable_external: true
+
+  Deploy:
+    needs: Validate-HTML
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Push Changes"
+        run: |
+          git config user.name "Travis Heavener"
+          git config user.email "travis.heavener@gmail.com"
+          git commit -am "Automated minification of ${{ github.sha }}"
+          git push --force -u origin main:gh-pages
