@@ -30,5 +30,5 @@ bio:
 	@echo "✅ Bio"
 
 sitemap:
-	@echo "TODO - SITEMAP"
-# 	@echo "✅ Sitemap"
+	@python3 ./tools/load-sitemap.py
+	@echo "✅ Sitemap"
