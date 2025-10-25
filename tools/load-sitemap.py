@@ -24,5 +24,5 @@ if __name__ == "__main__":
         contents = contents.replace("%%BIO_LASTMOD%%", get_mod_ts("../templates/bio/index.html"))
 
         # Write to new file
-        with open("../web/sitemap.xml", "w") as f:
+        with open("../docs/sitemap.xml", "w") as f:
             f.write(contents)

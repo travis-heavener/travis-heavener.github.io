@@ -23,22 +23,22 @@ jobs:
 
       - name: Minify CSS
         run: |
-          find ./web/ -type f -name "*.css" -not -path "*/node_modules/*" -exec cleancss -o {} {} \;
+          find ./docs/ -type f -name "*.css" -not -path "*/node_modules/*" -exec cleancss -o {} {} \;
 
       - name: Minify JS
         run: |
-          find ./web/ -type f -name "*.js" -not -path "*/node_modules/*" -exec uglifyjs {} -o {} \;
+          find ./docs/ -type f -name "*.js" -not -path "*/node_modules/*" -exec uglifyjs {} -o {} \;
 
       - name: Minify HTML
         run: |
-          find ./web/ -type f -name "*.html" -not -path "*/node_modules/*" -exec html-minifier {} -o {} \
+          find ./docs/ -type f -name "*.html" -not -path "*/node_modules/*" -exec html-minifier {} -o {} \
             --collapse-whitespace --html5 --remove-comments --minify-css --minify-js \;
 
       #################### VALIDATE ####################
       - name: W3 Validate HTML
         uses: anishathalye/proof-html@v2
         with:
-          directory: ./web/
+          directory: ./docs/
           enforce_https: false
           disable_external: true
 

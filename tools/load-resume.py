@@ -84,5 +84,5 @@ if __name__ == "__main__":
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../web/resume/index.html", "w") as f:
+        with open("../docs/resume/index.html", "w") as f:
             f.write(contents)

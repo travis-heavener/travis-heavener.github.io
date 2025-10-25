@@ -27,5 +27,5 @@ if __name__ == "__main__":
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../web/bio/index.html", "w") as f:
+        with open("../docs/bio/index.html", "w") as f:
             f.write(contents)
