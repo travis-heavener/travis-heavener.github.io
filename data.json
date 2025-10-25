@@ -9,7 +9,7 @@
                     "desc": "A lightweight, configurable HTTP server made in C++ for Windows and Linux.",
                     "imgs": [
                         {
-                            "path": "/res/projects/mercury/thumb1.webp",
+                            "src": "/res/projects/mercury/thumb1.webp",
                             "alt": "Icon for the Mercury web server.",
                             "loading": "eager"
                         }
@@ -21,17 +21,17 @@
                     "desc": "A solitaire remake to challenge and completely ruin the game for the most insane players.",
                     "imgs": [
                         {
-                            "path": "/res/projects/uf4/thumb1.webp",
+                            "src": "/res/projects/uf4/thumb1.webp",
                             "alt": "Screenshot of Unfair Solitaire 4 welcome screen.",
                             "loading": "eager"
                         },
                         {
-                            "path": "/res/projects/uf4/thumb2.webp",
+                            "src": "/res/projects/uf4/thumb2.webp",
                             "alt": "Screenshot of a mixed up solitaire game in Unfair Solitaire 4.",
                             "loading": "lazy"
                         },
                         {
-                            "path": "/res/projects/uf4/thumb3.webp",
+                            "src": "/res/projects/uf4/thumb3.webp",
                             "alt": "Screenshot of the 'Fish' card in Unfair Solitaire 4.",
                             "loading": "lazy"
                         }
@@ -43,7 +43,7 @@
                     "desc": "A JavaScript/HTML5 canvas simulation of Newtonian gravity for celestial bodies.",
                     "imgs": [
                         {
-                            "path": "/res/projects/orbital-sim/thumb1.webp",
+                            "src": "/res/projects/orbital-sim/thumb1.webp",
                             "alt": "Screenshot of Travis's Orbital Sim.",
                             "loading": "eager"
                         }
@@ -55,7 +55,7 @@
                     "desc": "The classic 2048 game by Gabriele Cirulli, remade in JavaScript.",
                     "imgs": [
                         {
-                            "path": "/res/projects/2048/thumb1.webp",
+                            "src": "/res/projects/2048/thumb1.webp",
                             "alt": "Screenshot of a nearly-complete 2048 game.",
                             "loading": "eager"
                         }
@@ -72,7 +72,7 @@
                     "desc": "An 8086-inspired, emulated CPU turned emulated operating system, with its own C-style programming language \"T\".",
                     "imgs": [
                         {
-                            "path": "/res/projects/tpu2/thumb1.webp",
+                            "src": "/res/projects/tpu2/thumb1.webp",
                             "alt": "Screenshot of the TPU's Operating System's kernel program.",
                             "loading": "lazy"
                         }
@@ -84,17 +84,17 @@
                     "desc": "A web app UI for a custom home server, with a media library, photos app, notes app, and a user suite.",
                     "imgs": [
                         {
-                            "path": "/res/projects/mini/thumb1.webp",
+                            "src": "/res/projects/mini/thumb1.webp",
                             "alt": "Screenshot of the Mini Server v2.1's landing page.",
                             "loading": "lazy"
                         },
                         {
-                            "path": "/res/projects/mini/thumb2.webp",
+                            "src": "/res/projects/mini/thumb2.webp",
                             "alt": "Screenshot of the Mini Server v2.1's dashboard page.",
                             "loading": "lazy"
                         },
                         {
-                            "path": "/res/projects/mini/thumb3.webp",
+                            "src": "/res/projects/mini/thumb3.webp",
                             "alt": "Screenshot of the Mini Server v2.1's gallery app.",
                             "loading": "lazy"
                         }
@@ -106,7 +106,7 @@
                     "desc": "A simulation where reinforcement models learn to shift gears, handle a powerful engine, and race programmable circuits.",
                     "imgs": [
                         {
-                            "path": "/res/projects/rlds/thumb1.webp",
+                            "src": "/res/projects/rlds/thumb1.webp",
                             "alt": "Screenshot of the RL Driving Simulator with a car rounding a corner.",
                             "loading": "lazy"
                         }
@@ -118,7 +118,7 @@
                     "desc": "An HTML canvas-based library designed for easy implementation of 2-D HTML5/JS web games and other canvas applications.",
                     "imgs": [
                         {
-                            "path": "/res/projects/cookiegl/thumb1.webp",
+                            "src": "/res/projects/cookiegl/thumb1.webp",
                             "alt": "Screenshot of a CookieGL usage example.",
                             "loading": "lazy"
                         }
@@ -135,7 +135,7 @@
                     "desc": "Started in early 2020, the Cornhole Scoreboard allows users to locally track progress in a cornhole tournament.",
                     "imgs": [
                         {
-                            "path": "/res/projects/cornhole-v5.0/thumb1.webp",
+                            "src": "/res/projects/cornhole-v5.0/thumb1.webp",
                             "alt": "Screenshot of the Cornhole Scoreboard v5.0's landing page.",
                             "loading": "lazy"
                         }
@@ -152,17 +152,17 @@
                     "desc": "A high school project aimed at encouraging physical activity via bingo card gamification in an Android app.",
                     "imgs": [
                         {
-                            "path": "/res/projects/bingo/thumb1.webp",
+                            "src": "/res/projects/bingo/thumb1.webp",
                             "alt": "Screenshot of BinGo's user profile.",
                             "loading": "lazy"
                         },
                         {
-                            "path": "/res/projects/bingo/thumb2.webp",
+                            "src": "/res/projects/bingo/thumb2.webp",
                             "alt": "Screenshot of BinGo's home page with a bingo card.",
                             "loading": "lazy"
                         },
                         {
-                            "path": "/res/projects/bingo/thumb3.webp",
+                            "src": "/res/projects/bingo/thumb3.webp",
                             "alt": "Screenshot of BinGo's card selection screen.",
                             "loading": "lazy"
                         }
@@ -179,7 +179,7 @@
                     "desc": "This digital GitHub Pages portfolio. Initially created in 2020, this current version was started in late 2024.",
                     "imgs": [
                         {
-                            "path": "/res/icons/site.webp",
+                            "src": "/res/icons/site.webp",
                             "alt": "This website's logo.",
                             "loading": "lazy"
                         }
