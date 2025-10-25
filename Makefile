@@ -14,7 +14,7 @@ clean:
 	@mkdir "web"
 
 home:
-	@echo "TODO - HOME"
+	@python3 ./tools/load-home.py
 
 resume:
 	@echo "TODO - RESUME"
@@ -23,4 +23,4 @@ projects:
 	@echo "TODO - PROJECTS"
 
 bio:
-	@echo "TODO - BIO"
+	@python3 ./tools/load-bio.py
