@@ -1,0 +1,376 @@
+{
+    "bio": {
+        "paragraphs": [
+            [
+                "Travis Heavener (HEAVE-nur) is currently a third year student at Rensselaer Polytechnic Institute majoring in IT & Web Science. In his spare time, Travis often works on independent programming projects (see <a href=\"/projects/\">Projects</a>) or is spending time with friends. Travis is a modest car enthusiast and a longtime swimmer, however his athletic interests have shifted more towards weightlifting in recent years.",
+                "Officially beginning in 2017, Travis' self-led journey into code was fueled by an existing passion for computers and all things technology. Travis has taken on projects ranging from web development to machine learning, game development to server programming, and much more. While he has a great deal of experience with web development, Travis is never one to shy away from a challenge and is always eager to expand his skill set."
+            ],
+            [
+                "In recent years, Travis has developed many projects such as <a href=\"https://github.com/travis-heavener/mercury\">Mercury</a>, a cross-platform, HTTP server made in C++ for Windows & Linux. Using React Native, Travis also developed the Android app <a href=\"https://github.com/travis-heavener/seniorresearch\">BinGo</a> during a year-long high school research project in his senior year, which encourages users to engage in physical activity through the gamification of digital bingo cards.",
+                "Outside of programming, Travis has always made sure to keep himself busy. For most of his high school career, Travis was employed at Hammerdown BBQ in Aldie, VA, where he gained extensive experience in customer service, food preparation, and team communication. With his lifelong passion for swimming, Travis was also a summer swim coach for two years. After graduating high school, Travis held a summer IT internship position with Next Phase Solutions and Services in Columbia, MD in 2023 and 2025. For more information, see <a href=\"/resume/\">Travis' Resume</a>."
+            ]
+        ]
+    },
+    "resume": {
+        "education": [
+            {
+                "name": "Rensselaer Polytechnic Institute",
+                "href": "https://www.rpi.edu/",
+                "desc": "Troy, NY &mdash; May 2027<br>B.Sc. in IT & Web Science",
+                "img": {
+                    "srcset": "/res/resume/rpi/394-179.webp 1x, /res/resume/rpi/788-358.webp 2x",
+                    "default": "/res/resume/rpi/394-179.webp",
+                    "alt": "Photograph of an RPI residence hall."
+                }
+            },
+            {
+                "name": "Lightridge High School",
+                "href": "https://www.lcps.org/o/lrh",
+                "desc": "Aldie, VA &mdash; June 2023<br>Advanced Studies Diploma",
+                "img": {
+                    "srcset": "/res/resume/lrhs/394-179.webp 1x, /res/resume/lrhs/788-358.webp 2x",
+                    "default": "/res/resume/lrhs/394-179.webp",
+                    "alt": "Photograph of Lightridge High School being struck by lightning."
+                }
+            },
+            {
+                "name": "Academies of Loudoun",
+                "href": "https://www.lcps.org/o/acl",
+                "desc": "Ashburn, VA &mdash; June 2023<br>Completed four-year IT program",
+                "img": {
+                    "srcset": "/res/resume/acl/394-179.webp 1x, /res/resume/acl/788-358.webp 2x",
+                    "default": "/res/resume/acl/394-179.webp",
+                    "alt": "Oil painting of the Academies of Loudoun."
+                }
+            }
+        ],
+        "experience": [
+            {
+                "name": "Next Phase Solutions and Services",
+                "href": "https://npss-inc.com/",
+                "desc": "Summer 2023 & 2025<br>Information Technology Intern",
+                "img": {
+                    "srcset": "/res/resume/npss/394-179.webp 1x, /res/resume/npss/788-358.webp 2x",
+                    "default": "/res/resume/npss/394-179.webp",
+                    "alt": "Next Phase Solutions and Services logo."
+                }
+            },
+            {
+                "name": "Hammerdown Barbeque",
+                "href": "https://hammerdownbbq.com/",
+                "desc": "2020 &ndash; 2023; Summer 2024<br>Senior Employee",
+                "img": {
+                    "srcset": "/res/resume/hdbbq/394-179.webp 1x, /res/resume/hdbbq/788-358.webp 2x",
+                    "default": "/res/resume/hdbbq/394-179.webp",
+                    "alt": "Hammerdown BBQ logo."
+                }
+            },
+            {
+                "name": "Sprout School Supplies",
+                "href": "https://sproutsupplies.com/",
+                "desc": "Aug. 2021 & Aug. 2022<br>Operations Associate",
+                "img": {
+                    "srcset": "/res/resume/sprout/394-179.webp 1x, /res/resume/sprout/788-358.webp 2x",
+                    "default": "/res/resume/sprout/394-179.webp",
+                    "alt": "Sprout School Supplies logo."
+                }
+            },
+            {
+                "name": "Lenah Run Summer Swim Team",
+                "href": "https://lrfroggers.swimtopia.com/",
+                "desc": "Summer 2020 &ndash; 2022<br>Junior Coach, Senior Coach",
+                "img": {
+                    "srcset": "/res/resume/froggers/394-179.webp 1x, /res/resume/froggers/788-358.webp 2x",
+                    "default": "/res/resume/froggers/394-179.webp",
+                    "alt": "Lenah Run Froggers logo."
+                }
+            }
+        ],
+        "skills": [
+            {
+                "name": "JavaScript",
+                "href": "/res/resume/skills/sheet.svg#js"
+            },
+            {
+                "name": "TypeScript",
+                "href": "/res/resume/skills/sheet.svg#ts"
+            },
+            {
+                "name": "Node",
+                "href": "/res/resume/skills/sheet.svg#node"
+            },
+            {
+                "name": "HTML5",
+                "href": "/res/resume/skills/sheet.svg#html"
+            },
+            {
+                "name": "CSS3",
+                "href": "/res/resume/skills/sheet.svg#css"
+            },
+            {
+                "name": "C++",
+                "href": "/res/resume/skills/sheet.svg#cpp"
+            },
+            {
+                "name": "Python",
+                "href": "/res/resume/skills/sheet.svg#python"
+            },
+            {
+                "name": "PHP",
+                "href": "/res/resume/skills/sheet.svg#php"
+            },
+            {
+                "name": "MySQL",
+                "href": "/res/resume/skills/sheet.svg#mysql"
+            },
+            {
+                "name": "Apache",
+                "href": "/res/resume/skills/apache.webp",
+                "alt": "Apache logo."
+            },
+            {
+                "name": "RegEx",
+                "href": "/res/resume/skills/sheet.svg#regex"
+            },
+            {
+                "name": "AWS",
+                "href": "/res/resume/skills/sheet.svg#aws",
+                "class": "skill-pad-white"
+            },
+            {
+                "name": "MongoDB Atlas",
+                "href": "/res/resume/skills/sheet.svg#atlas",
+                "class": "skill-pad-white"
+            }
+        ],
+        "activities": [
+            {
+                "title": "Private code tutoring",
+                "duration": "2021 &ndash; Present"
+            },
+            {
+                "title": "Academies of Loudoun Hackathon Workshop Lead",
+                "duration": "2023"
+            },
+            {
+                "title": "Lightridge High School Car Club",
+                "duration": "2022 &ndash; 2023"
+            },
+            {
+                "title": "Computer Science Honor Society",
+                "duration": "2021 &ndash; 2023"
+            },
+            {
+                "title": "Latin Club",
+                "duration": "2018 &ndash; 2023"
+            },
+            {
+                "title": "Lenah Run Summer Swim Team",
+                "duration": "2018 &ndash; 2022"
+            }
+        ],
+        "accomplishments": [
+            {
+                "title": "Rensselaer Polytechnic Institute Dean's Honor List",
+                "duration": "2023 &ndash; 2025"
+            },
+            {
+                "title": "Lightridge High School All \"A\" Honor Roll",
+                "duration": "2019 &ndash; 2023"
+            },
+            {
+                "title": "Academies of Loudoun AET Design Challenge First Place",
+                "duration": "2019"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "year": "2025",
+            "projects": [
+                {
+                    "title": "Mercury",
+                    "href": "https://wowtravis.com/mercury",
+                    "desc": "A lightweight, configurable HTTP server made in C++ for Windows and Linux.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/mercury/thumb1.webp",
+                            "alt": "Icon for the Mercury web server.",
+                            "loading": "eager"
+                        }
+                    ]
+                },
+                {
+                    "title": "Unfair Solitaire 4",
+                    "href": "https://github.com/travis-heavener/unfair-solitaire-4",
+                    "desc": "A solitaire remake to challenge and completely ruin the game for the most insane players.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/uf4/thumb1.webp",
+                            "alt": "Screenshot of Unfair Solitaire 4 welcome screen.",
+                            "loading": "eager"
+                        },
+                        {
+                            "src": "/res/projects/uf4/thumb2.webp",
+                            "alt": "Screenshot of a mixed up solitaire game in Unfair Solitaire 4.",
+                            "loading": "lazy"
+                        },
+                        {
+                            "src": "/res/projects/uf4/thumb3.webp",
+                            "alt": "Screenshot of the 'Fish' card in Unfair Solitaire 4.",
+                            "loading": "lazy"
+                        }
+                    ]
+                },
+                {
+                    "title": "Orbital Simulator",
+                    "href": "https://github.com/travis-heavener/orbital-sim",
+                    "desc": "A JavaScript/HTML5 canvas simulation of Newtonian gravity for celestial bodies.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/orbital-sim/thumb1.webp",
+                            "alt": "Screenshot of Travis's Orbital Sim.",
+                            "loading": "eager"
+                        }
+                    ]
+                },
+                {
+                    "title": "2048.js",
+                    "href": "https://github.com/travis-heavener/2048.js",
+                    "desc": "The classic 2048 game by Gabriele Cirulli, remade in JavaScript.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/2048/thumb1.webp",
+                            "alt": "Screenshot of a nearly-complete 2048 game.",
+                            "loading": "eager"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "2024",
+            "projects": [
+                {
+                    "title": "TPU2",
+                    "href": "https://github.com/travis-heavener/tpu2",
+                    "desc": "An 8086-inspired, emulated CPU turned emulated operating system, with its own C-style programming language \"T\".",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/tpu2/thumb1.webp",
+                            "alt": "Screenshot of the TPU's Operating System's kernel program.",
+                            "loading": "lazy"
+                        }
+                    ]
+                },
+                {
+                    "title": "Mini Server v2.1",
+                    "href": "https://github.com/travis-heavener/mini-server-2.x",
+                    "desc": "A web app UI for a custom home server, with a media library, photos app, notes app, and a user suite.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/mini/thumb1.webp",
+                            "alt": "Screenshot of the Mini Server v2.1's landing page.",
+                            "loading": "lazy"
+                        },
+                        {
+                            "src": "/res/projects/mini/thumb2.webp",
+                            "alt": "Screenshot of the Mini Server v2.1's dashboard page.",
+                            "loading": "lazy"
+                        },
+                        {
+                            "src": "/res/projects/mini/thumb3.webp",
+                            "alt": "Screenshot of the Mini Server v2.1's gallery app.",
+                            "loading": "lazy"
+                        }
+                    ]
+                },
+                {
+                    "title": "RL Driving Simulator",
+                    "href": "https://github.com/travis-heavener/RL_driver_sim",
+                    "desc": "A simulation where reinforcement models learn to shift gears, handle a powerful engine, and race programmable circuits.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/rlds/thumb1.webp",
+                            "alt": "Screenshot of the RL Driving Simulator with a car rounding a corner.",
+                            "loading": "lazy"
+                        }
+                    ]
+                },
+                {
+                    "title": "CookieGL",
+                    "href": "https://github.com/travis-heavener/CookieGL",
+                    "desc": "An HTML canvas-based library designed for easy implementation of 2-D HTML5/JS web games and other canvas applications.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/cookiegl/thumb1.webp",
+                            "alt": "Screenshot of a CookieGL usage example.",
+                            "loading": "lazy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "2023",
+            "projects": [
+                {
+                    "title": "Cornhole v5.0",
+                    "href": null,
+                    "desc": "Started in early 2020, the Cornhole Scoreboard allows users to locally track progress in a cornhole tournament.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/cornhole-v5.0/thumb1.webp",
+                            "alt": "Screenshot of the Cornhole Scoreboard v5.0's landing page.",
+                            "loading": "lazy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "2022",
+            "projects": [
+                {
+                    "title": "BinGo",
+                    "href": "https://github.com/travis-heavener/seniorresearch",
+                    "desc": "A high school project aimed at encouraging physical activity via bingo card gamification in an Android app.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/bingo/thumb1.webp",
+                            "alt": "Screenshot of BinGo's user profile.",
+                            "loading": "lazy"
+                        },
+                        {
+                            "src": "/res/projects/bingo/thumb2.webp",
+                            "alt": "Screenshot of BinGo's home page with a bingo card.",
+                            "loading": "lazy"
+                        },
+                        {
+                            "src": "/res/projects/bingo/thumb3.webp",
+                            "alt": "Screenshot of BinGo's card selection screen.",
+                            "loading": "lazy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "2020",
+            "projects": [
+                {
+                    "title": "Digital Portfolio",
+                    "href": "https://github.com/travis-heavener/travis-heavener.github.io",
+                    "desc": "This digital GitHub Pages portfolio. Initially created in 2020, this current version was started in late 2024.",
+                    "imgs": [
+                        {
+                            "src": "/res/icons/site.webp",
+                            "alt": "This website's logo.",
+                            "loading": "lazy"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
