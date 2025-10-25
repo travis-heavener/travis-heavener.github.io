@@ -17,7 +17,7 @@ home:
 	@python3 ./tools/load-home.py
 
 resume:
-	@echo "TODO - RESUME"
+	@python3 ./tools/load-resume.py
 
 projects:
 	@python3 ./tools/load-projects.py

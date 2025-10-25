@@ -1,4 +1,177 @@
 {
+    "resume": {
+        "education": [
+            {
+                "name": "Rensselaer Polytechnic Institute",
+                "href": "https://www.rpi.edu/",
+                "desc": "Troy, NY &mdash; May 2027<br>B.Sc. in IT & Web Science",
+                "img": {
+                    "srcset": "/res/resume/rpi/394-179.webp 1x, /res/resume/rpi/788-358.webp 2x",
+                    "default": "/res/resume/rpi/394-179.webp",
+                    "alt": "Photograph of an RPI residence hall."
+                }
+            },
+            {
+                "name": "Lightridge High School",
+                "href": "https://www.lcps.org/o/lrh",
+                "desc": "Aldie, VA &mdash; June 2023<br>Advanced Studies Diploma",
+                "img": {
+                    "srcset": "/res/resume/lrhs/394-179.webp 1x, /res/resume/lrhs/788-358.webp 2x",
+                    "default": "/res/resume/lrhs/394-179.webp",
+                    "alt": "Photograph of Lightridge High School being struck by lightning."
+                }
+            },
+            {
+                "name": "Academies of Loudoun",
+                "href": "https://www.lcps.org/o/acl",
+                "desc": "Ashburn, VA &mdash; June 2023<br>Completed four-year IT program",
+                "img": {
+                    "srcset": "/res/resume/acl/394-179.webp 1x, /res/resume/acl/788-358.webp 2x",
+                    "default": "/res/resume/acl/394-179.webp",
+                    "alt": "Oil painting of the Academies of Loudoun."
+                }
+            }
+        ],
+        "experience": [
+            {
+                "name": "Next Phase Solutions and Services",
+                "href": "https://npss-inc.com/",
+                "desc": "Summer 2023 & 2025<br>Information Technology Intern",
+                "img": {
+                    "srcset": "/res/resume/npss/394-179.webp 1x, /res/resume/npss/788-358.webp 2x",
+                    "default": "/res/resume/npss/394-179.webp",
+                    "alt": "Next Phase Solutions and Services logo."
+                }
+            },
+            {
+                "name": "Hammerdown Barbeque",
+                "href": "https://hammerdownbbq.com/",
+                "desc": "2020 &ndash; 2023; Summer 2024<br>Senior Employee",
+                "img": {
+                    "srcset": "/res/resume/hdbbq/394-179.webp 1x, /res/resume/hdbbq/788-358.webp 2x",
+                    "default": "/res/resume/hdbbq/394-179.webp",
+                    "alt": "Hammerdown BBQ logo."
+                }
+            },
+            {
+                "name": "Sprout School Supplies",
+                "href": "https://sproutsupplies.com/",
+                "desc": "Aug. 2021 & Aug. 2022<br>Operations Associate",
+                "img": {
+                    "srcset": "/res/resume/sprout/394-179.webp 1x, /res/resume/sprout/788-358.webp 2x",
+                    "default": "/res/resume/sprout/394-179.webp",
+                    "alt": "Sprout School Supplies logo."
+                }
+            },
+            {
+                "name": "Lenah Run Summer Swim Team",
+                "href": "https://lrfroggers.swimtopia.com/",
+                "desc": "Summer 2020 &ndash; 2022<br>Junior Coach, Senior Coach",
+                "img": {
+                    "srcset": "/res/resume/froggers/394-179.webp 1x, /res/resume/froggers/788-358.webp 2x",
+                    "default": "/res/resume/froggers/394-179.webp",
+                    "alt": "Lenah Run Froggers logo."
+                }
+            }
+        ],
+        "skills": [
+            {
+                "name": "JavaScript",
+                "href": "/res/resume/skills/sheet.svg#js"
+            },
+            {
+                "name": "TypeScript",
+                "href": "/res/resume/skills/sheet.svg#ts"
+            },
+            {
+                "name": "Node",
+                "href": "/res/resume/skills/sheet.svg#node"
+            },
+            {
+                "name": "HTML5",
+                "href": "/res/resume/skills/sheet.svg#html"
+            },
+            {
+                "name": "CSS3",
+                "href": "/res/resume/skills/sheet.svg#css"
+            },
+            {
+                "name": "C++",
+                "href": "/res/resume/skills/sheet.svg#cpp"
+            },
+            {
+                "name": "Python",
+                "href": "/res/resume/skills/sheet.svg#python"
+            },
+            {
+                "name": "PHP",
+                "href": "/res/resume/skills/sheet.svg#php"
+            },
+            {
+                "name": "MySQL",
+                "href": "/res/resume/skills/sheet.svg#mysql"
+            },
+            {
+                "name": "Apache",
+                "href": "/res/resume/skills/apache.webp",
+                "alt": "Apache logo."
+            },
+            {
+                "name": "RegEx",
+                "href": "/res/resume/skills/sheet.svg#regex"
+            },
+            {
+                "name": "AWS",
+                "href": "/res/resume/skills/sheet.svg#aws",
+                "class": "skill-pad-white"
+            },
+            {
+                "name": "MongoDB Atlas",
+                "href": "/res/resume/skills/sheet.svg#atlas",
+                "class": "skill-pad-white"
+            }
+        ],
+        "activities": [
+            {
+                "title": "Private code tutoring",
+                "duration": "2021 &ndash; Present"
+            },
+            {
+                "title": "Academies of Loudoun Hackathon Workshop Lead",
+                "duration": "2023"
+            },
+            {
+                "title": "Lightridge High School Car Club",
+                "duration": "2022 &ndash; 2023"
+            },
+            {
+                "title": "Computer Science Honor Society",
+                "duration": "2021 &ndash; 2023"
+            },
+            {
+                "title": "Latin Club",
+                "duration": "2018 &ndash; 2023"
+            },
+            {
+                "title": "Lenah Run Summer Swim Team",
+                "duration": "2018 &ndash; 2022"
+            }
+        ],
+        "accomplishments": [
+            {
+                "title": "Rensselaer Polytechnic Institute Dean's Honor List",
+                "duration": "2023 &ndash; 2025"
+            },
+            {
+                "title": "Lightridge High School All \"A\" Honor Roll",
+                "duration": "2019 &ndash; 2023"
+            },
+            {
+                "title": "Academies of Loudoun AET Design Challenge First Place",
+                "duration": "2019"
+            }
+        ]
+    },
     "projects": [
         {
             "year": "2025",
