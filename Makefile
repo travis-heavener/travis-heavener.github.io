@@ -5,13 +5,13 @@ all: clean init_copy home resume projects bio sitemap
 .PHONY: clean init_copy home reusme projects bio sitemap
 
 init_copy:
-	@cp -r "templates/." "web/"
+	@cp -r "templates/." "docs/"
 
 clean:
-	@if [ -d "web" ]; then \
-		rm -rf "web"; \
+	@if [ -d "docs" ]; then \
+		rm -rf "docs"; \
 	fi
-	@mkdir "web"
+	@mkdir "docs"
 
 home:
 	@python3 ./tools/load-home.py
