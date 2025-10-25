@@ -1,0 +1,205 @@
+#content-div {
+    padding: 6vh 15% 15vh 15%;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #fbfbfb;
+    font: 400 4.25rem/1.2em var(--Anton);
+    text-shadow: 0.08em 0.06em 0.03em #0006;
+}
+
+ul li {
+    margin-left: 1.5em;
+    color: #e2e2e2;
+    font: 700 1.25rem/1.5em var(--Open-Sans);
+    text-shadow: 0.1em 0.05em 0 #0006;
+}
+
+ul a {
+    color: var(--anchor-base);
+    text-decoration: underline;
+    transition: 0.1s color;
+}
+
+ul a:hover { color: var(--anchor-lite); }
+ul a:active { color: var(--anchor-dark); }
+
+/* section wrapper styling */
+
+.section-wrapper { position: relative; }
+
+.section-wrapper > a {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    width: 2.25rem;
+    left: -2.25rem;
+    height: 1.67rem;
+    cursor: pointer;
+}
+
+.section-wrapper > a > img {
+    position: absolute;
+    height: 1.33rem;
+    top: 0.17rem;
+}
+
+.section-wrapper > a:focus-visible { opacity: 1; outline: none !important; }
+.section-wrapper > a:focus-visible > img { outline: 2px solid #fff; }
+.section-wrapper:hover > a { opacity: 1; }
+
+h2 {
+    margin-top: 0.67rem;
+    color: #e9e9e9;
+    font: 400 2.5rem/1.5em var(--Anton);
+    text-shadow: 0.08em 0.06em 0.03em #0006;
+    text-decoration-color: var(--accent-dark); /* Safari hates shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+/* dropdown icon styling */
+
+.dropdown-icon {
+    position: absolute;
+    top: 25%;
+    left: 6.5rem;
+    height: 2rem;
+
+    cursor: pointer;
+    filter: drop-shadow(-0.19rem 0 0.05rem #0006);
+    transform: rotate(-90deg);
+    transition: 0.15s transform, 0.15s filter;
+}
+
+.dropdown-icon.active {
+    filter: drop-shadow(0.19rem 0 0.05rem #0006);
+    transform: rotate(90deg);
+}
+
+/* projects styling */
+
+.projects-row {
+    --height: 22rem;
+
+    display: flex;
+    column-gap: 1rem;
+    margin: 0 -0.67rem 1.25rem -0.67rem;
+    padding: 0.67rem;
+    width: calc(100% + 1.33rem);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.projects-row.hidden { display: none; }
+
+.projects-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
+.projects-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
+
+@keyframes projectsFadeIn {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: var(--height);
+    }
+}
+
+.project-div {
+    --width: 16rem;
+    --border-width: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: var(--width);
+    max-width: var(--width);
+    height: var(--height);
+
+    background: #fff2;
+    box-shadow: 0 0.1rem 0.7rem #0006;
+    border-radius: calc(var(--width) * 0.07);
+    overflow: hidden;
+}
+
+.project-div a,
+.project-div h3 {
+    margin: 0.25rem 0.5rem;
+    color: #e9e9e9;
+    font: 700 1.25rem/1.5em var(--Open-Sans);
+    text-shadow: 0.1em 0.05em 0 #0006;
+}
+
+.project-div a {
+    text-decoration-color: var(--anchor-base); /* Safari hates shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+}
+
+.project-div p {
+    margin: 0 0.5rem;
+    color: #e5e5e5;
+    font: italic 300 1rem/1.5em var(--Open-Sans);
+    text-shadow: 0.1em 0.1em 0 #0006;
+}
+
+.project-img {
+    width: var(--width);
+    aspect-ratio: 1.31;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 33%;
+    border-bottom: calc(0.75 * var(--border-width)) solid var(--accent-liter);
+}
+
+.slideshow-3 {
+    position: relative;
+    width: var(--width);
+    aspect-ratio: 1.31;
+}
+
+.slideshow-3 .project-img {
+    --anim-dur: 15s;
+    position: absolute;
+    animation: var(--anim-dur) slideshow3 0s infinite;
+}
+
+.slideshow-3 .project-img:nth-child(2) { animation-delay: calc(2 * var(--anim-dur) / -3); }
+.slideshow-3 .project-img:nth-child(3) { animation-delay: calc(var(--anim-dur) / -3); }
+
+@keyframes slideshow3 {
+     0%, 30%, 100% { opacity: 1; }
+    33%, 97% { opacity: 0; }
+}
+
+/* mobile styling */
+
+@media screen and (orientation: portrait) {
+    #content-div { padding: 3vh 8% 8vh 8%; }
+
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.02em;
+    }
+
+    .section-wrapper > a {
+        width: 1.75rem;
+        left: -1.75rem;
+    }
+}
+
+
+/* adjust padding on landscape mobiles */
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    #content-div { padding: 6vh 7% 15vh 7%; }
+}

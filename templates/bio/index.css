@@ -1,0 +1,86 @@
+/* main content styling */
+
+#content-div {
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 15% 15vh 15%;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #fbfbfb;
+    font: 400 4.25rem/1.2em var(--Anton);
+    text-shadow: 0.08em 0.06em 0.03em #0006;
+}
+
+.text-section > p {
+    color: #f3f3f3;
+    text-align: justify;
+    text-indent: 2em;
+    font: italic 300 1.4rem/1.45em var(--Open-Sans);
+}
+
+.text-section > p:last-of-type { margin-top: 1.5em; }
+
+.text-section > p > a {
+    color: var(--anchor-base);
+    font-style: normal;
+    transition: 0.1s color;
+}
+
+.text-section > p > a:hover { color: var(--anchor-lite); }
+.text-section > p > a:active { color: var(--anchor-dark); }
+
+.content-section {
+    display: flex;
+    align-items: center;
+    column-gap: 7vw;
+}
+
+.content-section:last-of-type { margin-top: 6rem; }
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+picture { height: 26rem; }
+
+.bio-img {
+    height: 26rem;
+    object-fit: cover;
+    aspect-ratio: 0.65;
+
+    border-radius: 0.25rem;
+    box-shadow: 0.125rem 0.125rem 1.5rem #0009;
+}
+
+@media screen and (orientation: portrait) {
+    #content-div { padding: 3vh 8% 8vh 8%; }
+
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.02em;
+    }
+
+    .content-section {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .text-section > p { font-size: 1.15rem; }
+
+    .content-section:last-of-type { flex-direction: column-reverse; }
+
+    picture { height: 25rem; }
+    .bio-img { height: 25rem; }
+}
+
+
+/* adjust padding on landscape mobiles */
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    #content-div { padding: 6vh 8% 15vh 8%; }
+}
