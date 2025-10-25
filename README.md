@@ -4,7 +4,7 @@ Travis Heavener's official interactive web portfolio.
 
 [wowtravis.com](https://wowtravis.com)
 
-[![Build](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/minify.yml/badge.svg)](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/build.yml)
+[![Build](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/build.yml)
 
 ## About
 Travis Heavener (HEAVE-nur) is currently a third year student at Rensselaer Polytechnic Institute majoring in IT & Web Science. In his spare time, Travis often works on independent programming projects or spends his time with friends. Travis is a modest car enthusiast and a longtime swimmer, with a passion for full stack and collaborative project development.
