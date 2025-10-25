@@ -15,15 +15,20 @@ clean:
 
 home:
 	@python3 ./tools/load-home.py
+	@echo "✅ Home"
 
 resume:
 	@python3 ./tools/load-resume.py
+	@echo "✅ Resume"
 
 projects:
 	@python3 ./tools/load-projects.py
+	@echo "✅ Projects"
 
 bio:
 	@python3 ./tools/load-bio.py
+	@echo "✅ Bio"
 
 sitemap:
 	@echo "TODO - SITEMAP"
+# 	@echo "✅ Sitemap"
