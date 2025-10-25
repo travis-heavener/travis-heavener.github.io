@@ -20,7 +20,7 @@ resume:
 	@echo "TODO - RESUME"
 
 projects:
-	@echo "TODO - PROJECTS"
+	@python3 ./tools/load-projects.py
 
 bio:
 	@python3 ./tools/load-bio.py
