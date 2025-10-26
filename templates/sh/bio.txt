@@ -1,33 +1,33 @@
 ╭──── wowtravis.com/bio ───────────────────────────────────────────────────────────────────────────┐
 │                                                                                                  │
-│                                                                  [38;2;155;0;0m▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖[0m        │
-│     [1mTRAVIS HEAVENER[0m                                              [38;2;175;0;0m▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌[0m        │
-│      [38;5;8m[1mTRAVIS HEAVENER[0m                                             [38;2;195;0;0m   ▐██▌      ▐██▙▄▄▄▟██▌[0m        │
-│     [38;5;172m● ● ●[0m                                                        [38;2;215;0;0m   ▐██▌      ▐██▛▀▀▀▜██▌[0m        │
-│                                                                  [38;2;235;0;0m   ▐██▌      ▐██▌   ▐██▌[0m        │
-│     [38;5;187m[1m[4mAbout[0m                                                        [38;2;255;0;0m   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘[0m        │
+│                                                                  %F▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖%A        │
+│     %BTRAVIS HEAVENER%A                                              %G▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌%A        │
+│      %E%BTRAVIS HEAVENER%A                                             %H   ▐██▌      ▐██▙▄▄▄▟██▌%A        │
+│     %L● ● ●%A                                                        %I   ▐██▌      ▐██▛▀▀▀▜██▌%A        │
+│                                                                  %J   ▐██▌      ▐██▌   ▐██▌%A        │
+│     %M%B%DAbout%A                                                        %K   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘%A        │
 │                                                                                                  │
-│     [38;2;210;225;255mTravis Heavener[0m (HEAVE-nur) is currently a third   ╭──── Directory ────────────────────┐     │
-│     year student at [38;2;255;155;70mRensselaer Polytechnic Institute[0m   │                                   │     │
-│     majoring in [38;2;235;235;30mIT & Web Science[0m. In his spare time,   │    [38;5;214mcurl wowtravis.com         [0m    │     │
-│     [38;2;210;225;255mTravis[0m often works on independent programming      │    [93mcurl wowtravis.com/resume  [0m    │     │
-│     projects (see [38;5;78mwowtravis.com/projects[0m).             │    [38;5;78mcurl wowtravis.com/projects[0m    │     │
+│     %STravis Heavener%A (HEAVE-nur) is currently a third   ╭──── Directory ────────────────────┐     │
+│     year student at %TRensselaer Polytechnic Institute%A   │                                   │     │
+│     majoring in %UIT & Web Science%A. In his spare time,   │    %Ocurl wowtravis.com         %A    │     │
+│     %STravis%A often works on independent programming      │    %Pcurl wowtravis.com/resume  %A    │     │
+│     projects (see %Qwowtravis.com/projects%A).             │    %Qcurl wowtravis.com/projects%A    │     │
 │                                                        │                                   │     │
-│     In recent years, [38;2;210;225;255mTravis[0m has developed many         └───────────────────────────────────╯     │
-│     projects such as [38;2;235;235;30mMercury[0m, a lightweight HTTP                                                 │
-│     server made in C++ for Windows and Linux. Using               [38;2;110;155;245mSource: wowtravis.com/this[0m     │
-│     React Native, [38;2;210;225;255mTravis[0m also developed the Android                                              │
-│     app [38;2;235;235;30mBinGo[0m during his senior year of high school,         [38;2;230;155;240mFun fact: Travis is colorblind![0m     │
+│     In recent years, %STravis%A has developed many         └───────────────────────────────────╯     │
+│     projects such as %UMercury%A, a lightweight HTTP                                                 │
+│     server made in C++ for Windows and Linux. Using               %NSource: wowtravis.com/this%A     │
+│     React Native, %STravis%A also developed the Android                                              │
+│     app %UBinGo%A during his senior year of high school,         %VFun fact: Travis is colorblind!%A     │
 │     which encourages users to be physically active                                               │
 │     via digital bingo cards.                                                                     │
 │                                                                                                  │
-│     Aside from code, [38;2;210;225;255mTravis[0m has always made sure to keep himself busy. For most of his high      │
-│     school career, [38;2;210;225;255mTravis[0m was employed at [38;2;255;155;70mHammerdown BBQ[0m in Aldie, VA, where he gained           │
+│     Aside from code, %STravis%A has always made sure to keep himself busy. For most of his high      │
+│     school career, %STravis%A was employed at %THammerdown BBQ%A in Aldie, VA, where he gained           │
 │     extensive experience in customer service, food preparation, and team communication. With     │
-│     his lifelong passion for swimming, [38;2;210;225;255mTravis[0m was also a summer swim coach for two years.        │
-│     After graduating high school, [38;2;210;225;255mTravis[0m held a summer [38;2;235;235;30mIT internship position[0m with [38;2;255;155;70mNext Phase[0m    │
-│     [38;2;255;155;70mSolutions and Services, Inc.[0m in Columbia, MD during 2023 and 2025. For more information,     │
-│     see [38;2;210;225;255mTravis's[0m full resume ([93mwowtravis.com/resume[0m).                                             │
+│     his lifelong passion for swimming, %STravis%A was also a summer swim coach for two years.        │
+│     After graduating high school, %STravis%A held a summer %UIT internship position%A with %TNext Phase%A    │
+│     %TSolutions and Services, Inc.%A in Columbia, MD during 2023 and 2025. For more information,     │
+│     see %STravis's%A full resume (%Pwowtravis.com/resume%A).                                             │
 │                                                                                                  │
 │                                                                                Updated Oct. 2025 │
 └──────────────────────────────────────────────────────────────────────────────────────────────────╯

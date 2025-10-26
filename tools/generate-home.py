@@ -27,6 +27,9 @@ if __name__ == "__main__":
         # Replace timestamp
         contents = contents.replace("%%TIMESTAMP%%", pad_left(gen_timestamp_txt(), max_len=17))
 
+        # Escape shell colors
+        contents = escape_shell_colors(contents)
+
         # Write to new file
         with open("../docs/sh/home.txt", "w") as f:
             f.write(contents)
