@@ -10,9 +10,9 @@
 │                                                                                                  │
 │     ╭──── Socials ───────────────────────────────┐     ╭──── Directory ────────────────────┐     │
 │     │                                            │     │                                   │     │
-│     │    %OLinkedIn │ wowtravis.com/my/linkedin%A    │     │    %Ocurl wowtravis.com/resume  %A    │     │
-│     │    %PGitHub   │ wowtravis.com/my/github  %A    │     │    %Pcurl wowtravis.com/projects%A    │     │
-│     │    %QEmail    │ mail@wowtravis.com       %A    │     │    %Qcurl wowtravis.com/bio     %A    │     │
+│     │    %OLinkedIn %A│ %Owowtravis.com/my/linkedin%A    │     │    %Ocurl wowtravis.com/resume  %A    │     │
+│     │    %PGitHub   %A│ %Pwowtravis.com/my/github  %A    │     │    %Pcurl wowtravis.com/projects%A    │     │
+│     │    %QEmail    %A│ %Qmail@wowtravis.com       %A    │     │    %Qcurl wowtravis.com/bio     %A    │     │
 │     │                                            │     │                                   │     │
 │     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
 │                                                                                                  │
