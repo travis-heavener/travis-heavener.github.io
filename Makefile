@@ -2,7 +2,7 @@ SHELL := /bin/bash
 
 all: clean init_copy home resume projects bio sitemap
 
-.PHONY: clean init_copy home reusme projects bio sitemap
+.PHONY: clean init_copy home resume projects bio sitemap
 
 init_copy:
 	@cp -r "templates/." "docs/"
