@@ -15,26 +15,26 @@
 │     │                                            │     │                                   │     │
 │     │    Lightridge High School                  │     └───────────────────────────────────╯     │
 │     │    Aldie, VA — June 2023                   │                                               │
-│     │    Advanced Studies Diploma                │                Source: wowtravis.com/this     │
-│     │                                            │                                               │
-│     │    Academies of Loudoun                    │     ╭──── Contact ──────────────────────┐     │
-│     │    Ashburn, VA — June 2023                 │     │                                   │     │
-│     │    Completed four-year IT program          │     │     wowtravis.com/my/linkedin     │     │
-│     │                                            │     │     wowtravis.com/my/github       │     │
-│     └────────────────────────────────────────────╯     │     mail@wowtravis.com            │     │
-│                                                        │                                   │     │
-│     ╭──── Experience ────────────────────────────┐     └───────────────────────────────────╯     │
-│     │                                            │                                               │
-│     │    Next Phase Solutions and Services       │     ╭──── Skills ───────────────────────┐     │
-│     │    Summer 2023 & 2025                      │     │                                   │     │
-│     │    IT Intern                               │     │    JavaScript   │ TypeScript      │     │
-│     │                                            │     │    Node JS      │ HTML            │     │
-│     │    Hammerdown Barbeque                     │     │    CSS          │ C++             │     │
-│     │    2020 – 2023; Summer 2024                │     │    Python       │ PHP             │     │
-│     │    Senior Employee                         │     │    MySQL        │ Apache          │     │
-│     │                                            │     │    RegEx        │ AWS             │     │
-│     │    Sprout School Supplies                  │     │                                   │     │
-│     │    Aug. 2021 & Aug. 2022                   │     └───────────────────────────────────╯     │
+│     │    Advanced Studies Diploma                │     ╭──── Contact ──────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Academies of Loudoun                    │     │     wowtravis.com/my/linkedin     │     │
+│     │    Ashburn, VA — June 2023                 │     │     wowtravis.com/my/github       │     │
+│     │    Completed four-year IT program          │     │     mail@wowtravis.com            │     │
+│     │                                            │     │                                   │     │
+│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│                                                                                                  │
+│     ╭──── Experience ────────────────────────────┐     ╭──── Skills ───────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Next Phase Solutions and Services       │     │    JavaScript   │ TypeScript      │     │
+│     │    Summer 2023 & 2025                      │     │    Node JS      │ HTML            │     │
+│     │    IT Intern                               │     │    CSS          │ C++             │     │
+│     │                                            │     │    Python       │ PHP             │     │
+│     │    Hammerdown Barbeque                     │     │    MySQL        │ Apache          │     │
+│     │    2020 – 2023; Summer 2024                │     │    RegEx        │ AWS             │     │
+│     │    Senior Employee                         │     │                                   │     │
+│     │                                            │     └───────────────────────────────────╯     │
+│     │    Sprout School Supplies                  │                                               │
+│     │    Aug. 2021 & Aug. 2022                   │                Source: wowtravis.com/this     │
 │     │    Operations Associate                    │                                               │
 │     │                                            │                                               │
 │     │    Lenah Run Summer Swim Team              │        See full resume in your browser!       │
