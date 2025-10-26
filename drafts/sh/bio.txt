@@ -1,0 +1,33 @@
+╭──── wowtravis.com/bio ───────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  ▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖        │
+│     TRAVIS HEAVENER                                              ▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌        │
+│      TRAVIS HEAVENER                                                ▐██▌      ▐██▙▄▄▄▟██▌        │
+│     ● ● ●                                                           ▐██▌      ▐██▛▀▀▀▜██▌        │
+│                                                                     ▐██▌      ▐██▌   ▐██▌        │
+│     About                                                           ▝▀▀▘      ▝▀▀▘   ▝▀▀▘        │
+│                                                                                                  │
+│     Travis Heavener (HEAVE-nur) is currently a third   ╭──── Directory ────────────────────┐     │
+│     year student at Rensselaer Polytechnic Institute   │                                   │     │
+│     majoring in IT & Web Science. In his spare time,   │    curl wowtravis.com             │     │
+│     Travis often works on independent programming      │    curl wowtravis.com/resume      │     │
+│     projects (see wowtravis.com/projects).             │    curl wowtravis.com/projects    │     │
+│                                                        │                                   │     │
+│     In recent years, Travis has developed many         └───────────────────────────────────╯     │
+│     projects such as Mercury, a lightweight HTTP                                                 │
+│     server made in C++ for Windows and Linux. Using               Source: wowtravis.com/this     │
+│     React Native, Travis also developed the Android                                              │
+│     app BinGo during his senior year of high school,         Fun fact: Travis is colorblind!     │
+│     which encourages users to be physically active                                               │
+│     via digital bingo cards.                                                                     │
+│                                                                                                  │
+│     Aside from code, Travis has always made sure to keep himself busy. For most of his high      │
+│     school career, Travis was employed at Hammerdown BBQ in Aldie, VA, where he gained           │
+│     extensive experience in customer service, food preparation, and team communication. With     │
+│     his lifelong passion for swimming, Travis was also a summer swim coach for two years.        │
+│     After graduating high school, Travis held a summer IT internship position with Next Phase    │
+│     Solutions and Services, Inc. in Columbia, MD during 2023 and 2025. For more information,     │
+│     see Travis's full resume (wowtravis.com/resume).                                             │
+│                                                                                                  │
+│                                                                                Updated Oct. 2025 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯
