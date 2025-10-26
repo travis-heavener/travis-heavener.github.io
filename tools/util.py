@@ -1,4 +1,5 @@
 from datetime import datetime
+import re
 
 def gen_timestamp(include_top_anchor: bool) -> str:
     return f"<p>Updated {datetime.now().strftime('%b. %Y')}{' &emsp; &emsp; <a href=\"#\">Back to Top</a>' if include_top_anchor else ''}</p>"
@@ -46,5 +47,5 @@ SHELL_COLORS = {
 
 def escape_shell_colors(body: str) -> str:
     for k, v in SHELL_COLORS.items():
-        body = body.replace(k, v)
+        body = re.sub(rf"(?<!%){k}", v, body)
     return body
