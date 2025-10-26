@@ -14,3 +14,14 @@ From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
 > I am a self-driven full-stack web developer and CS enthusiast currently studying Information Technology and Web Science (ITWS) at Rensselaer Polytechnic Institute. I have a deep passion for programming and spend much of my free time working on various projects and enjoying time with friends. I have gained valuable hands-on experience during my IT internship with Next Phase Solutions and Services in Columbia, MD in the summers of 2023 and 2025. Additionally, I honed my customer service skills at Hammerdown BBQ from 2020 to 2023, with a brief return in 2024.
 > 
 > I have extensive experience with JavaScript and overall web development, and solid backend skills in C++, Python, and Java. Proficient in AWS services including DynamoDB, API Gateway, Lambda, and EC2.
+
+## Special URLs
+The following URLs will redirect you to where you need to go ;)
+
+| Name      | URL                                                            |
+|-----------|----------------------------------------------------------------|
+| LinkedIn  | [wowtravis.com/my/linkedin](https://wowtravis.com/my/linkedin) |
+| GitHub    | [wowtravis.com/my/github](https://wowtravis.com/my/github)     |
+| This Repo | [wowtravis.com/this](https://wowtravis.com/this)               |
+
+Hint: try `curl wowtravis.com`!

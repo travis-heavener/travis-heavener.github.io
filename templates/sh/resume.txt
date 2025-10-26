@@ -1,0 +1,47 @@
+╭──── wowtravis.com/resume ────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  %F▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖%A        │
+│     %BTRAVIS HEAVENER%A                                              %G▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌%A        │
+│      %E%BTRAVIS HEAVENER%A                                             %H   ▐██▌      ▐██▙▄▄▄▟██▌%A        │
+│     %L● ● ●%A                                                        %I   ▐██▌      ▐██▛▀▀▀▜██▌%A        │
+│                                                                  %J   ▐██▌      ▐██▌   ▐██▌%A        │
+│     %M%B%DResume%A                                                       %K   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘%A        │
+│                                                                                                  │
+│     ╭──── Education ─────────────────────────────┐     ╭──── Directory ────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    %O%%SCHOOL_TITLE_A%%%A    │     │    %Ocurl wowtravis.com         %A    │     │
+│     │    %%SCHOOL_SPAN_A%%    │     │    %Pcurl wowtravis.com/projects%A    │     │
+│     │    %C%%SCHOOL_DESC_A%%%A    │     │    %Qcurl wowtravis.com/bio     %A    │     │
+│     │                                            │     │                                   │     │
+│     │    %P%%SCHOOL_TITLE_B%%%A    │     └───────────────────────────────────╯     │
+│     │    %%SCHOOL_SPAN_B%%    │                                               │
+│     │    %C%%SCHOOL_DESC_B%%%A    │     ╭──── Contact ──────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    %Q%%SCHOOL_TITLE_C%%%A    │     │     %Owowtravis.com/my/linkedin %A    │     │
+│     │    %%SCHOOL_SPAN_C%%    │     │     %Pwowtravis.com/my/github   %A    │     │
+│     │    %C%%SCHOOL_DESC_C%%%A    │     │     %Qmail@wowtravis.com        %A    │     │
+│     │                                            │     │                                   │     │
+│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│                                                                                                  │
+│     ╭──── Experience ────────────────────────────┐     ╭──── Skills ───────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    %O%%EXPERIENCE_TITLE_A%%%A    │     │    %O%%SKILLS_A%%%A │ %O%%SKILLS_B%%%A    │     │
+│     │    %%EXPERIENCE_SPAN_A%%    │     │    %O%%SKILLS_C%%%A │ %O%%SKILLS_D%%%A    │     │
+│     │    %C%%EXPERIENCE_DESC_A%%%A    │     │    %P%%SKILLS_E%%%A │ %P%%SKILLS_F%%%A    │     │
+│     │                                            │     │    %P%%SKILLS_G%%%A │ %P%%SKILLS_H%%%A    │     │
+│     │    %P%%EXPERIENCE_TITLE_B%%%A    │     │    %Q%%SKILLS_I%%%A │ %Q%%SKILLS_J%%%A    │     │
+│     │    %%EXPERIENCE_SPAN_B%%    │     │    %Q%%SKILLS_K%%%A │ %Q%%SKILLS_L%%%A    │     │
+│     │    %C%%EXPERIENCE_DESC_B%%%A    │     │                                   │     │
+│     │                                            │     └───────────────────────────────────╯     │
+│     │    %Q%%EXPERIENCE_TITLE_C%%%A    │                                               │
+│     │    %%EXPERIENCE_SPAN_C%%    │                %NSource: wowtravis.com/this%A     │
+│     │    %C%%EXPERIENCE_DESC_C%%%A    │                                               │
+│     │                                            │                                               │
+│     │    %N%%EXPERIENCE_TITLE_D%%%A    │        %RSee full resume in your browser!%A       │
+│     │    %%EXPERIENCE_SPAN_D%%    │          %Rhttps://wowtravis.com/resume%A         │
+│     │    %C%%EXPERIENCE_DESC_D%%%A    │                                               │
+│     │                                            │                                               │
+│     └────────────────────────────────────────────╯                                               │
+│                                                                                                  │
+│                                                                                %%TIMESTAMP%% │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯

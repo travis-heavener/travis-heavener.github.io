@@ -1,0 +1,47 @@
+╭──── wowtravis.com/resume ────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  ▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖        │
+│     TRAVIS HEAVENER                                              ▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌        │
+│      TRAVIS HEAVENER                                                ▐██▌      ▐██▙▄▄▄▟██▌        │
+│     ● ● ●                                                           ▐██▌      ▐██▛▀▀▀▜██▌        │
+│                                                                     ▐██▌      ▐██▌   ▐██▌        │
+│     Resume                                                          ▝▀▀▘      ▝▀▀▘   ▝▀▀▘        │
+│                                                                                                  │
+│     ╭──── Education ─────────────────────────────┐     ╭──── Directory ────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Rensselaer Polytechnic Institute        │     │    curl wowtravis.com             │     │
+│     │    Troy, NY — May 2027                     │     │    curl wowtravis.com/projects    │     │
+│     │    B.Sc. in IT & Web Science               │     │    curl wowtravis.com/bio         │     │
+│     │                                            │     │                                   │     │
+│     │    Lightridge High School                  │     └───────────────────────────────────╯     │
+│     │    Aldie, VA — June 2023                   │                                               │
+│     │    Advanced Studies Diploma                │     ╭──── Contact ──────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Academies of Loudoun                    │     │     wowtravis.com/my/linkedin     │     │
+│     │    Ashburn, VA — June 2023                 │     │     wowtravis.com/my/github       │     │
+│     │    Completed four-year IT program          │     │     mail@wowtravis.com            │     │
+│     │                                            │     │                                   │     │
+│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│                                                                                                  │
+│     ╭──── Experience ────────────────────────────┐     ╭──── Skills ───────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Next Phase Solutions and Services       │     │    JavaScript   │ TypeScript      │     │
+│     │    Summer 2023 & 2025                      │     │    Node JS      │ HTML            │     │
+│     │    IT Intern                               │     │    CSS          │ C++             │     │
+│     │                                            │     │    Python       │ PHP             │     │
+│     │    Hammerdown Barbeque                     │     │    MySQL        │ Apache          │     │
+│     │    2020 – 2023; Summer 2024                │     │    RegEx        │ AWS             │     │
+│     │    Senior Employee                         │     │                                   │     │
+│     │                                            │     └───────────────────────────────────╯     │
+│     │    Sprout School Supplies                  │                                               │
+│     │    Aug. 2021 & Aug. 2022                   │                Source: wowtravis.com/this     │
+│     │    Operations Associate                    │                                               │
+│     │                                            │                                               │
+│     │    Lenah Run Summer Swim Team              │        See full resume in your browser!       │
+│     │    Summer 2020 – 2022                      │          https://wowtravis.com/resume         │
+│     │    Junior Coach, Senior Coach              │                                               │
+│     │                                            │                                               │
+│     └────────────────────────────────────────────╯                                               │
+│                                                                                                  │
+│                                                                                Updated Oct. 2025 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯

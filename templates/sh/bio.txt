@@ -1,0 +1,33 @@
+╭──── wowtravis.com/bio ───────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  %F▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖%A        │
+│     %BTRAVIS HEAVENER%A                                              %G▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌%A        │
+│      %E%BTRAVIS HEAVENER%A                                             %H   ▐██▌      ▐██▙▄▄▄▟██▌%A        │
+│     %L● ● ●%A                                                        %I   ▐██▌      ▐██▛▀▀▀▜██▌%A        │
+│                                                                  %J   ▐██▌      ▐██▌   ▐██▌%A        │
+│     %M%B%DAbout%A                                                        %K   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘%A        │
+│                                                                                                  │
+│     %STravis Heavener%A (HEAVE-nur) is currently a third   ╭──── Directory ────────────────────┐     │
+│     year student at %TRensselaer Polytechnic Institute%A   │                                   │     │
+│     majoring in %UIT & Web Science%A. In his spare time,   │    %Ocurl wowtravis.com         %A    │     │
+│     %STravis%A often works on independent programming      │    %Pcurl wowtravis.com/resume  %A    │     │
+│     projects (see %Qwowtravis.com/projects%A).             │    %Qcurl wowtravis.com/projects%A    │     │
+│                                                        │                                   │     │
+│     In recent years, %STravis%A has developed many         └───────────────────────────────────╯     │
+│     projects such as %UMercury%A, a lightweight HTTP                                                 │
+│     server made in C++ for Windows and Linux. Using               %NSource: wowtravis.com/this%A     │
+│     React Native, %STravis%A also developed the Android                                              │
+│     app %UBinGo%A during his senior year of high school,         %VFun fact: Travis is colorblind!%A     │
+│     which encourages users to be physically active                                               │
+│     via digital bingo cards.                                                                     │
+│                                                                                                  │
+│     Aside from code, %STravis%A has always made sure to keep himself busy. For most of his high      │
+│     school career, %STravis%A was employed at %THammerdown BBQ%A in Aldie, VA, where he gained           │
+│     extensive experience in customer service, food preparation, and team communication. With     │
+│     his lifelong passion for swimming, %STravis%A was also a summer swim coach for two years.        │
+│     After graduating high school, %STravis%A held a summer %UIT internship position%A with %TNext Phase%A    │
+│     %TSolutions and Services, Inc.%A in Columbia, MD during 2023 and 2025. For more information,     │
+│     see %STravis's%A full resume (%Pwowtravis.com/resume%A).                                             │
+│                                                                                                  │
+│                                                                                Updated Oct. 2025 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯
