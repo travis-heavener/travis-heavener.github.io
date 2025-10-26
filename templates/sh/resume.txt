@@ -7,41 +7,41 @@
 │                                                                  %J   ▐██▌      ▐██▌   ▐██▌%A        │
 │     %M%B%DResume%A                                                       %K   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘%A        │
 │                                                                                                  │
-│     ╭──── Education ─────────────────────────────┐     ╭──── Directory ────────────────────┐     │
-│     │                                            │     │                                   │     │
-│     │    %O%%SCHOOL_TITLE_A%%%A    │     │    %Ocurl wowtravis.com         %A    │     │
-│     │    %%SCHOOL_SPAN_A%%    │     │    %Pcurl wowtravis.com/projects%A    │     │
-│     │    %C%%SCHOOL_DESC_A%%%A    │     │    %Qcurl wowtravis.com/bio     %A    │     │
-│     │                                            │     │                                   │     │
-│     │    %P%%SCHOOL_TITLE_B%%%A    │     └───────────────────────────────────╯     │
-│     │    %%SCHOOL_SPAN_B%%    │                                               │
-│     │    %C%%SCHOOL_DESC_B%%%A    │     ╭──── Contact ──────────────────────┐     │
-│     │                                            │     │                                   │     │
-│     │    %Q%%SCHOOL_TITLE_C%%%A    │     │     %Owowtravis.com/my/linkedin %A    │     │
-│     │    %%SCHOOL_SPAN_C%%    │     │     %Pwowtravis.com/my/github   %A    │     │
-│     │    %C%%SCHOOL_DESC_C%%%A    │     │     %Qmail@wowtravis.com        %A    │     │
-│     │                                            │     │                                   │     │
-│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│     %E╭────%A Education %E─────────────────────────────┐     ╭────%A Directory %E────────────────────┐%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E│    %O%%SCHOOL_TITLE_A%%    %E│     │    %Ocurl wowtravis.com             %E│%A     │
+│     %E│    %A%%SCHOOL_SPAN_A%%    %E│     │    %Pcurl wowtravis.com/projects    %E│%A     │
+│     %E│    %A%C%%SCHOOL_DESC_A%%%A    %E│     │    %Qcurl wowtravis.com/bio         %E│%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E│    %P%%SCHOOL_TITLE_B%%    %E│     └───────────────────────────────────╯%A     │
+│     %E│    %A%%SCHOOL_SPAN_B%%    %E│%A                                               │
+│     %E│    %A%C%%SCHOOL_DESC_B%%%A    %E│     ╭────%A Contact %E──────────────────────┐%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E│    %Q%%SCHOOL_TITLE_C%%    %E│     │     %Owowtravis.com/my/linkedin     %E│%A     │
+│     %E│    %A%%SCHOOL_SPAN_C%%    %E│     │     %Pwowtravis.com/my/github       %E│%A     │
+│     %E│    %A%C%%SCHOOL_DESC_C%%%A    %E│     │     %Qmail@wowtravis.com            %E│%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E└────────────────────────────────────────────╯     └───────────────────────────────────╯%A     │
 │                                                                                                  │
-│     ╭──── Experience ────────────────────────────┐     ╭──── Skills ───────────────────────┐     │
-│     │                                            │     │                                   │     │
-│     │    %O%%EXPERIENCE_TITLE_A%%%A    │     │    %O%%SKILLS_A%%%A │ %O%%SKILLS_B%%%A    │     │
-│     │    %%EXPERIENCE_SPAN_A%%    │     │    %O%%SKILLS_C%%%A │ %O%%SKILLS_D%%%A    │     │
-│     │    %C%%EXPERIENCE_DESC_A%%%A    │     │    %P%%SKILLS_E%%%A │ %P%%SKILLS_F%%%A    │     │
-│     │                                            │     │    %P%%SKILLS_G%%%A │ %P%%SKILLS_H%%%A    │     │
-│     │    %P%%EXPERIENCE_TITLE_B%%%A    │     │    %Q%%SKILLS_I%%%A │ %Q%%SKILLS_J%%%A    │     │
-│     │    %%EXPERIENCE_SPAN_B%%    │     │    %Q%%SKILLS_K%%%A │ %Q%%SKILLS_L%%%A    │     │
-│     │    %C%%EXPERIENCE_DESC_B%%%A    │     │                                   │     │
-│     │                                            │     └───────────────────────────────────╯     │
-│     │    %Q%%EXPERIENCE_TITLE_C%%%A    │                                               │
-│     │    %%EXPERIENCE_SPAN_C%%    │                %NSource: wowtravis.com/this%A     │
-│     │    %C%%EXPERIENCE_DESC_C%%%A    │                                               │
-│     │                                            │                                               │
-│     │    %N%%EXPERIENCE_TITLE_D%%%A    │        %RSee full resume in your browser!%A       │
-│     │    %%EXPERIENCE_SPAN_D%%    │          %Rhttps://wowtravis.com/resume%A         │
-│     │    %C%%EXPERIENCE_DESC_D%%%A    │                                               │
-│     │                                            │                                               │
-│     └────────────────────────────────────────────╯                                               │
+│     %E╭────%A Experience %E────────────────────────────┐     ╭────%A Skills %E───────────────────────┐%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E│    %O%%EXPERIENCE_TITLE_A%%    %E│     │    %O%%SKILLS_A%% %E│ %O%%SKILLS_B%%    %E│%A     │
+│     %E│    %A%%EXPERIENCE_SPAN_A%%    %E│     │    %O%%SKILLS_C%% %E│ %O%%SKILLS_D%%    %E│%A     │
+│     %E│    %A%C%%EXPERIENCE_DESC_A%%%A    %E│     │    %P%%SKILLS_E%% %E│ %P%%SKILLS_F%%    %E│%A     │
+│     %E│                                            │     │    %P%%SKILLS_G%% %E│ %P%%SKILLS_H%%    %E│%A     │
+│     %E│    %P%%EXPERIENCE_TITLE_B%%    %E│     │    %Q%%SKILLS_I%% %E│ %Q%%SKILLS_J%%    %E│%A     │
+│     %E│    %A%%EXPERIENCE_SPAN_B%%    %E│     │    %Q%%SKILLS_K%% %E│ %Q%%SKILLS_L%%    %E│%A     │
+│     %E│    %A%C%%EXPERIENCE_DESC_B%%%A    %E│     │                                   │%A     │
+│     %E│                                            │     └───────────────────────────────────╯%A     │
+│     %E│    %Q%%EXPERIENCE_TITLE_C%%    %E│%A                                               │
+│     %E│    %A%%EXPERIENCE_SPAN_C%%    %E│                %NSource: wowtravis.com/this%A     │
+│     %E│    %A%C%%EXPERIENCE_DESC_C%%%A    %E│%A                                               │
+│     %E│                                            │%A                                               │
+│     %E│    %N%%EXPERIENCE_TITLE_D%%    %E│        %RSee full resume in your browser!%A       │
+│     %E│    %A%%EXPERIENCE_SPAN_D%%    %E│          %Rhttps://wowtravis.com/resume%A         │
+│     %E│    %A%C%%EXPERIENCE_DESC_D%%%A    %E│%A                                               │
+│     %E│                                            │%A                                               │
+│     %E└────────────────────────────────────────────╯%A                                               │
 │                                                                                                  │
 │                                                                                %%TIMESTAMP%% │
 └──────────────────────────────────────────────────────────────────────────────────────────────────╯

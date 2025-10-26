@@ -8,13 +8,13 @@
 │                                                                  %K   ▝▀▀▘      ▝▀▀▘   ▝▀▀▘%A        │
 │     %NSource: wowtravis.com/this%A                                                                   │
 │                                                                                                  │
-│     ╭──── Socials ───────────────────────────────┐     ╭──── Directory ────────────────────┐     │
-│     │                                            │     │                                   │     │
-│     │    %OLinkedIn %A│ %Owowtravis.com/my/linkedin%A    │     │    %Ocurl wowtravis.com/resume  %A    │     │
-│     │    %PGitHub   %A│ %Pwowtravis.com/my/github  %A    │     │    %Pcurl wowtravis.com/projects%A    │     │
-│     │    %QEmail    %A│ %Qmail@wowtravis.com       %A    │     │    %Qcurl wowtravis.com/bio     %A    │     │
-│     │                                            │     │                                   │     │
-│     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
+│     %E╭────%A Socials %E───────────────────────────────┐     ╭────%A Directory %E────────────────────┐%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E│    %OLinkedIn %E│ %Owowtravis.com/my/linkedin    %E│     │    %Ocurl wowtravis.com/resume      %E│%A     │
+│     %E│    %PGitHub   %E│ %Pwowtravis.com/my/github      %E│     │    %Pcurl wowtravis.com/projects    %E│%A     │
+│     %E│    %QEmail    %E│ %Qmail@wowtravis.com           %E│     │    %Qcurl wowtravis.com/bio         %E│%A     │
+│     %E│                                            │     │                                   │%A     │
+│     %E└────────────────────────────────────────────╯     └───────────────────────────────────╯%A     │
 │                                                                                                  │
 │                                                                                %%TIMESTAMP%% │
 └──────────────────────────────────────────────────────────────────────────────────────────────────╯

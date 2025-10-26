@@ -50,19 +50,19 @@ def gen_projects_table(data: any, body: str) -> str:
     rows = ""
     for i, year in enumerate(data):
         if i == 0: # Start of table
-            rows += "│     ├%E──────┬──────────────────────┬────────────────────────────────────────────────────────%A┤     │\n"
+            rows += "│     %E├──────┬──────────────────────┬────────────────────────────────────────────────────────┤%A     │\n"
 
         for j, project in enumerate(year["projects"]):
             r = "│     "
-            r += "│ %O" + (year['year'] if j == 0 else "%A    ") + " %E│ %P" + pad_right(project["title"], max_len=20)
-            r += " %E│ %Q" + pad_right(project["shortDesc"], max_len=55) + "%A│"
+            r += "%E│ %O" + (year['year'] if j == 0 else "%A    ") + " %E│ %P" + pad_right(project["title"], max_len=20)
+            r += " %E│ %Q" + pad_right(project["shortDesc"], max_len=55) + "%E│%A"
             r += "     │\n"
             rows += r
 
         if i+1 < len(data): # Not at end yet
-            rows += "│     ├%E──────┼──────────────────────┼────────────────────────────────────────────────────────%A┤     │\n"
+            rows += "│     %E├──────┼──────────────────────┼────────────────────────────────────────────────────────┤%A     │\n"
         else: # End of table (no newline)
-            rows += "│     ├%E──────┴──────────────────────┴────────────────────────────────────────────────────────%A┤     │"
+            rows += "│     %E├──────┴──────────────────────┴────────────────────────────────────────────────────────┤%A     │"
 
     # Insert projects table
     return body.replace("%%PROJECTS_TABLE%%", rows)
