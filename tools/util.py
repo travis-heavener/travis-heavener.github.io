@@ -18,6 +18,11 @@ def pad_right(s: str, max_len: int) -> str:
     if len(s) >= max_len: return s
     return s + (" " * (max_len - len(s)))
 
+# Helper to handle overflowing lines
+def overflow_lines(s: str, max_len=36) -> tuple[str, str]:
+    index = s[:max_len].rfind(" ")
+    return (s[:index], s[index+1:])
+
 ###############################################
 
 SHELL_COLORS = {

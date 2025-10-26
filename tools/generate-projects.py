@@ -45,6 +45,54 @@ def gen_project_section(data: any, first_row: bool) -> str:
 
     return s
 
+def gen_projects_table(data: any, body: str) -> str:
+    # Generate table
+    rows = ""
+    for i, year in enumerate(data):
+        if i == 0: # Start of table
+            rows += "│     ├%E──────┬──────────────────────┬────────────────────────────────────────────────────────%A┤     │\n"
+
+        for j, project in enumerate(year["projects"]):
+            r = "│     "
+            r += "│ %O" + (year['year'] if j == 0 else "%A    ") + " %E│ %P" + pad_right(project["title"], max_len=20)
+            r += " %E│ %Q" + pad_right(project["shortDesc"], max_len=55) + "%A│"
+            r += "     │\n"
+            rows += r
+
+        if i+1 < len(data): # Not at end yet
+            rows += "│     ├%E──────┼──────────────────────┼────────────────────────────────────────────────────────%A┤     │\n"
+        else: # End of table (no newline)
+            rows += "│     ├%E──────┴──────────────────────┴────────────────────────────────────────────────────────%A┤     │"
+
+    # Insert projects table
+    return body.replace("%%PROJECTS_TABLE%%", rows)
+
+def gen_featured_project(data: any, body: str) -> str:
+    # Find desired project
+    featured_year = [y for y in data if y["year"] == "2025"][0]
+    project = [p for p in featured_year["projects"] if p["title"] == "Mercury"][0]
+
+    # Replace info
+    body = body.replace("%%FEATURED_NAME%%", "%O" + pad_right(project["title"], max_len=36) + "%A")
+    body = body.replace("%%FEATURED_HREF%%", "%P" + pad_right(project["href"], max_len=36) + "%A")
+
+    # Replace description lines
+    lines = [project["desc"], "", ""]
+    if len(lines[0]) > 36:
+        lines[0], lines[1] = overflow_lines(lines[0])
+
+        if len(lines[1]) > 36:
+            lines[1], lines[2] = overflow_lines(lines[1])
+
+            if len(lines[2]) > 36:
+                lines[2] = lines[2][:33] + "..."
+
+    body = body.replace("%%FEATURED_LINE_A%%", "%Q%C" + pad_right(lines[0], max_len=36) + "%A") \
+                       .replace("%%FEATURED_LINE_B%%", "%Q%C" + pad_right(lines[1], max_len=36) + "%A") \
+                       .replace("%%FEATURED_LINE_C%%", "%Q%C" + pad_right(lines[2], max_len=36) + "%A")
+
+    return body
+
 if __name__ == "__main__":
     # CD to script directory
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
@@ -78,4 +126,23 @@ if __name__ == "__main__":
 
         # Write to new file
         with open("../docs/projects/index.html", "w") as f:
+            f.write(contents)
+
+    # Update shell page
+    with open("../templates/sh/projects.txt", "r") as f:
+        # Read file
+        contents = f.read()
+
+        # Insert projects
+        contents = gen_featured_project(data, contents)
+        contents = gen_projects_table(data, contents)
+
+        # Replace timestamp
+        contents = contents.replace("%%TIMESTAMP%%", pad_left(gen_timestamp_txt(), max_len=17))
+
+        # Escape shell colors
+        contents = escape_shell_colors(contents)
+
+        # Write to new file
+        with open("../docs/sh/projects.txt", "w") as f:
             f.write(contents)

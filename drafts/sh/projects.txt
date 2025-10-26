@@ -1,0 +1,43 @@
+╭──── wowtravis.com/projects ──────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│                                                                  ▄▄▄▄▄▄▄▄▄▄   ▗▄▄▖   ▗▄▄▖        │
+│     TRAVIS HEAVENER                                              ▀▀▀▜██▛▀▀▀   ▐██▌   ▐██▌        │
+│      TRAVIS HEAVENER                                                ▐██▌      ▐██▙▄▄▄▟██▌        │
+│     ● ● ●                                                           ▐██▌      ▐██▛▀▀▀▜██▌        │
+│                                                                     ▐██▌      ▐██▌   ▐██▌        │
+│     Projects                                                        ▝▀▀▘      ▝▀▀▘   ▝▀▀▘        │
+│                                                                                                  │
+│     ╭──── Featured ──────────────────────────────┐     ╭──── Directory ────────────────────┐     │
+│     │                                            │     │                                   │     │
+│     │    Mercury                                 │     │    curl wowtravis.com             │     │
+│     │    https://wowtravis.com/mercury           │     │    curl wowtravis.com/resume      │     │
+│     │    A lightweight, configurable HTTP        │     │    curl wowtravis.com/bio         │     │
+│     │    server made in C++ for Windows          │     │                                   │     │
+│     │    and Linux.                              │     └───────────────────────────────────╯     │
+│     │                                            │                                               │
+│     └────────────────────────────────────────────╯                Source: wowtravis.com/this     │
+│                                                                                                  │
+│     ╭──── All Projects ────────────────────────────────────────────────────────────────────┐     │
+│     │                                                                                      │     │
+│     ├──────┬──────────────────────┬────────────────────────────────────────────────────────┤     │
+│     │ 2025 │ Mercury              │ A lightweight, C++ HTTP server for Windows & Linux.    │     │
+│     │      │ Unfair Solitaire 4   │ Rigged, sometimes impossible solitaire remake in JS.   │     │
+│     │      │ Orbital Simulator    │ An HTML canvas simulation for Newtonian gravity.       │     │
+│     │      │ 2048.js              │ A remake of the classic 2048 game in JS.               │     │
+│     ├──────┼──────────────────────┼────────────────────────────────────────────────────────┤     │
+│     │ 2024 │ TPU2                 │ 8086-like CPU/OS emulator w/ custom C-style language.  │     │
+│     │      │ Mini Server v2.1     │ Web UI for a custom home media and file server.        │     │
+│     │      │ RL Driving Simulator │ Reinforcement learning racecar simulation in Python.   │     │
+│     │      │ CookieGL             │ An HTML canvas library for 2-D JS applications.        │     │
+│     ├──────┼──────────────────────┼────────────────────────────────────────────────────────┤     │
+│     │ 2023 │ Cornhole v5.0        │ Local cornhole scorekeeping web app using AMP stack.   │     │
+│     ├──────┼──────────────────────┼────────────────────────────────────────────────────────┤     │
+│     │ 2022 │ BinGo                │ React Native exercise app using digital bingo cards.   │     │
+│     ├──────┼──────────────────────┼────────────────────────────────────────────────────────┤     │
+│     │ 2020 │ Digital Portfolio    │ This GitHub Pages portfolio, redesigned in late 2024.  │     │
+│     ├──────┴──────────────────────┴────────────────────────────────────────────────────────┤     │
+│     │                                                                                      │     │
+│     └──────────────────────────────────────────────────────────────────────────────────────╯     │
+│                                                                                                  │
+│                                                                                Updated Oct. 2025 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────╯
