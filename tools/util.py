@@ -6,6 +6,9 @@ def gen_timestamp(include_top_anchor: bool) -> str:
 def gen_timestamp_txt() -> str:
     return f"Updated {datetime.now().strftime('%b. %Y')}"
 
+def indent(n: int) -> str:
+    return " " * (4 * n)
+
 def pad_left(s: str, max_len: int) -> str:
     if len(s) >= max_len: return s
     return " " * (max_len - len(s)) + s

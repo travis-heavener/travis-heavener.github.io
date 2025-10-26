@@ -3,9 +3,6 @@ import os
 
 from util import *
 
-def indent(n: int) -> str:
-    return " " * (4 * n)
-
 def gen_project_section(data: any, first_row: bool) -> str:
     s = indent(3) + """<div class="section-wrapper">\n""" \
             + indent(4) + f"""<a href="#{data['year']}"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>\n""" \

@@ -3,9 +3,6 @@ import os
 
 from util import *
 
-def indent(n: int) -> str:
-    return " " * (4 * n)
-
 def gen_education_experience(data: any) -> str:
     s = indent(3) + """<div class="info-row">\n"""
 
@@ -55,6 +52,11 @@ def gen_activities_accomplishments(data: any) -> str:
             + indent(3) + "</div>\n"
     return s[12:] # Remove extra leading whitespace w/ [12:]
 
+def split_edu_exp_desc(desc: str) -> str:
+    i = desc.find("<br>")
+    format = lambda s: s.replace("&mdash;", "—").replace("&ndash;", "–")
+    return (format(desc[:i]), format(desc[i+4:]))
+
 if __name__ == "__main__":
     # CD to script directory
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
@@ -85,4 +87,38 @@ if __name__ == "__main__":
 
         # Write to new file
         with open("../docs/resume/index.html", "w") as f:
+            f.write(contents)
+    
+    # Update shell page
+    with open("../templates/sh/resume.txt", "r") as f:
+        # Read file
+        contents = f.read()
+
+        # Replace skills
+        for i, exp in enumerate(data["skills"]):
+            if i >= 12: break # Only use the first 12 skills
+            letter = bytes([65 + i]).decode("utf-8")
+            contents = contents.replace(f"%%SKILLS_{letter}%%", pad_right(exp["name"], max_len=12))
+
+        # Replace education
+        for i, exp in enumerate(data["education"]):
+            letter = bytes([65 + i]).decode("utf-8")
+            span, desc = split_edu_exp_desc(exp["desc"])
+            contents = contents.replace(f"%%SCHOOL_TITLE_{letter}%%", pad_right(exp["name"], max_len=36))
+            contents = contents.replace(f"%%SCHOOL_SPAN_{letter}%%", pad_right(span, max_len=36))
+            contents = contents.replace(f"%%SCHOOL_DESC_{letter}%%", pad_right(desc, max_len=36))
+
+        # Replace experience
+        for i, exp in enumerate(data["experience"]):
+            letter = bytes([65 + i]).decode("utf-8")
+            span, desc = split_edu_exp_desc(exp["desc"])
+            contents = contents.replace(f"%%EXPERIENCE_TITLE_{letter}%%", pad_right(exp["name"], max_len=36))
+            contents = contents.replace(f"%%EXPERIENCE_SPAN_{letter}%%", pad_right(span, max_len=36))
+            contents = contents.replace(f"%%EXPERIENCE_DESC_{letter}%%", pad_right(desc, max_len=36))
+
+        # Replace timestamp
+        contents = contents.replace("%%TIMESTAMP%%", pad_left(gen_timestamp_txt(), max_len=17))
+
+        # Write to new file
+        with open("../docs/sh/resume.txt", "w") as f:
             f.write(contents)
