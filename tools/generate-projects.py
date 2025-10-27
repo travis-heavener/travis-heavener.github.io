@@ -62,7 +62,7 @@ def gen_projects_table(data: any, body: str) -> str:
         if i+1 < len(data): # Not at end yet
             rows += "│     %E├──────┼──────────────────────┼────────────────────────────────────────────────────────┤%A     │\n"
         else: # End of table (no newline)
-            rows += "│     %E├──────┴──────────────────────┴────────────────────────────────────────────────────────┤%A     │"
+            rows += "│     %E└──────┴──────────────────────┴────────────────────────────────────────────────────────╯%A     │"
 
     # Insert projects table
     return body.replace("%%PROJECTS_TABLE%%", rows)
