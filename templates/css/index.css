@@ -259,7 +259,7 @@
     .contact-text {
         display: inline-block;
         color: var(--anchor-base);
-        font: 300 italic 1.1875rem var(--Open-Sans);
+        font: 300 1.1875rem var(--Open-Sans);
         text-decoration: underline;
         transition: 0.1s color;
     }

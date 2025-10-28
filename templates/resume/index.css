@@ -117,7 +117,7 @@ h3 {
 .info-div p {
     margin: 0 0.5rem;
     color: #e5e5e5;
-    font: italic 300 1rem/1.5em var(--Open-Sans);
+    font: 300 1rem/1.5em var(--Open-Sans);
     text-align: center;
     text-shadow: 0.1em 0.1em 0 #0006;
 }
