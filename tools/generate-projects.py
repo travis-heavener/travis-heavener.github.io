@@ -103,7 +103,7 @@ if __name__ == "__main__":
         data = json.load(f)["projects"]
 
     # Update timestamp
-    with open("../templates/projects/index.html", "r") as f:
+    with open("../src/projects/index.html", "r") as f:
         # Read file
         contents = f.read()
 
@@ -129,7 +129,7 @@ if __name__ == "__main__":
             f.write(contents)
 
     # Update shell page
-    with open("../templates/sh/projects.txt", "r") as f:
+    with open("../src/sh/projects.txt", "r") as f:
         # Read file
         contents = f.read()
 

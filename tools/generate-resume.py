@@ -67,7 +67,7 @@ if __name__ == "__main__":
         data = json.load(f)["resume"]
 
     # Update timestamp
-    with open("../templates/resume/index.html", "r") as f:
+    with open("../src/resume/index.html", "r") as f:
         # Read file
         contents = f.read()
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             f.write(contents)
     
     # Update shell page
-    with open("../templates/sh/resume.txt", "r") as f:
+    with open("../src/sh/resume.txt", "r") as f:
         # Read file
         contents = f.read()
 

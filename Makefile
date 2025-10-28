@@ -8,7 +8,7 @@ init:
 	@sudo apt install terser html-minifier-terser cleancss -y 1> /dev/null
 
 init_copy:
-	@cp -r "templates/." "docs/"
+	@cp -r "src/." "docs/"
 
 robots_txt:
 	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh

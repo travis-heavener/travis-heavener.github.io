@@ -8,7 +8,7 @@ if __name__ == "__main__":
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
 
     # Update timestamp
-    with open("../templates/index.html", "r") as f:
+    with open("../src/index.html", "r") as f:
         # Read file
         contents = f.read()
 
@@ -20,7 +20,7 @@ if __name__ == "__main__":
             f.write(contents)
 
     # Update shell page
-    with open("../templates/sh/home.txt", "r") as f:
+    with open("../src/sh/home.txt", "r") as f:
         # Read file
         contents = f.read()
 
