@@ -12,6 +12,7 @@ clean:
 		rm -rf "docs"; \
 	fi
 	@mkdir "docs"
+	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh
 
 home:
 	@python3 ./tools/generate-home.py
