@@ -13,26 +13,11 @@ jobs:
       - uses: actions/checkout@v5
 
       #################### BUILD ####################
+      - name: Install Minifiy Deps
+        run: make init
+
       - name: Make Static Files
         run: make
-
-      #################### MINIFY ####################
-      - run: npm install clean-css-cli -g
-      - run: npm install uglify-js -g
-      - run: npm install html-minifier -g
-
-      - name: Minify CSS
-        run: |
-          find ./docs/ -type f -name "*.css" -not -path "*/node_modules/*" -exec cleancss -o {} {} \;
-
-      - name: Minify JS
-        run: |
-          find ./docs/ -type f -name "*.js" -not -path "*/node_modules/*" -exec uglifyjs {} -o {} \;
-
-      - name: Minify HTML
-        run: |
-          find ./docs/ -type f -name "*.html" -not -path "*/node_modules/*" -exec html-minifier {} -o {} \
-            --collapse-whitespace --html5 --remove-comments --minify-css --minify-js \;
 
       #################### VALIDATE ####################
       - name: W3 Validate HTML
