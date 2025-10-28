@@ -20,7 +20,7 @@ if __name__ == "__main__":
             f.write(contents)
 
     # Update shell page
-    with open("../src/sh/home.txt", "r") as f:
+    with open("../src/sh/.txt", "r") as f:
         # Read file
         contents = f.read()
 
@@ -31,5 +31,5 @@ if __name__ == "__main__":
         contents = escape_shell_colors(contents)
 
         # Write to new file
-        with open("../docs/sh/home.txt", "w") as f:
+        with open("../docs/sh/.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
