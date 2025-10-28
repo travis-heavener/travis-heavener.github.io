@@ -13,8 +13,11 @@ jobs:
       - uses: actions/checkout@v5
 
       #################### BUILD ####################
-      - name: Install Minifiy Deps
-        run: make init
+      - name: Install APT Deps
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: terser html-minifier-terser cleancss
+          version: 1.0
 
       - name: Make Static Files
         run: make
