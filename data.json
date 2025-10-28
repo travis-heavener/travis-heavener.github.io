@@ -294,7 +294,7 @@
                 {
                     "title": "RL Driving Simulator",
                     "href": "https://github.com/travis-heavener/RL_driver_sim",
-                    "desc": "A simulation where reinforcement models learn to shift gears, handle a powerful engine, and race programmable circuits.",
+                    "desc": "Simulation where reinforcement models learn to shift gears, handle a powerful engine, and race programmable circuits.",
                     "shortDesc": "Reinforcement learning racecar simulation in Python.",
                     "imgs": [
                         {
