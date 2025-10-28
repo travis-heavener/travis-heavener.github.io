@@ -14,7 +14,7 @@ def gen_education_experience(data: any) -> str:
         img = school["img"]
         s += indent(5) + f"""<picture>\n""" \
             + indent(6) + f"""<source srcset="{img['srcset']}">\n""" \
-            + indent(6) + f"""<img src="{img['default']}" alt="{img['alt']}">\n""" \
+            + indent(6) + f"""<img src="{img['default']}" fetchpriority="high" alt="{img['alt']}">\n""" \
             + indent(5) + "</picture>\n"
 
         # Add title & desc

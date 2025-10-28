@@ -22,12 +22,12 @@ def gen_project_section(data: any, first_row: bool) -> str:
             s += indent(5) + """<div class="slideshow-3">\n"""
 
             for img in project["imgs"]:
-                s += indent(6) + f"""<img class="project-img" loading="{img['loading']}" src="{img['src']}" alt="{img['alt']}">\n"""
+                s += indent(6) + f"""<img class="project-img" loading="{img['loading']}" {'fetchpriority=\"high\"' if img['loading'] == 'eager' else ''} src="{img['src']}" alt="{img['alt']}">\n"""
 
             s += indent(5) + """</div>\n"""
         else:
             img = project["imgs"][0]
-            s += indent(5) + f"""<img class="project-img" loading="{img['loading']}" src="{img['src']}" alt="{img['alt']}">\n"""
+            s += indent(5) + f"""<img class="project-img" loading="{img['loading']}" {'fetchpriority=\"high\"' if img['loading'] == 'eager' else ''} src="{img['src']}" alt="{img['alt']}">\n"""
 
         # Add title
         if project["href"] is not None:
