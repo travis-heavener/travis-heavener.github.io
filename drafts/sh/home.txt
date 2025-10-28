@@ -12,7 +12,7 @@
 │     │                                            │     │                                   │     │
 │     │    LinkedIn │ wowtravis.com/my/linkedin    │     │    curl wowtravis.com/resume      │     │
 │     │    GitHub   │ wowtravis.com/my/github      │     │    curl wowtravis.com/projects    │     │
-│     │    Email    │ mail@wowtravis.com           │     │    curl wowtravis.com/bio         │     │
+│     │    Email    │ travis@wowtravis.com         │     │    curl wowtravis.com/bio         │     │
 │     │                                            │     │                                   │     │
 │     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
 │                                                                                                  │

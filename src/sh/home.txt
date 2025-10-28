@@ -12,7 +12,7 @@
 │     %E│                                            │     │                                   │%A     │
 │     %E│    %OLinkedIn %E│ %Owowtravis.com/my/linkedin    %E│     │    %Ocurl wowtravis.com/resume      %E│%A     │
 │     %E│    %PGitHub   %E│ %Pwowtravis.com/my/github      %E│     │    %Pcurl wowtravis.com/projects    %E│%A     │
-│     %E│    %QEmail    %E│ %Qmail@wowtravis.com           %E│     │    %Qcurl wowtravis.com/bio         %E│%A     │
+│     %E│    %QEmail    %E│ %Qtravis@wowtravis.com         %E│     │    %Qcurl wowtravis.com/bio         %E│%A     │
 │     %E│                                            │     │                                   │%A     │
 │     %E└────────────────────────────────────────────╯     └───────────────────────────────────╯%A     │
 │                                                                                                  │

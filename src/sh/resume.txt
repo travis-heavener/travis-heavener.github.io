@@ -19,7 +19,7 @@
 │     %E│                                            │     │                                   │%A     │
 │     %E│    %Q%%SCHOOL_TITLE_C%%    %E│     │     %Owowtravis.com/my/linkedin     %E│%A     │
 │     %E│    %A%%SCHOOL_SPAN_C%%    %E│     │     %Pwowtravis.com/my/github       %E│%A     │
-│     %E│    %A%C%%SCHOOL_DESC_C%%%A    %E│     │     %Qmail@wowtravis.com            %E│%A     │
+│     %E│    %A%C%%SCHOOL_DESC_C%%%A    %E│     │     %Qtravis@wowtravis.com          %E│%A     │
 │     %E│                                            │     │                                   │%A     │
 │     %E└────────────────────────────────────────────╯     └───────────────────────────────────╯%A     │
 │                                                                                                  │
