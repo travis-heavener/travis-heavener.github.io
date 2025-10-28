@@ -1,18 +1,20 @@
 SHELL := /bin/bash
 
-all: clean init_copy home resume projects bio sitemap
+all: clean init_copy robots_txt home resume projects bio sitemap
 
 .PHONY: clean init_copy home resume projects bio sitemap
 
 init_copy:
 	@cp -r "templates/." "docs/"
 
+robots_txt:
+	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh
+
 clean:
 	@if [ -d "docs" ]; then \
 		rm -rf "docs"; \
 	fi
 	@mkdir "docs"
-	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh
 
 home:
 	@python3 ./tools/generate-home.py
