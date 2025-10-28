@@ -136,11 +136,6 @@
                 "name": "AWS",
                 "href": "/res/resume/skills/sheet.svg#aws",
                 "class": "skill-pad-white"
-            },
-            {
-                "name": "MongoDB Atlas",
-                "href": "/res/resume/skills/sheet.svg#atlas",
-                "class": "skill-pad-white"
             }
         ],
         "activities": [
@@ -204,7 +199,7 @@
                 {
                     "title": "Unfair Solitaire 4",
                     "href": "https://github.com/travis-heavener/unfair-solitaire-4",
-                    "desc": "A solitaire remake to challenge and completely ruin the game for the most insane players.",
+                    "desc": "A solitaire remake in JS with random punishments and handicaps.",
                     "shortDesc": "Rigged, sometimes impossible solitaire remake in JS.",
                     "imgs": [
                         {
@@ -227,7 +222,7 @@
                 {
                     "title": "Orbital Simulator",
                     "href": "https://github.com/travis-heavener/orbital-sim",
-                    "desc": "A JavaScript/HTML5 canvas simulation of Newtonian gravity for celestial bodies.",
+                    "desc": "An HTML5 canvas simulation of Newtonian gravity on celestial bodies.",
                     "shortDesc": "An HTML canvas simulation for Newtonian gravity.",
                     "imgs": [
                         {
@@ -258,7 +253,7 @@
                 {
                     "title": "TPU2",
                     "href": "https://github.com/travis-heavener/tpu2",
-                    "desc": "An 8086-inspired, emulated CPU turned emulated operating system, with its own C-style programming language \"T\".",
+                    "desc": "An 8086-inspired, emulated CPU & OS with its own C-style programming language, \"T\".",
                     "shortDesc": "8086-like CPU/OS emulator w/ custom C-style language.",
                     "imgs": [
                         {
@@ -271,7 +266,7 @@
                 {
                     "title": "Mini Server v2.1",
                     "href": "https://github.com/travis-heavener/mini-server-2.x",
-                    "desc": "A web app UI for a custom home server, with a media library, photos app, notes app, and a user suite.",
+                    "desc": "A web UI for a custom home media, movie, and file server, complete with a user suite.",
                     "shortDesc": "Web UI for a custom home media and file server.",
                     "imgs": [
                         {
@@ -294,7 +289,7 @@
                 {
                     "title": "RL Driving Simulator",
                     "href": "https://github.com/travis-heavener/RL_driver_sim",
-                    "desc": "Simulation where reinforcement models learn to shift gears, handle a powerful engine, and race programmable circuits.",
+                    "desc": "A reinforcement learning racecar simulation with programmable circuits.",
                     "shortDesc": "Reinforcement learning racecar simulation in Python.",
                     "imgs": [
                         {
@@ -307,7 +302,7 @@
                 {
                     "title": "CookieGL",
                     "href": "https://github.com/travis-heavener/CookieGL",
-                    "desc": "An HTML canvas library designed for easy implementation of 2-D HTML5/JS web games and other canvas applications.",
+                    "desc": "An HTML canvas library designed for 2-D JS applications.",
                     "shortDesc": "An HTML canvas library for 2-D JS applications.",
                     "imgs": [
                         {
@@ -325,7 +320,7 @@
                 {
                     "title": "Cornhole v5.0",
                     "href": null,
-                    "desc": "Started in early 2020, the Cornhole Scoreboard allows users to locally track progress in a cornhole tournament.",
+                    "desc": "Cornhole scorekeeping web app to track tournament progress in a local cornhole tournament.",
                     "shortDesc": "Local cornhole scorekeeping web app using AMP stack.",
                     "imgs": [
                         {
@@ -343,7 +338,7 @@
                 {
                     "title": "BinGo",
                     "href": "https://github.com/travis-heavener/seniorresearch",
-                    "desc": "A high school project aimed at encouraging physical activity via bingo card gamification in an Android app.",
+                    "desc": "An Android app that promotes physical activity via digital bingo cards.",
                     "shortDesc": "React Native exercise app using digital bingo cards.",
                     "imgs": [
                         {
@@ -371,7 +366,7 @@
                 {
                     "title": "Digital Portfolio",
                     "href": "https://github.com/travis-heavener/travis-heavener.github.io",
-                    "desc": "This digital GitHub Pages portfolio. Initially created in 2020, this current version was started in late 2024.",
+                    "desc": "This digital GitHub Pages portfolio, initially created in 2020 but redesigned in 2024.",
                     "shortDesc": "This GitHub Pages portfolio, redesigned in late 2024.",
                     "imgs": [
                         {

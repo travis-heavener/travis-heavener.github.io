@@ -19,7 +19,7 @@
 │     │                                            │     │                                   │     │
 │     │    Academies of Loudoun                    │     │     wowtravis.com/my/linkedin     │     │
 │     │    Ashburn, VA — June 2023                 │     │     wowtravis.com/my/github       │     │
-│     │    Completed four-year IT program          │     │     mail@wowtravis.com            │     │
+│     │    Completed four-year IT program          │     │     travis@wowtravis.com          │     │
 │     │                                            │     │                                   │     │
 │     └────────────────────────────────────────────╯     └───────────────────────────────────╯     │
 │                                                                                                  │

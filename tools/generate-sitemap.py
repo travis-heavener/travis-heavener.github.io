@@ -13,15 +13,15 @@ if __name__ == "__main__":
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
 
     # Update timestamp
-    with open("../templates/sitemap.xml", "r") as f:
+    with open("../src/sitemap.xml", "r") as f:
         # Read file
         contents = f.read()
 
         # Load paragraphs
-        contents = contents.replace("%%HOME_LASTMOD%%", get_mod_ts("../templates/index.html"))
-        contents = contents.replace("%%RESUME_LASTMOD%%", get_mod_ts("../templates/resume/index.html"))
-        contents = contents.replace("%%PROJECTS_LASTMOD%%", get_mod_ts("../templates/projects/index.html"))
-        contents = contents.replace("%%BIO_LASTMOD%%", get_mod_ts("../templates/bio/index.html"))
+        contents = contents.replace("%%HOME_LASTMOD%%", get_mod_ts("../src/index.html"))
+        contents = contents.replace("%%RESUME_LASTMOD%%", get_mod_ts("../src/resume/index.html"))
+        contents = contents.replace("%%PROJECTS_LASTMOD%%", get_mod_ts("../src/projects/index.html"))
+        contents = contents.replace("%%BIO_LASTMOD%%", get_mod_ts("../src/bio/index.html"))
 
         # Write to new file
         with open("../docs/sitemap.xml", "w") as f:
