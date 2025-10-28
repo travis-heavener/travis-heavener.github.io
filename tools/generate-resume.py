@@ -67,6 +67,7 @@ if __name__ == "__main__":
         data = json.load(f)["resume"]
 
     # Update timestamp
+    out_path = "../docs/resume/index.html"
     with open("../src/resume/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -82,11 +83,14 @@ if __name__ == "__main__":
         contents = contents.replace("%%ACTIVITIES%%", gen_activities_accomplishments(data["activities"]))
         contents = contents.replace("%%ACCOMPLISHMENTS%%", gen_activities_accomplishments(data["accomplishments"]))
 
+        # Inject CSS
+        contents = inject_inline_css(out_path, contents)
+
         # Replace timestamp
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../docs/resume/index.html", "w") as f:
+        with open(out_path, "w") as f:
             f.write(contents)
     
     # Update shell page

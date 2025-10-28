@@ -23,6 +23,23 @@ def overflow_lines(s: str, max_len=36) -> tuple[str, str]:
     index = s[:max_len].rfind(" ")
     return (s[:index], s[index+1:])
 
+# Inlines included, local CSS files
+def inject_inline_css(path: str, body: str) -> str:
+    links = re.findall(r"<link.+rel=['\"]stylesheet['\"].*?>", body)
+    hrefs = [re.search(r"(?<=href=['\"]).*?(?=['\"])", g).group() for g in links]
+
+    # Find resource directory
+    res_dir = path[:path.rfind("/")+1]
+    paths = [("../docs" + href) if href[0] == "/" else (res_dir + href) for href in hrefs]
+
+    for i in range(len(links)):
+        inline = "<style>"
+        with open(paths[i], "r") as f:
+            inline += f.read()
+        inline += "</style>"
+        body = body.replace(links[i], inline, 1)
+    return body
+
 ###############################################
 
 SHELL_COLORS = {

@@ -8,15 +8,19 @@ if __name__ == "__main__":
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
 
     # Update timestamp
+    out_path = "../docs/index.html"
     with open("../src/index.html", "r") as f:
         # Read file
         contents = f.read()
+
+        # Inject CSS
+        contents = inject_inline_css(out_path, contents)
 
         # Replace timestamp
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=False))
 
         # Write to new file
-        with open("../docs/index.html", "w") as f:
+        with open(out_path, "w") as f:
             f.write(contents)
 
     # Update shell page
