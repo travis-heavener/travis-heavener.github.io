@@ -18,7 +18,7 @@ h1 {
     color: #f3f3f3;
     text-align: justify;
     text-indent: 2em;
-    font: italic 300 1.4rem/1.45em var(--Open-Sans);
+    font: 300 1.4rem/1.45em var(--Open-Sans);
 }
 
 .text-section > p:last-of-type { margin-top: 1.5em; }
