@@ -103,6 +103,7 @@ if __name__ == "__main__":
         data = json.load(f)["projects"]
 
     # Update timestamp
+    out_path = "../docs/projects/index.html"
     with open("../src/projects/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -121,11 +122,14 @@ if __name__ == "__main__":
                 [12:] # Remove extra leading whitespace w/ [12:]
         )
 
+        # Inject CSS
+        contents = inject_inline_css(out_path, contents)
+
         # Replace timestamp
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../docs/projects/index.html", "w") as f:
+        with open(out_path, "w") as f:
             f.write(contents)
 
     # Update shell page

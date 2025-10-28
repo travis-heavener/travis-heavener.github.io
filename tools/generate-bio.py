@@ -13,6 +13,7 @@ if __name__ == "__main__":
         data = json.load(f)["bio"]
 
     # Update timestamp
+    out_path = "../docs/bio/index.html"
     with open("../src/bio/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -23,11 +24,14 @@ if __name__ == "__main__":
         contents = contents.replace("%%PARAGRAPH 2.1%%", data["paragraphs"][1][0])
         contents = contents.replace("%%PARAGRAPH 2.2%%", data["paragraphs"][1][1])
 
+        # Inject CSS
+        contents = inject_inline_css(out_path, contents)
+
         # Replace timestamp
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file
-        with open("../docs/bio/index.html", "w") as f:
+        with open(out_path, "w") as f:
             f.write(contents)
 
     # Update shell page
