@@ -5,9 +5,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap"
-        >
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap" id="font-preload">
+        <script>document.getElementById("font-preload").addEventListener("load",function(){this.rel="stylesheet"})</script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Travis Heavener">
@@ -49,7 +48,7 @@
             <a class="header-anchor" href="/projects/">Projects</a>
             <a class="header-anchor" href="/bio/">About</a>
         </div>
-        <div id="content-div">
+        <main id="content-div">
             <div id="content-upper">
                 <div id="content-left">
                     <h1 id="name-display">TRAVIS<br><span class="show-mobile">&nbsp;</span>HEAVENER</h1>
@@ -65,7 +64,7 @@
                         <source media="(max-width: 2559px)" srcset="/res/headshot/290-333.webp, /res/headshot/400-460.webp 2x, /res/headshot/499-575.webp 3x">
                         <source media="(max-width: 3199px)" srcset="/res/headshot/400-460.webp, /res/headshot/499-575.webp 2x, /res/headshot/499-575.webp 3x">
                         <source media="(min-width: 3200px)" srcset="/res/headshot/499-575.webp">
-                        <img id="headshot-img" src="/res/headshot/499-575.webp" alt="Travis Heavener headshot image.">
+                        <img id="headshot-img" src="/res/headshot/499-575.webp" fetchpriority="high" alt="Travis Heavener headshot image.">
                     </picture>
                     <a id="headshot-caption" href="mailto:mail@wowtravis.com">mail@wowtravis.com</a>
                 </div>
@@ -110,7 +109,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
         <div id="footer-div">
             %%TIMESTAMP%%
         </div>

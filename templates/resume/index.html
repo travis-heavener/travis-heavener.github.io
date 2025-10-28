@@ -5,9 +5,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap"
-        >
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap" id="font-preload">
+        <script>document.getElementById("font-preload").addEventListener("load",function(){this.rel="stylesheet"})</script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Travis Heavener">
@@ -49,7 +48,7 @@
             <a class="header-anchor" href="/projects/">Projects</a>
             <a class="header-anchor" href="/bio/">About</a>
         </div>
-        <div id="content-div">
+        <main id="content-div">
             <h1>Travis Heavener</h1>
             <a href="mailto:mail@wowtravis.com">mail@wowtravis.com</a>
             <a href="/Travis_Heavener_Resume.pdf">View as PDF</a>
@@ -91,7 +90,7 @@
             </div>
 
             %%ACCOMPLISHMENTS%%
-        </div>
+        </main>
         <div id="footer-div">
             %%TIMESTAMP%%
         </div>
