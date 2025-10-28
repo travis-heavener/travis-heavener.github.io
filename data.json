@@ -136,11 +136,6 @@
                 "name": "AWS",
                 "href": "/res/resume/skills/sheet.svg#aws",
                 "class": "skill-pad-white"
-            },
-            {
-                "name": "MongoDB Atlas",
-                "href": "/res/resume/skills/sheet.svg#atlas",
-                "class": "skill-pad-white"
             }
         ],
         "activities": [
