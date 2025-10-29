@@ -320,7 +320,7 @@
                 {
                     "title": "Cornhole v5.0",
                     "href": null,
-                    "desc": "Cornhole scorekeeping web app to track tournament progress in a local cornhole tournament.",
+                    "desc": "Cornhole scorekeeping web app to track progress in a local tournament.",
                     "shortDesc": "Local cornhole scorekeeping web app using AMP stack.",
                     "imgs": [
                         {
