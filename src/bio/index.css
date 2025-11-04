@@ -45,20 +45,35 @@ h1 {
     justify-content: center;
 }
 
-picture { height: 26rem; }
+#slideshow-2 { position: relative }
 
+#slideshow-2,
+picture,
 .bio-img {
     height: 26rem;
-    object-fit: cover;
     aspect-ratio: 0.65;
+}
+
+.bio-img {
+    object-fit: cover;
     background: #e7dfda;
 
     border-radius: 0.25rem;
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
 
+#slideshow-2 picture { position: absolute }
+
+#slideshow-2 picture:nth-child(1) { animation-delay: -7.5s }
+
+@keyframes slideshow2 {
+     0%, 45%, 100% { opacity: 1; }
+    50%, 95% { opacity: 0; }
+}
+
 @media screen and (orientation: portrait) {
     #content-div { padding: 3vh 8% 8vh 8%; }
+    .hide-mobile { display: none }
 
     h1 {
         font-size: 3rem;
@@ -74,13 +89,16 @@ picture { height: 26rem; }
 
     .content-section:last-of-type { flex-direction: column-reverse; }
 
-    picture { height: 25rem; }
-    .bio-img { height: 25rem; }
-}
+    #slideshow-2,
+    picture,
+    .bio-img { height: 25rem }
 
+    #slideshow-2 picture { animation: 15s slideshow2 0s infinite }
+}
 
 /* adjust padding on landscape mobiles */
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
     #content-div { padding: 6vh 8% 15vh 8%; }
+    .show-mobile { display: none }
 }
