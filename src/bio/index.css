@@ -48,6 +48,11 @@ h1 {
 #slideshow-2 { position: relative }
 
 #slideshow-2,
+picture.hide-mobile {
+    box-shadow: .125rem .125rem 1.5rem #0009;
+}
+
+#slideshow-2,
 picture,
 .bio-img {
     height: 26rem;
@@ -56,10 +61,8 @@ picture,
 
 .bio-img {
     object-fit: cover;
-    background: #e7dfda;
-
+    background: var(--accent-base);
     border-radius: 0.25rem;
-    box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
 
 #slideshow-2 picture { position: absolute }
