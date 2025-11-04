@@ -37,7 +37,7 @@ h1 {
     column-gap: 7vw;
 }
 
-.content-section:last-of-type { margin-top: 6rem; }
+.content-section:last-of-type { margin-top: 2.5rem; }
 
 .text-section {
     display: flex;
@@ -51,6 +51,7 @@ picture { height: 26rem; }
     height: 26rem;
     object-fit: cover;
     aspect-ratio: 0.65;
+    background: #e7dfda;
 
     border-radius: 0.25rem;
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
