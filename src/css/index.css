@@ -76,7 +76,7 @@
 
 #tagline-text {
     color: #f3f3f3;
-    font: italic 300 1.5rem var(--Open-Sans);
+    font: 300 1.5rem var(--Open-Sans);
 }
 
 #read-more-anchor {

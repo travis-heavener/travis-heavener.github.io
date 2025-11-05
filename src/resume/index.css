@@ -50,14 +50,6 @@ h2 {
     text-underline-offset: 2px;
 }
 
-h3 {
-    margin-top: 0.4rem;
-    margin-bottom: 0.15rem;
-
-    color: #d9d9d9;
-    font: 600 1.35rem var(--Open-Sans);
-}
-
 /* Content row styling */
 
 .info-row {
