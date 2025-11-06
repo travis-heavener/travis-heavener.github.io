@@ -33,7 +33,7 @@
 
         <noscript>
             <link rel="stylesheet" type="text/css"
-                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
             >
         </noscript>
 
@@ -42,9 +42,9 @@
         <noscript>
             <style>
                 /* Conditional formatting for browsers w/o JavaScript enabled */
-                .section-wrapper h2 { cursor: default; }
+                section h2 { cursor: default; }
                 .dropdown-icon { display: none; }
-                .projects-row.hidden { display: flex; }
+                .row.hidden { display: flex; }
             </style>
         </noscript>
 
@@ -52,23 +52,18 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <div id="header-div">
-            <a id="home-anchor" class="header-anchor no-select" href="/">T</a>
-            <a class="header-anchor" href="/resume/">Resume</a>
-            <a class="header-anchor" href="/projects/">Projects</a>
-            <a class="header-anchor" href="/bio/">About</a>
-        </div>
-        <main id="content-div">
+        %%HEADER%%
+        <main>
             <h1>Projects</h1>
             <div id="content-dot-wrapper">
                 <div></div><div></div><div></div>
             </div>
 
             <noscript>
-                <div class="section-wrapper">
+                <section>
                     <a href="#table-of-contents"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                     <h2 id="table-of-contents">Table of Contents</h2>
-                </div>
+                </section>
 
                 <ul>
                     %%TABLE_OF_CONTENTS%%
@@ -77,8 +72,8 @@
 
             %%PROJECTS%%
         </main>
-        <div id="footer-div">
+        <footer>
             %%TIMESTAMP%%
-        </div>
+        </footer>
     </body>
 </html>

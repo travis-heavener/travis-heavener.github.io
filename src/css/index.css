@@ -1,6 +1,6 @@
 /* main content styling */
 
-#content-div {
+main {
     --row-gap: 2rem;
     --inner-content-height: calc(89vh - var(--header-height) - var(--footer-height) - var(--row-gap));
 
@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-#content-left {
+section.left {
     flex: 1;
     padding-top: 2%;
 }
@@ -36,14 +36,14 @@
 
 #content-dot-wrapper { margin: 0; }
 
-#content-right {
+section.right {
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
 }
 
-#content-right > picture { height: 21.25rem; }
+section.right > picture { height: 21.25rem; }
 
 #headshot-img {
     height: 21.25rem;
@@ -111,13 +111,13 @@
 
 /* contact info formatting */
 
-#contact-content {
+#contact {
     display: flex;
     justify-content: center;
     column-gap: 2.5rem;
 }
 
-.contact-section > a { display: block }
+#contact > section > a { display: block }
 
 .contact-img {
     --diameter: 5.25rem;
@@ -142,19 +142,19 @@
 /* portrait & landscape overrides */
 
 @media screen and (orientation: landscape) {
-    #tagline-content, #contact-content { flex: 1; }
+    #tagline, #contact { flex: 1; }
 
     #content-lower { min-height: calc(0.4 * var(--inner-content-height)); }
 
     .show-mobile,
-    #contact-header,
+    #contact > h3,
     .contact-text { display: none; }
 
     .contact-img {
         filter: brightness(0.9);
         transition: 0.15s filter, 0.15s box-shadow;
     }
-    .contact-section:nth-of-type(2) .contact-img {
+    #contact > section:nth-of-type(2) .contact-img {
         --hover-shadow-color: #0367a1;
         --active-shadow-color: #004166;
         margin-top: 1rem;
@@ -170,7 +170,7 @@
 }
 
 @media screen and (orientation: portrait) {
-    #content-div {
+    main {
         --row-gap: 1.25rem;
         padding: 3vh 8% 14vh 8%;
     }
@@ -180,7 +180,7 @@
     }
 
     /* Left content */
-    #content-left {
+    section.left {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -203,9 +203,9 @@
     }
 
     /* Right content */
-    #content-right { justify-content: center; }
+    section.right { justify-content: center; }
 
-    #content-right > picture { width: 45vw; height: auto; }
+    section.right > picture { width: 45vw; height: auto; }
     #headshot-img {
         margin: 5% 0;
         width: 45vw;
@@ -234,20 +234,20 @@
         text-align: center;
     }
 
-    #contact-content {
+    #contact {
         flex-direction: column;
         row-gap: 0.75rem;
         padding: 0 5%;
     }
 
-    .contact-section > a {
+    #contact > section > a {
         display: flex;
         flex-direction: row;
         align-items: center;
         column-gap: 0.75rem;
     }
 
-    #contact-header {
+    #contact > h3 {
         display: block;
         margin-top: 0.5em;
         width: 100%;

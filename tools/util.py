@@ -40,6 +40,18 @@ def inject_inline_css(path: str, body: str) -> str:
         body = body.replace(links[i], inline, 1)
     return body
 
+def inject_header(body: str) -> str:
+    return body.replace("%%HEADER%%",
+        """
+            <header>
+                <a id="home-anchor" class="no-select" href="/">T</a>
+                <a href="/resume/">Resume</a>
+                <a href="/projects/">Projects</a>
+                <a href="/bio/">About</a>
+            </header>
+        """
+    )
+
 ###############################################
 
 SHELL_COLORS = {

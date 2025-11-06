@@ -1,4 +1,4 @@
-#content-div {
+main {
     padding: 6vh 15% 15vh 15%;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     overflow-x: hidden;
@@ -28,9 +28,9 @@ ul a:active { color: var(--anchor-dark); }
 
 /* section wrapper styling */
 
-.section-wrapper { position: relative; }
+section { position: relative; }
 
-.section-wrapper > a {
+section > a {
     opacity: 0;
     position: absolute;
     top: 30%;
@@ -40,15 +40,15 @@ ul a:active { color: var(--anchor-dark); }
     cursor: pointer;
 }
 
-.section-wrapper > a > img {
+section > a > img {
     position: absolute;
     height: 1.33rem;
     top: 0.17rem;
 }
 
-.section-wrapper > a:focus-visible { opacity: 1; outline: none !important; }
-.section-wrapper > a:focus-visible > img { outline: 2px solid #fff; }
-.section-wrapper:hover > a { opacity: 1; }
+section > a:focus-visible { opacity: 1; outline: none !important; }
+section > a:focus-visible > img { outline: 2px solid #fff; }
+section:hover > a { opacity: 1; }
 
 h2 {
     margin-top: 0.67rem;
@@ -83,7 +83,7 @@ h2 {
 
 /* projects styling */
 
-.projects-row {
+.row {
     --height: 20rem;
 
     display: flex;
@@ -96,10 +96,10 @@ h2 {
     overflow-y: hidden;
 }
 
-.projects-row.hidden { display: none; }
+.row.hidden { display: none; }
 
-.projects-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
-.projects-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
+.row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
+.row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
 
 @keyframes projectsFadeIn {
     from {
@@ -185,22 +185,21 @@ h2 {
 /* mobile styling */
 
 @media screen and (orientation: portrait) {
-    #content-div { padding: 3vh 8% 8vh 8%; }
+    main { padding: 3vh 8% 8vh 8%; }
 
     h1 {
         font-size: 3rem;
         letter-spacing: 0.02em;
     }
 
-    .section-wrapper > a {
+    section > a {
         width: 1.75rem;
         left: -1.75rem;
     }
 }
 
-
 /* adjust padding on landscape mobiles */
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
-    #content-div { padding: 6vh 7% 15vh 7%; }
+    main { padding: 6vh 7% 15vh 7%; }
 }

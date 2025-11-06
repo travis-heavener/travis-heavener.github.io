@@ -27,7 +27,8 @@ if __name__ == "__main__":
         # Inject CSS
         contents = inject_inline_css(out_path, contents)
 
-        # Replace timestamp
+        # Replace header & timestamp
+        contents = inject_header(contents)
         contents = contents.replace("%%TIMESTAMP%%", gen_timestamp(include_top_anchor=True))
 
         # Write to new file

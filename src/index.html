@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
         >
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,22 +43,17 @@
         <script src="/js/globals.js" defer></script>
     </head>
     <body>
-        <div id="header-div">
-            <a id="home-anchor" class="header-anchor no-select" href="/">T</a>
-            <a class="header-anchor" href="/resume/">Resume</a>
-            <a class="header-anchor" href="/projects/">Projects</a>
-            <a class="header-anchor" href="/bio/">About</a>
-        </div>
-        <main id="content-div">
+        %%HEADER%%
+        <main>
             <div id="content-upper">
-                <div id="content-left">
+                <section class="left">
                     <h1 id="name-display">TRAVIS<br><span class="show-mobile">&nbsp;</span>HEAVENER</h1>
                     <div id="content-dot-wrapper">
                         <div></div><div></div><div></div>
                     </div>
                     <h2 id="job-title-display">Web Developer</h2>
-                </div>
-                <div id="content-right">
+                </section>
+                <section class="right">
                     <picture>
                         <source media="(max-width: 389px)" srcset="/res/headshot/128-147.webp 1x, /res/headshot/250-288.webp 2x, /res/headshot/400-460.webp 3x">
                         <source media="(max-width: 1919px)" srcset="/res/headshot/250-288.webp 1x, /res/headshot/400-460.webp 2x, /res/headshot/499-575.webp 3x">
@@ -68,16 +63,16 @@
                         <img id="headshot-img" src="/res/headshot/499-575.webp" fetchpriority="high" alt="Travis Heavener headshot image.">
                     </picture>
                     <a id="headshot-caption" href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
-                </div>
+                </section>
             </div>
             <div id="content-lower">
-                <div id="tagline-content">
+                <div id="tagline">
                     <p id="tagline-text">Focused, pragmatic full stack web developer and programmer.</p>
                     <a id="read-more-anchor" href="/bio/">Read full bio</a>
                 </div>
-                <div id="contact-content">
-                    <h3 id="contact-header">Get in Touch!</h3>
-                    <div class="contact-section">
+                <div id="contact">
+                    <h3>Get in Touch!</h3>
+                    <section>
                         <a href="https://github.com/travis-heavener" title="@travis-heavener on GitHub">
                             <svg id="gh-icon" class="contact-img no-select" viewBox="0 0 16 16">
                                 <path d="M8 0C3.6 0 0 3.6 0 8C0 11.5 2.3 14.5 5.5 15.6C5.9 15.7 6 15.4 6 15.2C6 15 6 14.4 6 13.7C4 14.1 3.5 13.2 3.3 12.8C3.2 12.6 2.8 11.8 2.5 11.6C2.2 11.5 1.8 11.1 2.5 11.1C3.1 11.1 3.6 11.7 3.7 11.9C4.4 13.2 5.6 12.8 6.1 12.6C6.1 12.1 6.3 11.7 6.6 11.5C4.8 11.3 2.9 10.6 2.9 7.6C2.9 6.7 3.2 6 3.7 5.4C3.7 5.2 3.4 4.4 3.8 3.3C3.8 3.3 4.5 3.1 6 4.1C6.7 4 7.3 3.9 8 3.9C8.7 3.9 9.4 4 10 4.1C11.6 3.1 12.2 3.3 12.2 3.3C12.7 4.4 12.4 5.2 12.3 5.4C12.8 6 13.1 6.7 13.1 7.6C13.1 10.6 11.2 11.3 9.5 11.5C9.8 11.8 10 12.3 10 13C10 14.1 10 14.9 10 15.2C10 15.4 10.2 15.7 10.6 15.6C13.7 14.5 16 11.5 16 8C16 3.6 12.4 0 8 0Z" fill="#fff"/>
@@ -85,8 +80,8 @@
                             </svg>
                             <span class="contact-text">@travis-heavener</span>
                         </a>
-                    </div>
-                    <div class="contact-section">
+                    </section>
+                    <section>
                         <a href="https://www.linkedin.com/in/travis-heavener" title="@travis-heavener on LinkedIn">
                             <svg id="linkedin-icon" class="contact-img no-select" viewBox="0 0 72 72">
                                 <path d="M62,62 L51.3,62 L51.3,43.8 C51.3,38.8 49.4,36 45.5,36 C41.2,36 38.9,38.9 38.9,43.8 L38.9,62 L28.6,62 L28.6,27.3 L38.9,27.3 L38.9,32 C38.9,32 42,26.3 49.4,26.3 C56.7,26.3 62,30.8 62,40.1 L62,62 Z M16.3,22.8 C12.8,22.8 10,19.9 10,16.4 C10,12.9 12.8,10 16.3,10 C19.9,10 22.7,12.9 22.7,16.4 C22.7,19.9 19.9,22.8 16.3,22.8 Z M11,62 L21.8,62 L21.8,27.3 L11,27.3 L11,62 Z" fill="#fff"/>
@@ -94,8 +89,8 @@
                             </svg>
                             <span class="contact-text">@travis-heavener</span>
                         </a>
-                    </div>
-                    <div class="contact-section">
+                    </section>
+                    <section>
                         <a href="mailto:travis@wowtravis.com" title="travis@wowtravis.com via Email">
                             <svg class="contact-img no-select" viewBox="0 0 512 512">
                                 <path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"/>
@@ -107,12 +102,12 @@
                             </svg>
                             <span class="contact-text">travis@wowtravis.com</span>
                         </a>
-                    </div>
+                    </section>
                 </div>
             </div>
         </main>
-        <div id="footer-div">
+        <footer>
             %%TIMESTAMP%%
-        </div>
+        </footer>
     </body>
 </html>
