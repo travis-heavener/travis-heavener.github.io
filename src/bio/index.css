@@ -14,22 +14,22 @@ h1 {
     text-shadow: 0.08em 0.06em 0.03em #0006;
 }
 
-hgroup > p {
+article > p {
     color: #d9d9d9;
     text-indent: 2em;
     font: 300 1.4rem/1.45em var(--Open-Sans);
 }
 
-hgroup > p:last-of-type { margin-top: 1.5em; }
+article > p:last-of-type { margin-top: 1.5em; }
 
-hgroup > p > a {
+article > p > a {
     color: var(--anchor-base);
     font-style: normal;
     transition: 0.1s color;
 }
 
-hgroup > p > a:hover { color: var(--anchor-lite); }
-hgroup > p > a:active { color: var(--anchor-dark); }
+article > p > a:hover { color: var(--anchor-lite); }
+article > p > a:active { color: var(--anchor-dark); }
 
 section {
     display: flex;
@@ -39,7 +39,7 @@ section {
 
 section:last-of-type { margin-top: 2.5rem; }
 
-hgroup {
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@ picture,
         row-gap: 3rem;
     }
 
-    hgroup > p { font-size: 1.15rem; }
+    article > p { font-size: 1.15rem; }
 
     section:last-of-type { flex-direction: column-reverse; }
 
