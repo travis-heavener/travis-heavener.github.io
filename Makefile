@@ -9,6 +9,7 @@ init:
 
 init_copy:
 	@cp -r "src/." "docs/"
+	@find docs -type f -name "*.css" -exec rm {} \;
 
 robots_txt:
 	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh
