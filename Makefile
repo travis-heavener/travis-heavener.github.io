@@ -9,7 +9,6 @@ init:
 
 init_copy:
 	@cp -r "src/." "docs/"
-	@find docs -type f -name "*.css" -exec rm {} \;
 
 robots_txt:
 	@chmod +x ./tools/fetch_robots_txt.sh && ./tools/fetch_robots_txt.sh
@@ -41,7 +40,9 @@ sitemap:
 	@echo "✅ Sitemap"
 
 minify:
+	@find docs -type f -name "*.css" -exec rm {} \;
+	@rmdir docs/css
 	@find ./docs/ -type f -name "*.js" -exec terser {} -o {} \;
-	@find ./docs/ -type f -name "*.css" -exec cleancss -o {} {} \;
 	@find ./docs/ -type f -name "*.html" -exec html-minifier-terser {} -o {} \
 		--collapse-whitespace --remove-comments --minify-css --use-short-doctype \;
+	@echo "✅ Minify"
