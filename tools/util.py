@@ -44,10 +44,10 @@ def inject_header(body: str) -> str:
     return body.replace("%%HEADER%%",
         """
             <header>
-                <a id="home-anchor" class="header-anchor no-select" href="/">T</a>
-                <a class="header-anchor" href="/resume/">Resume</a>
-                <a class="header-anchor" href="/projects/">Projects</a>
-                <a class="header-anchor" href="/bio/">About</a>
+                <a id="home-anchor" class="no-select" href="/">T</a>
+                <a href="/resume/">Resume</a>
+                <a href="/projects/">Projects</a>
+                <a href="/bio/">About</a>
             </header>
         """
     )

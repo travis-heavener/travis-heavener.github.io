@@ -75,7 +75,7 @@ header {
     background-color: #0005;
 }
 
-.header-anchor {
+header > a {
     height: 100%;
     padding: 0 1.25rem;
 
@@ -91,15 +91,15 @@ header {
     transition: 0.15s color, 0.15s font-weight, 0.15s letter-spacing;
 }
 
-.header-anchor:hover {
+header > a:hover {
     color: #fafafa;
     font-weight: 500;
 }
 
 /* mitigate layout shift from increasing font weight */
-.header-anchor:nth-child(2):hover { letter-spacing: -0.03em; }
-.header-anchor:nth-child(3):hover { letter-spacing: -0.025em; }
-.header-anchor:nth-child(4):hover { letter-spacing: -0.03em; }
+header > a:nth-child(2):hover { letter-spacing: -0.03em; }
+header > a:nth-child(3):hover { letter-spacing: -0.025em; }
+header > a:nth-child(4):hover { letter-spacing: -0.03em; }
 
 #home-anchor {
     position: absolute;
@@ -167,7 +167,7 @@ footer a:active { color: var(--anchor-dark); }
     }
     #home-anchor { left: 5%; }
     #home-anchor::after { content: ".H"; }
-    .header-anchor {
+    header > a {
         font-size: 1.25rem;
         padding: 0 0.5rem;
     }
