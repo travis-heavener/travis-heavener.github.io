@@ -83,7 +83,7 @@ h2 {
 
 /* projects styling */
 
-.projects-row {
+.row {
     --height: 20rem;
 
     display: flex;
@@ -96,10 +96,10 @@ h2 {
     overflow-y: hidden;
 }
 
-.projects-row.hidden { display: none; }
+.row.hidden { display: none; }
 
-.projects-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
-.projects-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
+.row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
+.row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
 
 @keyframes projectsFadeIn {
     from {

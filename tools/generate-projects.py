@@ -11,7 +11,7 @@ def gen_project_section(data: any, first_row: bool) -> str:
         + indent(3) + "</section>\n"
 
     # Add projects row
-    s += indent(3) + f"""<div class="projects-row{'' if first_row else ' hidden'}">\n"""
+    s += indent(3) + f"""<div class="row{'' if first_row else ' hidden'}">\n"""
 
     # Add each project
     for project in data["projects"]:
