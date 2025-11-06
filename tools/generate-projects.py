@@ -4,11 +4,11 @@ import os
 from util import *
 
 def gen_project_section(data: any, first_row: bool) -> str:
-    s = indent(3) + """<div class="section-wrapper">\n""" \
+    s = indent(3) + """<section>\n""" \
             + indent(4) + f"""<a href="#{data['year']}"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>\n""" \
             + indent(4) + f"""<h2 id="{data['year']}">{data['year']}</h2>\n""" \
             + indent(4) + f"""<img class="dropdown-icon{' active' if first_row else ''}" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">\n""" \
-        + indent(3) + "</div>\n"
+        + indent(3) + "</section>\n"
 
     # Add projects row
     s += indent(3) + f"""<div class="projects-row{'' if first_row else ' hidden'}">\n"""

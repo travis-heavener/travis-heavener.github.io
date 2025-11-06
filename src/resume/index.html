@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..600;0,700;1,300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
         >
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,13 +43,13 @@
         <script src="/js/globals.js" defer></script>
     </head>
     <body>
-        <div id="header-div">
+        <header>
             <a id="home-anchor" class="header-anchor no-select" href="/">T</a>
             <a class="header-anchor" href="/resume/">Resume</a>
             <a class="header-anchor" href="/projects/">Projects</a>
             <a class="header-anchor" href="/bio/">About</a>
-        </div>
-        <main id="content-div">
+        </header>
+        <main>
             <h1>Travis Heavener</h1>
             <a href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
             <a href="/Travis_Heavener_Resume.pdf">View as PDF</a>
@@ -57,43 +57,43 @@
                 <div></div><div></div><div></div>
             </div>
             
-            <div class="section-wrapper">
+            <section>
                 <a href="#education"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="education">Education</h2>
-            </div>
+            </section>
 
             %%EDUCATION%%
 
-            <div class="section-wrapper">
+            <section>
                 <a href="#experience"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="experience">Experience</h2>
-            </div>
+            </section>
 
             %%EXPERIENCE%%
 
-            <div class="section-wrapper">
+            <section>
                 <a href="#skills"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="skills">Skills</h2>
-            </div>
+            </section>
 
             %%SKILLS_LIST%%
 
-            <div class="section-wrapper">
+            <section>
                 <a href="#activities"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="activities">Activities</h2>
-            </div>
+            </section>
 
             %%ACTIVITIES%%
 
-            <div class="section-wrapper">
+            <section>
                 <a href="#accomplishments"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="accomplishments">Accomplishments</h2>
-            </div>
+            </section>
 
             %%ACCOMPLISHMENTS%%
         </main>
-        <div id="footer-div">
+        <footer>
             %%TIMESTAMP%%
-        </div>
+        </footer>
     </body>
 </html>

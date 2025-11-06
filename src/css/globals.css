@@ -61,7 +61,7 @@ body {
 
 /* header styling */
 
-#header-div {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@ body {
 
 /* footer styling */
 
-#footer-div {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,19 +116,19 @@ body {
     background-color: #0005;
 }
 
-#footer-div a,
-#footer-div p {
+footer a,
+footer p {
     color: #f3f3f3;
     font: 300 1.05rem var(--Open-Sans);
 }
 
-#footer-div a {
+footer a {
     color: var(--anchor-base);
     transition: 0.1s color;
 }
 
-#footer-div a:hover { color: var(--anchor-lite); }
-#footer-div a:active { color: var(--anchor-dark); }
+footer a:hover { color: var(--anchor-lite); }
+footer a:active { color: var(--anchor-dark); }
 
 /* connect dot styling */
 
@@ -156,7 +156,7 @@ body {
 @media screen and (orientation: portrait) {
     :root { font-size: 0.9rem; }
     body { background: linear-gradient(180deg, var(--g-dark) 0%, var(--g-lite) 100%); }
-    #header-div {
+    header {
         column-gap: 2rem;
         padding-right: 7%;
         justify-content: flex-end;

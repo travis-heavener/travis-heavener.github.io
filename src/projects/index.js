@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    for (const wrap of document.getElementsByClassName("section-wrapper")) {
+    for (const wrap of document.getElementsByTagName("section")) {
         // Bind click evts
         const projWrap = wrap.nextElementSibling;
         let timeout;
