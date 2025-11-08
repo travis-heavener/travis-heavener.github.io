@@ -25,3 +25,9 @@ The following URLs will redirect you to where you need to go ;)
 | This Repo | [wowtravis.com/this](https://wowtravis.com/this)               |
 
 Hint: try `curl wowtravis.com`!
+
+## Credits
+
+This portfolio is made possible by the following sources:
+
+- `robots.txt` is automatically fetched from https://github.com/ai-robots-txt/ai.robots.txt (see [licenses/ai_robots_txt_LICENSE.txt](licenses/ai_robots_txt_LICENSE.txt)).
