@@ -112,9 +112,6 @@ header > a:nth-child(4):hover { letter-spacing: -0.03em; }
 /* footer styling */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: var(--footer-height);
     background-color: #0005;
@@ -124,6 +121,8 @@ footer a,
 footer p {
     color: #f3f3f3;
     font: 300 1.05rem var(--Open-Sans);
+    line-height: var(--footer-height);
+    text-align: center;
 }
 
 footer a {
@@ -139,18 +138,16 @@ footer a:active { color: var(--anchor-dark); }
 #content-dot-wrapper { margin: 1rem 0; }
 
 #content-dot-wrapper > div {
-    --diameter: 1rem;
-    
     display: inline-block;
-    margin-left: calc(0.25 * var(--diameter));
-    width: var(--diameter);
-    height: var(--diameter);
+    margin-left: 0.25rem;
+    width: 1rem;
+    height: 1rem;
     background-color: var(--accent-dark);
     border-radius: 50%;
 }
 
 #content-dot-wrapper > div:not(:first-of-type) {
-    margin-left: calc(0.5 * var(--diameter));
+    margin-left: 0.5rem;
 }
 
 /* mobile styling */

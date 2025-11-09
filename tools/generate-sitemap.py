@@ -26,3 +26,5 @@ if __name__ == "__main__":
         # Write to new file
         with open("../docs/sitemap.xml", "w") as f:
             f.write(contents)
+    
+    print("✅ Sitemap")

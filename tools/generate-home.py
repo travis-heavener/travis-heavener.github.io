@@ -38,3 +38,5 @@ if __name__ == "__main__":
         # Write to new file
         with open("../docs/sh/index.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
+    
+    print("✅ Home")

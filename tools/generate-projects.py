@@ -151,3 +151,5 @@ if __name__ == "__main__":
         # Write to new file
         with open("../docs/sh/projects.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
+    
+    print("✅ Projects")
