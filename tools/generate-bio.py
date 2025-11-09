@@ -49,3 +49,5 @@ if __name__ == "__main__":
         # Write to new file
         with open("../docs/sh/bio.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
+    
+    print("✅ Bio")
