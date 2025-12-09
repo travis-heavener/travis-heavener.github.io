@@ -89,53 +89,52 @@
         "skills": [
             {
                 "name": "JavaScript",
-                "href": "/res/resume/skills/sheet.svg#js"
+                "href": "/res/resume/skills/sheet.svg?v=2#js"
             },
             {
                 "name": "TypeScript",
-                "href": "/res/resume/skills/sheet.svg#ts"
+                "href": "/res/resume/skills/sheet.svg?v=2#ts"
             },
             {
                 "name": "Node",
-                "href": "/res/resume/skills/sheet.svg#node"
+                "href": "/res/resume/skills/sheet.svg?v=2#node"
+            },
+            {
+                "name": "React",
+                "href": "/res/resume/skills/sheet.svg?v=2#react"
             },
             {
                 "name": "HTML5",
-                "href": "/res/resume/skills/sheet.svg#html"
+                "href": "/res/resume/skills/sheet.svg?v=2#html"
             },
             {
                 "name": "CSS3",
-                "href": "/res/resume/skills/sheet.svg#css"
+                "href": "/res/resume/skills/sheet.svg?v=2#css"
             },
             {
                 "name": "C++",
-                "href": "/res/resume/skills/sheet.svg#cpp"
+                "href": "/res/resume/skills/sheet.svg?v=2#cpp"
             },
             {
                 "name": "Python",
-                "href": "/res/resume/skills/sheet.svg#python"
+                "href": "/res/resume/skills/sheet.svg?v=2#python"
             },
             {
                 "name": "PHP",
-                "href": "/res/resume/skills/sheet.svg#php"
+                "href": "/res/resume/skills/sheet.svg?v=2#php"
             },
             {
                 "name": "MySQL",
-                "href": "/res/resume/skills/sheet.svg#mysql"
-            },
-            {
-                "name": "Apache",
-                "href": "/res/resume/skills/apache.webp",
-                "alt": "Apache logo."
-            },
-            {
-                "name": "RegEx",
-                "href": "/res/resume/skills/sheet.svg#regex"
+                "href": "/res/resume/skills/sheet.svg?v=2#mysql"
             },
             {
                 "name": "AWS",
-                "href": "/res/resume/skills/sheet.svg#aws",
+                "href": "/res/resume/skills/sheet.svg?v=2#aws",
                 "class": "skill-pad-white"
+            },
+            {
+                "name": "Azure",
+                "href": "/res/resume/skills/sheet.svg?v=2#azure"
             }
         ],
         "activities": [
@@ -167,7 +166,7 @@
         "accomplishments": [
             {
                 "title": "Rensselaer Polytechnic Institute Dean's Honor List",
-                "duration": "2023 &ndash; 2025"
+                "duration": "2023 &ndash; Present"
             },
             {
                 "title": "Lightridge High School All \"A\" Honor Roll",

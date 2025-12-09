@@ -34,8 +34,8 @@ def gen_skills_list(data: any) -> str:
     for skill in data:
         if ".svg" in skill["href"]:
             s += indent(4) + f"""<svg{'' if 'class' not in skill else f' class=\"{skill['class']}\"'}>\n""" \
-                + indent(5) + f"""<use href="{skill['href']}"></use>\n""" \
                 + indent(5) + f"""<title>{skill['name']}</title>\n""" \
+                + indent(5) + f"""<use href="{skill['href']}"></use>\n""" \
                 + indent(4) + "</svg>\n"
         else:
             s += indent(4) + f"""<img src="{skill['href']}" alt="{skill['alt']}">\n"""
