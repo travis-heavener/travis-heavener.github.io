@@ -61,7 +61,7 @@ picture,
 
 .bio-img {
     object-fit: cover;
-    background: var(--accent-darkest);
+    background: var(--accent-darker);
     border-radius: 0.25rem;
 }
 
