@@ -18,8 +18,8 @@
                 "href": "https://www.rpi.edu/",
                 "desc": "Troy, NY &mdash; May 2027<br>B.Sc. in IT & Web Science",
                 "img": {
-                    "srcset": "/res/resume/rpi/394-179.webp 1x, /res/resume/rpi/788-358.webp 2x",
-                    "default": "/res/resume/rpi/394-179.webp",
+                    "srcset": "/res/resume/rpi/394-179.webp?v=1 1x, /res/resume/rpi/788-358.webp?v=1 2x",
+                    "default": "/res/resume/rpi/394-179.webp?v=1",
                     "alt": "Photograph of an RPI residence hall."
                 }
             },
@@ -28,8 +28,8 @@
                 "href": "https://www.lcps.org/o/lrh",
                 "desc": "Aldie, VA &mdash; June 2023<br>Advanced Studies Diploma",
                 "img": {
-                    "srcset": "/res/resume/lrhs/394-179.webp 1x, /res/resume/lrhs/788-358.webp 2x",
-                    "default": "/res/resume/lrhs/394-179.webp",
+                    "srcset": "/res/resume/lrhs/394-179.webp?v=1 1x, /res/resume/lrhs/788-358.webp?v=1 2x",
+                    "default": "/res/resume/lrhs/394-179.webp?v=1",
                     "alt": "Photograph of Lightridge High School being struck by lightning."
                 }
             },
@@ -38,8 +38,8 @@
                 "href": "https://www.lcps.org/o/acl",
                 "desc": "Ashburn, VA &mdash; June 2023<br>Completed four-year IT program",
                 "img": {
-                    "srcset": "/res/resume/acl/394-179.webp 1x, /res/resume/acl/788-358.webp 2x",
-                    "default": "/res/resume/acl/394-179.webp",
+                    "srcset": "/res/resume/acl/394-179.webp?v=1 1x, /res/resume/acl/788-358.webp?v=1 2x",
+                    "default": "/res/resume/acl/394-179.webp?v=1",
                     "alt": "Oil painting of the Academies of Loudoun."
                 }
             }
