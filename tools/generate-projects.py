@@ -108,18 +108,18 @@ if __name__ == "__main__":
         # Read file
         contents = f.read()
 
-        # Create table of contents
-        contents = contents.replace(
-            "%%TABLE_OF_CONTENTS%%",
-            "\n".join([indent(5) + f"<li><a href=\"#{y['year']}\">{y['year']}</a></li>" for y in data])
-                [20:] # Remove extra leading whitespace w/ [20:]
-        )
+        # Isolate featured projects
+        featured_projects = {
+            "year": "Featured",
+            "projects": [ p for year in data for p in year["projects"] if ("featured" in p and p["featured"]) ]
+        }
 
         # Load projects by year
         contents = contents.replace(
             "%%PROJECTS%%",
-            "\n".join([gen_project_section(year, i == 0) for i, year in enumerate(data)])
-                [12:] # Remove extra leading whitespace w/ [12:]
+            gen_project_section(featured_projects, True) + "\n" + \
+                "\n".join([gen_project_section(year, False) for year in data])
+                    [12:] # Remove extra leading whitespace w/ [12:]
         )
 
         # Inject CSS

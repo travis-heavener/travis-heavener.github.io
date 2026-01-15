@@ -205,6 +205,7 @@
                     "href": "https://wowtravis.com/mercury",
                     "desc": "A lightweight, configurable HTTP server made in C++ for Windows and Linux.",
                     "shortDesc": "A lightweight, C++ HTTP server for Windows & Linux.",
+                    "featured": true,
                     "imgs": [
                         {
                             "src": "/res/projects/mercury/thumb1.webp",
@@ -272,6 +273,7 @@
                     "href": "https://github.com/travis-heavener/tpu2",
                     "desc": "An 8086-inspired, emulated CPU & OS with its own C-style programming language, \"T\".",
                     "shortDesc": "8086-like CPU/OS emulator w/ custom C-style language.",
+                    "featured": true,
                     "imgs": [
                         {
                             "src": "/res/projects/tpu2/thumb1.webp",
@@ -285,6 +287,7 @@
                     "href": "https://github.com/travis-heavener/mini-server-2.x",
                     "desc": "A web UI for a custom home media, movie, and file server, complete with a user suite.",
                     "shortDesc": "Web UI for a custom home media and file server.",
+                    "featured": true,
                     "imgs": [
                         {
                             "src": "/res/projects/mini/thumb1.webp",
@@ -357,6 +360,7 @@
                     "href": "https://github.com/travis-heavener/seniorresearch",
                     "desc": "An Android app that promotes physical activity via digital bingo cards.",
                     "shortDesc": "React Native exercise app using digital bingo cards.",
+                    "featured": true,
                     "imgs": [
                         {
                             "src": "/res/projects/bingo/thumb1.webp",
