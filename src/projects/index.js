@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
 
-        wrap.addEventListener("click", e => (e.target === wrap.children[1] || e.target === wrap.children[2]) && toggleFocus());
+        wrap.addEventListener("click", e => (e.target === wrap || e.target === wrap.children[1] || e.target === wrap.children[2]) ? toggleFocus() : null);
         wrap.children[2].addEventListener("keyup", e => e.code === "Enter" && toggleFocus());
     }
 });

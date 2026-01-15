@@ -5,8 +5,8 @@ from util import *
 
 def gen_project_section(data: any, first_row: bool) -> str:
     s = indent(3) + """<section>\n""" \
-            + indent(4) + f"""<a href="#{data['year']}"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>\n""" \
-            + indent(4) + f"""<h2 id="{data['year']}">{data['year']}</h2>\n""" \
+            + indent(4) + f"""<a href="#{data['year'].replace("&ndash;", "-")}"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>\n""" \
+            + indent(4) + f"""<h2 id="{data['year'].replace("&ndash;", "-")}">{data['year']}</h2>\n""" \
             + indent(4) + f"""<img class="dropdown-icon{' active' if first_row else ''}" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">\n""" \
         + indent(3) + "</section>\n"
 
@@ -108,18 +108,27 @@ if __name__ == "__main__":
         # Read file
         contents = f.read()
 
-        # Create table of contents
-        contents = contents.replace(
-            "%%TABLE_OF_CONTENTS%%",
-            "\n".join([indent(5) + f"<li><a href=\"#{y['year']}\">{y['year']}</a></li>" for y in data])
-                [20:] # Remove extra leading whitespace w/ [20:]
-        )
+        # Isolate featured projects
+        featured_projects = {
+            "year": "Featured",
+            "projects": [ p for year in data for p in year["projects"] if ("featured" in p and p["featured"]) ]
+        }
+
+        # Group small years (2020-2023)
+        years = []
+        for y in data:
+            if y["year"] == "2020" or y["year"] == "2022":
+                years[-1]["projects"].extend(y["projects"])
+                years[-1]["year"] = "2020&ndash;2023"
+            else:
+                years.append(y)
 
         # Load projects by year
         contents = contents.replace(
             "%%PROJECTS%%",
-            "\n".join([gen_project_section(year, i == 0) for i, year in enumerate(data)])
-                [12:] # Remove extra leading whitespace w/ [12:]
+            gen_project_section(featured_projects, True) + "\n" + \
+                "\n".join([gen_project_section(year, False) for year in years])
+                    [12:] # Remove extra leading whitespace w/ [12:]
         )
 
         # Inject CSS
