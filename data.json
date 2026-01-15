@@ -180,6 +180,24 @@
     },
     "projects": [
         {
+            "year": "2026",
+            "projects": [
+                {
+                    "title": "MangoManager",
+                    "href": "https://github.com/travis-heavener/mangomanager",
+                    "desc": "A LAN-based hardware monitor made using Express & web sockets.",
+                    "shortDesc": "LAN hardware monitor made w/ Express & web sockets.",
+                    "imgs": [
+                        {
+                            "src": "/res/projects/mangomanager/thumb1.webp",
+                            "alt": "Icon for the MangoManager hardware monitor.",
+                            "loading": "eager"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "year": "2025",
             "projects": [
                 {
