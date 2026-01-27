@@ -29,7 +29,7 @@ def gen_education_experience(data: any) -> str:
     return s[12:] # Remove extra leading whitespace w/ [12:]
 
 def gen_skills_list(data: any) -> str:
-    s = indent(3) + """<div id="skills-list">\n"""
+    s = indent(3) + """<div class="icon-list">\n"""
 
     for skill in data:
         if ".svg" in skill["href"]:
@@ -41,6 +41,37 @@ def gen_skills_list(data: any) -> str:
             s += indent(4) + f"""<img src="{skill['href']}" alt="{skill['alt']}">\n"""
 
     s += indent(3) + """</div>\n"""
+    return s[12:] # Remove extra leading whitespace w/ [12:]
+
+def gen_certs_list(data: any) -> str:
+    s = ""
+
+    has_completed = False in [ c['inProgress'] for c in data ]
+    has_in_progress = True in [ c['inProgress'] for c in data ]
+
+    # Check for owned certs
+    if has_completed:
+        if has_in_progress:
+            s += indent(3) + f"""<h3>Completed</h3>\n"""
+        s += indent(3) + """<div class="icon-list large">\n"""
+
+        for cert in data:
+            if not cert['inProgress']:
+                s += indent(4) + f"""<img src="{cert['href']}" alt="{cert['name']}">\n"""
+
+        s += indent(3) + """</div>\n"""
+
+    # Check for in-progress certs
+    if has_in_progress:
+        s += indent(3) + f"""<h3>In Progress</h3>\n""" \
+            + indent(3) + """<div class="icon-list large">\n"""
+
+        for cert in data:
+            if cert['inProgress']:
+                s += indent(4) + f"""<img src="{cert['href']}" alt="{cert['name']}">\n"""
+
+        s += indent(3) + """</div>\n"""
+
     return s[12:] # Remove extra leading whitespace w/ [12:]
 
 def gen_activities_accomplishments(data: any) -> str:
@@ -78,6 +109,7 @@ if __name__ == "__main__":
 
         # Load skills list
         contents = contents.replace("%%SKILLS_LIST%%", gen_skills_list(data["skills"]))
+        contents = contents.replace("%%CERTIFICATIONS%%", gen_certs_list(data["certifications"]))
 
         # Load activities & accomplishments
         contents = contents.replace("%%ACTIVITIES%%", gen_activities_accomplishments(data["activities"]))

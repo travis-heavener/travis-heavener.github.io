@@ -137,6 +137,18 @@
                 "href": "/res/resume/skills/sheet.svg?v=2#azure"
             }
         ],
+        "certifications": [
+            {
+                "name": "CompTIA Security+", "inProgress": true,
+                "expected": "May 2026",
+                "href": "/res/resume/certs/security_plus.webp"
+            },
+            {
+                "name": "AWS Certified Cloud Practitioner", "inProgress": true,
+                "expected": "Aug 2026",
+                "href": "/res/resume/certs/aws_ccp.webp"
+            }
+        ],
         "activities": [
             {
                 "title": "Private code tutoring",
@@ -147,20 +159,12 @@
                 "duration": "2023"
             },
             {
-                "title": "Lightridge High School Car Club",
-                "duration": "2022 &ndash; 2023"
-            },
-            {
                 "title": "Computer Science Honor Society",
                 "duration": "2021 &ndash; 2023"
             },
             {
                 "title": "Latin Club",
                 "duration": "2018 &ndash; 2023"
-            },
-            {
-                "title": "Lenah Run Summer Swim Team",
-                "duration": "2018 &ndash; 2022"
             }
         ],
         "accomplishments": [
