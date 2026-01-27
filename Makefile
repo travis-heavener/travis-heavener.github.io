@@ -1,8 +1,12 @@
 SHELL := /bin/bash
 
-.PHONY: all init clean
+.PHONY: init clean
 
-all:
+TARGETS := $(shell find ./src -type f | tr '\n' ' ')
+
+all: ./docs/CNAME
+
+./docs/CNAME: $(TARGETS)
 	@make clean --no-print-directory
 	@cp -r "src/." "docs/"
 
