@@ -11,9 +11,13 @@ Travis Heavener (HEAVE-nur) is currently a third year student at Rensselaer Poly
 
 From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
 
-> I am a self-driven full-stack web developer and CS enthusiast currently studying Information Technology and Web Science (ITWS) at Rensselaer Polytechnic Institute. I have a deep passion for programming and spend much of my free time working on various projects and enjoying time with friends. I have gained valuable hands-on experience during my IT internship with Next Phase Solutions and Services in Columbia, MD in the summers of 2023 and 2025. Additionally, I honed my customer service skills at Hammerdown BBQ from 2020 to 2023, with a brief return in 2024.
+> I'm a third-year student at Rensselaer Polytechnic Institute studying IT & Web Science, with a strong interest in building performant, scalable software systems. I've been programming since age twelve and have pursued both academic and independent projects across full-stack development, server programming, and systems engineering.
 > 
-> I have extensive experience with JavaScript and overall web development, and solid backend skills in C++, Python, and Java. Proficient in AWS services including DynamoDB, API Gateway, Lambda, and EC2.
+> I'm the developer of Mercury, a cross-platform, RFC-compliant HTTP server written in C++, and BinGo, a gamified Android application built with React Native that encourages physical activity through reward-driven progression. While my primary focus is web and backend development, I actively seek out low-level and systems-oriented projects to broaden my skill set.
+> 
+> Beyond software development, I've gained professional experience through IT internships with Next Phase Solutions and Services in 2023 and 2025, where I worked with cloud infrastructure, networking, and cybersecurity. Earlier roles in customer-facing environments helped shape my communication, leadership, and problem-solving skills.
+> 
+> Outside of work, I'm a longtime swimmer, amateur photographer, and computer enthusiast who enjoys learning by building.
 
 ## Special URLs
 The following URLs will redirect you to where you need to go ;)
