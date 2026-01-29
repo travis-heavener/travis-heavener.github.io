@@ -52,7 +52,7 @@ def gen_certs_list(data: any) -> str:
     # Check for owned certs
     if has_completed:
         if has_in_progress:
-            s += indent(3) + f"""<h3>Completed</h3>\n"""
+            s += indent(3) + f"""<h3 class="certs">Completed</h3>\n"""
         s += indent(3) + """<div class="icon-list large">\n"""
 
         for cert in data:
@@ -63,7 +63,7 @@ def gen_certs_list(data: any) -> str:
 
     # Check for in-progress certs
     if has_in_progress:
-        s += indent(3) + f"""<h3>In Progress</h3>\n""" \
+        s += indent(3) + f"""<h3 class="certs">In Progress</h3>\n""" \
             + indent(3) + """<div class="icon-list large">\n"""
 
         for cert in data:
