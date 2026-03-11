@@ -80,6 +80,11 @@ SHELL_COLORS = {
 }
 
 def escape_shell_colors(body: str) -> str:
+    # Clear formatting at end of line (EXCEPT last line)
+    body = body[:-1].replace("\n", "\033[00m\n%A") + "\033[00m\n"
+
+    # Iterate over colors
     for k, v in SHELL_COLORS.items():
         body = re.sub(rf"(?<!%){k}", v, body)
+
     return body
