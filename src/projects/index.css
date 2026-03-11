@@ -179,8 +179,8 @@ h2 {
 .slideshow-3 .project-img:nth-child(3) { animation-delay: calc(var(--anim-dur) / -3); }
 
 @keyframes slideshow3 {
-     0%, 30%, 100% { opacity: 1; }
-    33%, 97% { opacity: 0; }
+     0%, 30%, 100% { opacity: 1; pointer-events: all; }
+    33%, 97% { opacity: 0; pointer-events: none; }
 }
 
 /* mobile styling */
