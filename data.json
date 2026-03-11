@@ -198,6 +198,20 @@
                             "loading": "eager"
                         }
                     ]
+                },
+                {
+                    "title": "TPU3",
+                    "href": "https://github.com/travis-heavener/tpu3",
+                    "desc": "A 32-bit emulation of a CPU with a custom ISA and minimal preset kernel image.",
+                    "shortDesc": "32-bit CPU/OS emulator w/ custom ISA and kernel.",
+                    "featured": true,
+                    "imgs": [
+                        {
+                            "src": "/res/projects/tpu3/thumb1.webp",
+                            "alt": "Screenshot of the TPU's Operating System's kernel program.",
+                            "loading": "eager"
+                        }
+                    ]
                 }
             ]
         },
@@ -277,7 +291,6 @@
                     "href": "https://github.com/travis-heavener/tpu2",
                     "desc": "An 8086-inspired, emulated CPU & OS with its own C-style programming language, \"T\".",
                     "shortDesc": "8086-like CPU/OS emulator w/ custom C-style language.",
-                    "featured": true,
                     "imgs": [
                         {
                             "src": "/res/projects/tpu2/thumb1.webp",
