@@ -115,19 +115,19 @@ if __name__ == "__main__":
         }
 
         # Group small years (2020-2023)
-        years = []
+        formatted_years = []
         for y in data:
             if y["year"] == "2020" or y["year"] == "2022":
-                years[-1]["projects"].extend(y["projects"])
-                years[-1]["year"] = "2020&ndash;2023"
+                formatted_years[-1]["projects"].extend(y["projects"])
+                formatted_years[-1]["year"] = "2020&ndash;2023"
             else:
-                years.append(y)
+                formatted_years.append({**y}) # Copy dict
 
         # Load projects by year
         contents = contents.replace(
             "%%PROJECTS%%",
             gen_project_section(featured_projects, True) + "\n" + \
-                "\n".join([gen_project_section(year, False) for year in years])
+                "\n".join([gen_project_section(year, False) for year in formatted_years])
                     [12:] # Remove extra leading whitespace w/ [12:]
         )
 
