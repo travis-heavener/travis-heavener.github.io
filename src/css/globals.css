@@ -152,7 +152,7 @@ footer a:active { color: var(--anchor-dark); }
 
 /* mobile styling */
 
-@media screen and (orientation: landscape) and (max-width: 900px) { :root { font-size: 0.75rem; } }
+@media screen and (orientation: landscape) and (max-width: 900px) and (pointer: coarse) { :root { font-size: 0.75rem; } }
 
 @media screen and (orientation: portrait) {
     :root { font-size: 0.9rem; }
