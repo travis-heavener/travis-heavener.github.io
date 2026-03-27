@@ -1,15 +1,3 @@
-ul li {
-    margin-left: 1.5em;
-    color: #e2e2e2;
-    font: 700 1.25rem/1.5em var(--Open-Sans);
-    text-shadow: 0.1em 0.05em 0 #0006;
-}
-
-ul a { text-decoration: underline }
-
-ul a:hover { color: var(--anchor-lite); }
-ul a:active { color: var(--anchor-dark); }
-
 /* Section header styles */
 
 section { cursor: pointer }
@@ -41,8 +29,11 @@ section:has(:target) .dropdown-icon {
 /* Content card styles */
 
 label {
-    display: block;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     cursor: pointer;
 }
 
