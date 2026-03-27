@@ -177,6 +177,20 @@ def minify_css(text: str) -> str:
 
     return text.strip()
 
+# Simple JS minifier
+def minify_js(text: str) -> str:
+    # Remove comments
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.DOTALL)
+    text = re.sub(r"//.*", "", text)
+
+    # Remove whitespace around symbols
+    text = re.sub(r"\s*([{};,:=+\-*/()<>])\s*", r"\1", text)
+
+    # Remove remaining whitespace
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
+
 # Minifies HTML, CSS, and JS files in-place
 def minify() -> None:
     # Get files
@@ -208,7 +222,7 @@ def minify() -> None:
     for file in js_files:
         # Read & minify
         text = file.read_text()
-        # text = rjsmin.jsmin(text)
+        text = minify_js(text)
 
         # Write (truncated)
         with open(file, "w") as f:
