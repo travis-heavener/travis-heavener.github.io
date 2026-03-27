@@ -28,8 +28,6 @@ The following URLs will redirect you to where you need to go ;)
 | GitHub    | [wowtravis.com/my/github](https://wowtravis.com/my/github)     |
 | This Repo | [wowtravis.com/this](https://wowtravis.com/this)               |
 
-Hint: try `curl wowtravis.com`!
-
 ## Credits
 
 This portfolio is made possible by the following sources:
