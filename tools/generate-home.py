@@ -8,7 +8,7 @@ if __name__ == "__main__":
     os.chdir( os.path.dirname(os.path.abspath(__file__)) )
 
     # Update timestamp
-    out_path = "../docs/index.html"
+    out_path = "../public/index.html"
     with open("../src/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -36,7 +36,7 @@ if __name__ == "__main__":
         contents = escape_shell_colors(contents)
 
         # Write to new file
-        with open("../docs/sh/index.txt", "w") as f:
+        with open("../public/sh/index.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
     
     print("✅ Home")

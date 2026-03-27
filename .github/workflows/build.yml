@@ -11,7 +11,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       #################### BUILD ####################
       - name: Install APT Deps
@@ -27,16 +27,27 @@ jobs:
       - name: W3 Validate HTML
         uses: anishathalye/proof-html@v2
         with:
-          directory: ./docs/
+          directory: ./public/
           enforce_https: false
           disable_external: true
 
-      #################### PUSH ####################
-      - name: "Push Changes"
-        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
-        run: |
-          git config user.name "Travis Heavener"
-          git config user.email "travis.heavener@gmail.com"
-          git add -f docs
-          git commit -m "Automated minification of ${{ github.sha }}"
-          git push --force -u origin main:gh-pages
+      #################### UPLOAD ####################
+      - name: Upload Pages Artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+  Deploy:
+    needs: Build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name Deploy to GitHub pages
+        id: deployment
+        uses: actions/deploy-pages@v4

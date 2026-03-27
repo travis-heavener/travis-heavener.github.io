@@ -4,11 +4,11 @@ SHELL := /bin/bash
 
 TARGETS := $(shell find ./src -type f | tr '\n' ' ')
 
-all: ./docs/CNAME
+all: ./public/CNAME
 
-./docs/CNAME: $(TARGETS)
+./public/CNAME: $(TARGETS)
 	@make clean --no-print-directory
-	@cp -r "src/." "docs/"
+	@cp -r "src/." "public/"
 
 	@python3 ./tools/generate-home.py
 	@python3 ./tools/generate-resume.py
@@ -23,7 +23,7 @@ init:
 	@sudo apt install terser html-minifier-terser cleancss -y 1> /dev/null
 
 clean:
-	@if [ -d "docs" ]; then \
-		rm -rf "docs"; \
+	@if [ -d "public" ]; then \
+		rm -rf "public"; \
 	fi
-	@mkdir "docs"
+	@mkdir "public"

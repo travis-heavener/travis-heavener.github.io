@@ -98,7 +98,7 @@ if __name__ == "__main__":
         data = json.load(f)["resume"]
 
     # Update timestamp
-    out_path = "../docs/resume/index.html"
+    out_path = "../public/resume/index.html"
     with open("../src/resume/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -160,7 +160,7 @@ if __name__ == "__main__":
         contents = escape_shell_colors(contents)
 
         # Write to new file
-        with open("../docs/sh/resume.txt", "w") as f:
+        with open("../public/sh/resume.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
     
     print("✅ Resume")

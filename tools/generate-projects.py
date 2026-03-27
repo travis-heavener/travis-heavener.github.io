@@ -103,7 +103,7 @@ if __name__ == "__main__":
         data = json.load(f)["projects"]
 
     # Update timestamp
-    out_path = "../docs/projects/index.html"
+    out_path = "../public/projects/index.html"
     with open("../src/projects/index.html", "r") as f:
         # Read file
         contents = f.read()
@@ -158,7 +158,7 @@ if __name__ == "__main__":
         contents = escape_shell_colors(contents)
 
         # Write to new file
-        with open("../docs/sh/projects.txt", "w") as f:
+        with open("../public/sh/projects.txt", "w") as f:
             f.write(contents + "\033[0m") # Clear ALL formatting
     
     print("✅ Projects")

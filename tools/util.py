@@ -30,7 +30,7 @@ def inject_inline_css(path: str, body: str) -> str:
 
     # Find resource directory
     res_dir = path[:path.rfind("/")+1]
-    paths = [("../docs" + href) if href[0] == "/" else (res_dir + href) for href in hrefs]
+    paths = [("../public" + href) if href[0] == "/" else (res_dir + href) for href in hrefs]
 
     for i in range(len(links)):
         inline = "<style>"
