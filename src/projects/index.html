@@ -1,43 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <SharedMetaTags />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-        >
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Travis Heavener">
-        <meta name="description" content="Explore the innovative projects of Travis Heavener, including the Mercury HTTP server, TPU2 emulator, and extensive full-stack development work.">
         <link rel="canonical" href="https://wowtravis.com/projects/">
-        <meta name="robots" content="all">
-        
-        <link rel="icon" href="/res/icons/favicon.png?v=1">
-        
+        <meta name="description" content="Explore the innovative projects of Travis Heavener, including the Mercury HTTP server, TPU2 emulator, and extensive full-stack development work.">
         <meta property="og:title" content="Projects - Travis Heavener">
         <meta property="og:description" content="Explore the innovative projects of Travis Heavener, including the Mercury HTTP server, TPU2 emulator, and extensive full-stack development work.">
-        <meta property="og:site_name" content="Travis Heavener's Digital Portfolio">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://wowtravis.com/">
-        <meta property="og:image" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:secure_url" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:alt" content="Letters 'T' and 'H' for Travis Heavener's site logo">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
 
         <title>Projects - Travis Heavener</title>
 
-        <noscript>
-            <link rel="stylesheet" type="text/css"
-                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-            >
-        </noscript>
-
-        <link rel="stylesheet" href="/css/globals.css">
         <link rel="stylesheet" href="index.css">
         <noscript>
             <style>
@@ -47,22 +19,20 @@
                 .row.hidden { display: flex }
             </style>
         </noscript>
-
-        <script src="/js/globals.js" defer></script>
         <script src="index.js" defer></script>
     </head>
     <body>
-        %%HEADER%%
+        <Header />
         <main>
             <h1>Projects</h1>
-            <div id="content-dot-wrapper">
-                <div></div><div></div><div></div>
-            </div>
+            <Dots />
 
-            %%PROJECTS%%
+            <Projects.Featured />
+            <Projects.2026 />
+            <Projects.2025 />
+            <Projects.2024 />
+            <Projects.2020-2023 />
         </main>
-        <footer>
-            %%TIMESTAMP%%
-        </footer>
+        <Footer />
     </body>
 </html>

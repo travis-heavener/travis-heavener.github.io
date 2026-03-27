@@ -1,101 +1,67 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <SharedMetaTags />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-        >
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Travis Heavener">
-        <meta name="description" content="Discover the professional journey of Travis Heavener, ITWS student at RPI, a full-stack developer and strong collaborator with a robust work ethic.">
         <link rel="canonical" href="https://wowtravis.com/resume/">
-        <meta name="robots" content="all">
-
-        <link rel="icon" href="/res/icons/favicon.png?v=1">
-
+        <meta name="description" content="Discover the professional journey of Travis Heavener, ITWS student at RPI, a full-stack developer and strong collaborator with a robust work ethic.">
         <meta property="og:title" content="Resume - Travis Heavener">
         <meta property="og:description" content="Discover the professional journey of Travis Heavener, ITWS student at RPI, a full-stack developer and strong collaborator with a robust work ethic.">
-        <meta property="og:site_name" content="Travis Heavener's Digital Portfolio">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://wowtravis.com/">
-        <meta property="og:image" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:secure_url" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:alt" content="Letters 'T' and 'H' for Travis Heavener's site logo">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
 
         <title>Resume - Travis Heavener</title>
 
-        <noscript>
-            <link rel="stylesheet" type="text/css"
-                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-            >
-        </noscript>
-
-        <link rel="stylesheet" href="/css/globals.css">
         <link rel="stylesheet" href="index.css">
-
-        <script src="/js/globals.js" defer></script>
     </head>
     <body>
-        %%HEADER%%
+        <Header />
         <main>
             <h1>Travis Heavener</h1>
             <a href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
             <a href="/Travis_Heavener_Resume.pdf?v=2">View as PDF</a>
-            <div id="content-dot-wrapper">
-                <div></div><div></div><div></div>
-            </div>
+            <Dots />
             
             <section>
                 <a href="#education"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="education">Education</h2>
             </section>
 
-            %%EDUCATION%%
+            <Resume.Education />
 
             <section>
                 <a href="#experience"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="experience">Experience</h2>
             </section>
 
-            %%EXPERIENCE%%
+            <Resume.Experience />
 
             <section>
                 <a href="#skills"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="skills">Skills</h2>
             </section>
 
-            %%SKILLS_LIST%%
+            <Resume.Skills />
 
             <section>
                 <a href="#certifications"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="certifications">Certifications</h2>
             </section>
 
-            %%CERTIFICATIONS%%
+            <Resume.Certifications />
 
             <section>
                 <a href="#activities"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="activities">Activities</h2>
             </section>
 
-            %%ACTIVITIES%%
+            <Resume.Activities />
 
             <section>
                 <a href="#accomplishments"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
                 <h2 id="accomplishments">Accomplishments</h2>
             </section>
 
-            %%ACCOMPLISHMENTS%%
+            <Resume.Accomplishments />
         </main>
-        <footer>
-            %%TIMESTAMP%%
-        </footer>
+        <Footer />
     </body>
 </html>

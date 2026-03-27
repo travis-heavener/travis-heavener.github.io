@@ -1,63 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <SharedMetaTags />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'"
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-        >
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Travis Heavener">
-        <meta name="description" content="Meet Travis Heavener, an ITWS student at RPI, dedicated full-stack developer and experienced programmer passionate about technology and collaboration.">
         <link rel="canonical" href="https://wowtravis.com/bio/">
-        <meta name="robots" content="all">
-        
-        <link rel="icon" href="/res/icons/favicon.png?v=1">
-        
+        <meta name="description" content="Meet Travis Heavener, an ITWS student at RPI, dedicated full-stack developer and experienced programmer passionate about technology and collaboration.">
         <meta property="og:title" content="About - Travis Heavener">
         <meta property="og:description" content="Meet Travis Heavener, an ITWS student at RPI, dedicated full-stack developer and experienced programmer passionate about technology and collaboration.">
-        <meta property="og:site_name" content="Travis Heavener's Digital Portfolio">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://wowtravis.com/">
-        <meta property="og:image" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:secure_url" content="https://wowtravis.com/res/icons/site.jpg">
-        <meta property="og:image:alt" content="Letters 'T' and 'H' for Travis Heavener's site logo">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
 
         <title>About - Travis Heavener</title>
 
-        <noscript>
-            <link rel="stylesheet" type="text/css"
-                href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300..700&display=swap"
-            >
-        </noscript>
-
-        <link rel="stylesheet" href="/css/globals.css">
         <link rel="stylesheet" href="index.css">
-
-        <script src="/js/globals.js" defer></script>
     </head>
     <body>
-        %%HEADER%%
+        <Header />
         <main>
             <h1>About</h1>
-            <div id="content-dot-wrapper">
-                <div></div><div></div><div></div>
-            </div>
+            <Dots />
             <section>
-                <article>
-                    <p>
-                        %%PARAGRAPH 1.1%%
-                    </p>
-                    <p>
-                        %%PARAGRAPH 1.2%%
-                    </p>
-                </article>
+                <Bio.Paragraph1 />
                 <div id="slideshow-2">
                     <picture class="show-mobile">
                         <source media="(max-width: 389px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
@@ -86,18 +47,9 @@
                     <source media="(min-width: 5600px)" srcset="/res/bio/bio-2/1000-1538.webp?v=2">
                     <img class="bio-img" src="/res/bio/bio-2/1000-1538.webp?v=2" alt="A photo of Travis Heavener smiling in a white polo and green sweater.">
                 </picture>
-                <article>
-                    <p>
-                        %%PARAGRAPH 2.1%%
-                    </p>
-                    <p>
-                        %%PARAGRAPH 2.2%%
-                    </p>
-                </article>
+                <Bio.Paragraph2 />
             </section>
         </main>
-        <footer>
-            %%TIMESTAMP%%
-        </footer>
+        <Footer />
     </body>
 </html>
