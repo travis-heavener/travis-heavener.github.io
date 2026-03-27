@@ -3,7 +3,7 @@
 const catchHashChange = () => {
     // Clear hash when toggling checkbox
     if (location.hash) {
-        const checkbox = document.getElementById(location.hash.substring(1)).parentElement.parentElement.nextSibling;
+        const checkbox = document.getElementById(location.hash.substring(1)).parentElement.nextSibling;
         checkbox.addEventListener("change", () => {
             // Force close the checkbox content & remove hash
             checkbox.checked = false;
