@@ -126,6 +126,8 @@ def build_sitemap(files: tuple[str]) -> None:
             pretty_path = file[(2 if file.startswith("./") else 0):][7:] \
                 .replace("index.html", "")
 
+            if pretty_path == "404.html": continue
+
             # Calculate index priority
             priority = max(0.2, 1 - 0.2 * pretty_path.count("/"))
 

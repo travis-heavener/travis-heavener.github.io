@@ -1,0 +1,98 @@
+h2 {
+    color: var(--text-base);
+    font: 400 2.5rem/1.5em var(--Anton);
+    text-shadow: 0.08em 0.06em 0.03em #0006;
+    text-decoration-color: var(--accent-dark); /* Safari fix for shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 2px;
+}
+
+/* Section headers */
+
+section { position: relative }
+section > a:focus-visible { opacity: 1; outline: none !important }
+section > a:focus-visible > img { outline: 2px solid #fff }
+section:hover > a { opacity: 1 }
+
+section > a {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    width: 2.25rem;
+    left: -2.25rem;
+    height: 1.67rem;
+}
+
+section > a > img {
+    position: absolute;
+    height: 1.33rem;
+    top: 0.17rem;
+}
+
+/* Content cards */
+
+.card-row {
+    display: flex;
+    column-gap: 1rem;
+    margin: 0 -0.67rem 1.25rem -0.67rem;
+    padding: 0.67rem;
+    width: calc(100% + 1.33rem);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.card-div {
+    --border-width: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: var(--width);
+    max-width: var(--width);
+    height: var(--height);
+
+    background: #fff2;
+    box-shadow: 0 0.1rem 0.7rem #0006;
+    border-radius: calc(var(--width) * 0.07);
+    overflow: hidden;
+}
+
+.card-div a,
+.card-div h3 {
+    color: var(--text-base);
+    font: 700 1.25rem var(--Open-Sans);
+    text-shadow: 0.1em 0.05em 0 #0006;
+}
+
+.card-div a {
+    text-decoration-color: var(--anchor-base); /* Safari hates shorthand text-decoration */
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+}
+
+.card-div p {
+    margin: 0 1rem;
+    color: #e5e5e5;
+    font: 300 1rem/1.5em var(--Open-Sans);
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0 #0006;
+}
+
+/* Portrait styles */
+@media screen and (orientation: portrait) {
+    h2 { font-size: 2.33rem }
+
+    section > a {
+        width: 1.75rem;
+        left: -1.75rem;
+    }
+}
+
+/* Mobile horizontal screens */
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    main { padding: 6vh 7% 15vh 7% }
+}
