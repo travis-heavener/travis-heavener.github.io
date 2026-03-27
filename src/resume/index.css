@@ -97,7 +97,13 @@ p { color: var(--text-base) }
 }
 
 @media screen and (orientation: portrait) {
-    main { padding: 3vh 8% 14vh 8% }
+    main > a,
+    h3.certs { text-align: center }
+
+    section {
+        width: fit-content;
+        margin: 0 auto;
+    }
 
     .icon-list {
         --num-cols: 2;

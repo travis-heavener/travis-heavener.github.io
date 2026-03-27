@@ -36,7 +36,7 @@ section.left {
     text-shadow: 0.08em 0.06em 0.03em #0006;
 }
 
-#content-dot-wrapper { margin: 0; }
+#dot-wrapper { margin: 0; }
 
 section.right {
     display: flex;
@@ -193,7 +193,7 @@ section.right > picture { height: 21.25rem; }
         text-align: center;
     }
 
-    #content-dot-wrapper { display: none; }
+    #dot-wrapper { display: none; }
 
     #job-title {
         color: var(--accent-dark);

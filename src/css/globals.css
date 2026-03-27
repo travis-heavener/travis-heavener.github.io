@@ -156,9 +156,9 @@ footer p { color: #f3f3f3 }
 
 /* connect dot styling */
 
-#content-dot-wrapper { margin: 1rem 0; }
+#dot-wrapper { margin: 1rem 0; }
 
-#content-dot-wrapper > div {
+#dot-wrapper > div {
     display: inline-block;
     margin-left: 0.25rem;
     width: 1rem;
@@ -167,7 +167,7 @@ footer p { color: #f3f3f3 }
     border-radius: 50%;
 }
 
-#content-dot-wrapper > div:not(:first-of-type) {
+#dot-wrapper > div:not(:first-of-type) {
     margin-left: 0.5rem;
 }
 

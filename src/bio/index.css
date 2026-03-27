@@ -59,7 +59,11 @@ picture,
 }
 
 @media screen and (orientation: portrait) {
-    main { padding: 3vh 8% 8vh 8%; }
+    main { padding: 3vh 8% }
+
+    h1 { text-align: center }
+    #dot-wrapper { margin-left: auto; margin-right: auto }
+    #dot-wrapper > div:first-child { margin-left: 0 }
 
     section {
         flex-direction: column;
@@ -77,7 +81,7 @@ picture,
     #slideshow-2 picture { animation: 15s slideshow2 0s infinite }
 }
 
-/* adjust padding on landscape mobiles */
+/* Landscape mobile adjustments */
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
     main { padding: 6vh 8% 15vh 8%; }

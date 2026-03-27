@@ -84,7 +84,17 @@ section > a > img {
 
 /* Portrait styles */
 @media screen and (orientation: portrait) {
+    main { padding: 3vh 8% }
+
+    h1 { text-align: center }
     h2 { font-size: 2.33rem }
+
+    #dot-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    #dot-wrapper > div:first-child { margin-left: 0 }
 
     section > a {
         width: 1.75rem;

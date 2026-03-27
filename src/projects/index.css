@@ -85,9 +85,3 @@ h2 {
      0%, 30%, 100% { opacity: 1; pointer-events: all; }
     33%, 97% { opacity: 0; pointer-events: none; }
 }
-
-/* Portrait mobile adjustments */
-
-@media screen and (orientation: portrait) {
-    main { padding: 3vh 8% 8vh 8% }
-}
