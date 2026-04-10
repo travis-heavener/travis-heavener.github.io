@@ -14,4 +14,10 @@ const catchHashChange = () => {
 
 // Bind event listeners
 window.addEventListener("hashchange", catchHashChange);
-document.addEventListener("DOMContentLoaded", catchHashChange);
+document.addEventListener("DOMContentLoaded", () => {
+    catchHashChange(); // Manage hash changes
+
+    // Focus Featured content if nothing else is focused
+    if (location.hash == "")
+        document.getElementsByTagName("input")[0].checked = true;
+});
