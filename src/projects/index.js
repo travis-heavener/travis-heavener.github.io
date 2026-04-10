@@ -7,7 +7,7 @@ const catchHashChange = () => {
         checkbox.addEventListener("change", () => {
             // Force close the checkbox content & remove hash
             checkbox.checked = false;
-            location.hash = "";
+            location.hash = "_";
         }, { "once": true });
     }
 };
