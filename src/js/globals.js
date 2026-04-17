@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const prefetched = new Set();
     for (const a of document.getElementsByTagName("a")) {
         // Ignore crossorigin prefetches
-        if (!a.href.startsWith(location.origin)) return;
+        if (!a.href.startsWith(location.origin)) continue;
 
         // Prefetch links on hover
         let timeout;
