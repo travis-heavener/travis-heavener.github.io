@@ -39,6 +39,7 @@ picture.hide-mobile {
 #slideshow-2,
 picture,
 .bio-img {
+    display: block;
     height: 26rem;
     aspect-ratio: 0.65;
 }

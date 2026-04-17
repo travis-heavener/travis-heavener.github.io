@@ -43,7 +43,8 @@ section > a > img {
     overflow-y: hidden;
 }
 
-.card-div {
+.card-div:not(:has(article)),
+.card-div article {
     --border-width: 0.2rem;
 
     display: flex;

@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Update aria-current in header nav
+    document.querySelectorAll("nav a").forEach(link => {
+        if (link.href === window.location.href)
+            link.setAttribute("aria-current", "page");
+    });
+
+    // Prefetch internal links
     const prefetched = new Set();
     for (const a of document.getElementsByTagName("a")) {
         // Ignore crossorigin prefetches

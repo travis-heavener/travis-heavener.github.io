@@ -1,45 +1,57 @@
 <section>
-    <a href="#featured"><img src="/res/icons/hyperlink.svg" alt="Hyperlink icon."></a>
+    <a href="#featured" aria-label="Link to Featured section">
+        <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
+    </a>
     <h2 id="featured">Featured</h2>
     <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">
     <label for="featured-toggle"></label>
 </section>
 
 <input id="featured-toggle" type="checkbox" hidden>
-<div class="card-row">
+<ul class="card-row">
     <!-- TPU3 -->
-    <div class="card-div">
-        <img class="card-img" loading="lazy" src="/res/projects/tpu3/thumb1.webp" alt="Screenshot of the TPU's Operating System's kernel program.">
-        <h3><a href="https://github.com/travis-heavener/tpu3">TPU3</a></h3>
-        <p>A 32-bit emulation of a CPU with a custom ISA and minimal preset kernel image.</p>
-    </div>
+    <li class="card-div">
+        <article>
+            <img class="card-img" loading="lazy" src="/res/projects/tpu3/thumb1.webp" alt="Screenshot of the TPU's Operating System's kernel program.">
+            <h3><a href="https://github.com/travis-heavener/tpu3">TPU3</a></h3>
+            <p>A 32-bit emulation of a CPU with a custom ISA and minimal preset kernel image.</p>
+        </article>
+    </li>
 
     <!-- Mercury -->
-    <div class="card-div">
-        <img class="card-img" loading="lazy" src="/res/projects/mercury/thumb1.webp" alt="Icon for the Mercury web server.">
-        <h3><a href="https://wowtravis.com/mercury">Mercury</a></h3>
-        <p>A lightweight, configurable HTTP server made in C++ for Windows and Linux.</p>
-    </div>
+    <li class="card-div">
+        <article>
+            <img class="card-img" loading="lazy" src="/res/projects/mercury/thumb1.webp" alt="Icon for the Mercury web server.">
+            <h3><a href="https://wowtravis.com/mercury">Mercury</a></h3>
+            <p>A lightweight, configurable HTTP server made in C++ for Windows and Linux.</p>
+        </article>
+    </li>
 
     <!-- Mini Server v2.1 -->
-    <div class="card-div">
-        <div class="slideshow-3">
-            <img class="card-img" loading="lazy" src="/res/projects/mini/thumb1.webp" alt="Screenshot of the Mini Server v2.1's landing page.">
-            <img class="card-img" loading="lazy" src="/res/projects/mini/thumb2.webp" alt="Screenshot of the Mini Server v2.1's dashboard page.">
-            <img class="card-img" loading="lazy" src="/res/projects/mini/thumb3.webp" alt="Screenshot of the Mini Server v2.1's gallery app.">
-        </div>
-        <h3><a href="https://github.com/travis-heavener/mini-server-2.x">Mini Server v2.1</a></h3>
-        <p>A web UI for a custom home media, movie, and file server, complete with a user suite.</p>
-    </div>
+    <li class="card-div">
+        <article>
+            <figure class="slideshow-3">
+                <img class="card-img" loading="lazy" src="/res/projects/mini/thumb1.webp" alt="Screenshot of the Mini Server v2.1's landing page.">
+                <img class="card-img" loading="lazy" src="/res/projects/mini/thumb2.webp" alt="Screenshot of the Mini Server v2.1's dashboard page.">
+                <img class="card-img" loading="lazy" src="/res/projects/mini/thumb3.webp" alt="Screenshot of the Mini Server v2.1's gallery app.">
+                <figcaption class="visibly-hidden">Mini Server interface screenshots</figcaption>
+            </figure>
+            <h3><a href="https://github.com/travis-heavener/mini-server-2.x">Mini Server v2.1</a></h3>
+            <p>A web UI for a custom home media, movie, and file server, complete with a user suite.</p>
+        </article>
+    </li>
 
     <!-- BinGo -->
-    <div class="card-div">
-        <div class="slideshow-3">
-            <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb1.webp" alt="Screenshot of BinGo's user profile.">
-            <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb2.webp" alt="Screenshot of BinGo's home page with a bingo card.">
-            <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb3.webp" alt="Screenshot of BinGo's card selection screen.">
-        </div>
-        <h3><a href="https://github.com/travis-heavener/seniorresearch">BinGo</a></h3>
-        <p>An Android app that promotes physical activity via digital bingo cards.</p>
-    </div>
-</div>
+    <li class="card-div">
+        <article>
+            <figure class="slideshow-3">
+                <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb1.webp" alt="Screenshot of BinGo's user profile.">
+                <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb2.webp" alt="Screenshot of BinGo's home page with a bingo card.">
+                <img class="card-img" loading="lazy" src="/res/projects/bingo/thumb3.webp" alt="Screenshot of BinGo's card selection screen.">
+                <figcaption class="visibly-hidden">BinGo interface screenshots</figcaption>
+            </figure>
+            <h3><a href="https://github.com/travis-heavener/seniorresearch">BinGo</a></h3>
+            <p>An Android app that promotes physical activity via digital bingo cards.</p>
+        </article>
+    </li>
+</ul>

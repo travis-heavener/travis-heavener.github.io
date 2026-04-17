@@ -4,6 +4,7 @@
         <SharedMetaTags />
 
         <link rel="canonical" href="https://wowtravis.com/">
+        <meta property="og:url" content="https://wowtravis.com/">
         <meta name="description" content="Self-driven CS enthusiast and ITWS student at RPI, dedicated to programming, project development, and full-stack web development.">
         <meta property="og:title" content="Travis Heavener">
         <meta property="og:description" content="Self-driven CS enthusiast and ITWS student at RPI, dedicated to programming, project development, and full-stack web development.">
@@ -12,14 +13,15 @@
 
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body id="top">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <Header />
-        <main>
+        <main id="main-content">
             <div id="content-upper">
                 <section class="left">
                     <h1 id="name">TRAVIS<br class="hide-mobile"><span class="show-mobile">&nbsp;</span>HEAVENER</h1>
                     <Dots />
-                    <h2 id="job-title">Full-Stack Developer</h2>
+                    <p id="job-title">Full-Stack Developer</p>
                 </section>
                 <section class="right">
                     <picture>
@@ -28,32 +30,37 @@
                         <source media="(max-width: 2559px)" srcset="/res/headshot/290-333.webp, /res/headshot/400-460.webp 2x, /res/headshot/499-575.webp 3x">
                         <source media="(max-width: 3199px)" srcset="/res/headshot/400-460.webp, /res/headshot/499-575.webp 2x, /res/headshot/499-575.webp 3x">
                         <source media="(min-width: 3200px)" srcset="/res/headshot/499-575.webp">
-                        <img id="headshot-img" src="/res/headshot/499-575.webp" fetchpriority="high" alt="Travis Heavener headshot image.">
+                        <img
+                            id="headshot-img"
+                            src="/res/headshot/499-575.webp" fetchpriority="high"
+                            alt="Portrait of Travis Heavener"
+                            aria-describedby="headshot-caption"
+                        >
                     </picture>
-                    <a id="headshot-caption" href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
+                    <a id="headshot-caption" href="mailto:travis@wowtravis.com" aria-label="Email Travis Heavener at travis@wowtravis.com">travis@wowtravis.com</a>
                 </section>
             </div>
             <div id="content-lower">
-                <div id="tagline">
+                <div id="tagline" role="region" aria-labelledby="tagline-text">
                     <p id="tagline-text">Experienced, disciplined full-stack web developer and programmer.</p>
-                    <a id="read-more-anchor" href="/bio/">Read full bio</a>
+                    <a id="read-more-anchor" href="/bio/" aria-label="Read full biography of Travis Heavener">Read full bio</a>
                 </div>
-                <div id="contact">
-                    <h3 class="show-mobile">Get in Touch!</h3>
+                <div id="contact" role="region" aria-labelledby="contact-heading">
+                    <h3 id="contact-heading" class="show-mobile">Get in Touch!</h3>
                     <section>
-                        <a href="https://github.com/travis-heavener" title="@travis-heavener on GitHub">
+                        <a href="https://github.com/travis-heavener" aria-label="Travis Heavener on GitHub">
                             <GitHubSVG />
                             <span class="contact-text show-mobile">@travis-heavener</span>
                         </a>
                     </section>
                     <section>
-                        <a href="https://www.linkedin.com/in/travis-heavener" title="@travis-heavener on LinkedIn">
+                        <a href="https://www.linkedin.com/in/travis-heavener" aria-label="Travis Heavener on LinkedIn">
                             <LinkedInSVG />
                             <span class="contact-text show-mobile">@travis-heavener</span>
                         </a>
                     </section>
                     <section>
-                        <a href="mailto:travis@wowtravis.com" title="travis@wowtravis.com via Email">
+                        <a href="mailto:travis@wowtravis.com" aria-label="Email Travis Heavener at travis@wowtravis.com" title="travis@wowtravis.com via Email">
                             <GmailSVG />
                             <span class="contact-text show-mobile">travis@wowtravis.com</span>
                         </a>

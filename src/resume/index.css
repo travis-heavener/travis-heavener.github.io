@@ -66,8 +66,8 @@ h3.certs {
 .broken-text-fixed > *:first-child { max-width: 60%; }
 .broken-text-fixed > *:last-child { max-width: 40%; }
 
-p, a { font: 300 1.15rem/1.5em var(--Open-Sans); }
-p { color: var(--text-base) }
+main p, main a { font: 300 1.15rem/1.5em var(--Open-Sans); }
+main p { color: var(--text-base) }
 
 .icon-list {
     display: flex;
@@ -78,22 +78,27 @@ p { color: var(--text-base) }
     width: 100%;
 }
 
-.icon-list > img,
-.icon-list > svg {
+.icon-list > li {
+    display: flex;
+    list-style: none;
+}
+
+.icon-list img,
+.icon-list svg {
     height: 80px;
     aspect-ratio: 1;
     object-fit: contain;
     border-radius: 0.67rem;
 }
 
-.icon-list.large > img,
-.icon-list.large > svg {
+.icon-list.large img,
+.icon-list.large svg {
     height: 128px;
 }
 
 .skill-pad-white {
     background: #fff;
-    padding: 1%;
+    padding: 8px;
 }
 
 @media screen and (orientation: portrait) {

@@ -64,6 +64,8 @@ a { color: var(--anchor-base); transition: 0.1s color }
 a:hover { color: var(--anchor-lite) }
 a:active { color: var(--anchor-dark) }
 
+li { list-style: none }
+
 :focus-visible { outline: 2px solid #fff !important; }
 
 .no-select {
@@ -80,16 +82,29 @@ a:active { color: var(--anchor-dark) }
     -o-user-drag: none;
 }
 
-@media screen and (orientation: portrait) {
-    h1 {
-        font-size: 3rem;
-        letter-spacing: 0.02em;
-    }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.skip-link:focus { top: 0 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /**************** Header styling ****************/
 
-header {
+header > nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +118,7 @@ header {
     background-color: #0005;
 }
 
-header > a {
+header a {
     height: 100%;
     padding: 0 1.25rem;
 
@@ -119,15 +134,15 @@ header > a {
     transition: 0.15s color, 0.15s font-weight, 0.15s letter-spacing;
 }
 
-header > a:hover {
+header a:hover {
     color: #fafafa;
     font-weight: 500;
 }
 
 /* mitigate layout shift from increasing font weight */
-header > a:nth-child(2):hover { letter-spacing: -0.03em; }
-header > a:nth-child(3):hover { letter-spacing: -0.025em; }
-header > a:nth-child(4):hover { letter-spacing: -0.03em; }
+header a:nth-child(2):hover { letter-spacing: -0.03em; }
+header a:nth-child(3):hover { letter-spacing: -0.025em; }
+header a:nth-child(4):hover { letter-spacing: -0.03em; }
 
 #home-anchor {
     position: absolute;
@@ -185,14 +200,18 @@ footer p { color: #f3f3f3 }
     :root { font-size: 0.9rem; }
     .hide-mobile { display: none }
     body { background: linear-gradient(180deg, var(--g-dark) 0%, var(--g-lite) 100%); }
-    header {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.02em;
+    }
+    header > nav {
         column-gap: 1rem;
         padding-right: 7%;
         justify-content: flex-end;
     }
     #home-anchor { left: 5%; }
     #home-anchor::after { content: ".H"; }
-    header > a {
+    header a {
         font-size: 1.25rem;
         padding: 0 0.5rem;
     }
