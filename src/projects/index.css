@@ -2,12 +2,6 @@
 
 section { cursor: pointer }
 
-h2 {
-    display: inline;
-    margin-top: 0.67rem;
-    cursor: pointer;
-}
-
 /* Dropdown icon styles */
 
 .dropdown-icon {
@@ -20,33 +14,37 @@ h2 {
     transition: 0.15s transform, 0.15s filter;
 }
 
-section:has(+ input:checked) .dropdown-icon,
-section:has(:target) .dropdown-icon {
+section:has(button[aria-expanded="true"]) .dropdown-icon {
     filter: drop-shadow(0.19rem 0 0.05rem #0006);
     transform: rotate(90deg);
 }
 
+section h2,
+section img { pointer-events: none }
+
+section button {
+    display: flex;
+    align-items: center;
+    margin-top: 0.67rem;
+    width: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: all;
+}
+
 /* Content card styles */
 
-label {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-}
-
-.card-row {
-    --height: 20rem;
-    display: none;
-    animation: 150ms ease 0s 1 projectsFadeIn;
-}
-
-section:has(:target) + input + .card-row,
-input:checked + .card-row { display: flex }
+.card-row { --height: 20rem; display: none }
+.card-row.active, .card-row.animate-in, .card-row.animate-out { display: flex }
+.card-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
+.card-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
 
 .card-div { --width: 16rem }
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-in, .animate-out { animation: none; transition: none }
+}
 
 @keyframes projectsFadeIn {
     from { opacity: 0; height: 0 }

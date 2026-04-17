@@ -1,4 +1,5 @@
-h2 {
+h2,
+h2 > button {
     color: var(--text-base);
     font: 400 2.5rem/1.5em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;

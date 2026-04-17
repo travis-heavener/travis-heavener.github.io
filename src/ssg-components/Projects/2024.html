@@ -2,13 +2,15 @@
     <a href="#2024" aria-label="Link to 2024 section">
         <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
     </a>
-    <h2 id="2024">2024</h2>
-    <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">
-    <label for="2024-toggle"></label>
+    <h2>
+        <button id="2024" aria-expanded="false" aria-controls="2024-content">
+            2024
+            <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
+        </button>
+    </h2>
 </section>
 
-<input id="2024-toggle" type="checkbox" hidden>
-<ul class="card-row hidden">
+<ul id="2024-content" class="card-row" aria-labelledby="2024" hidden>
     <!-- TPU2 -->
     <li class="card-div">
         <article>

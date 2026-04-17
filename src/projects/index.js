@@ -1,23 +1,58 @@
-// If JS is enabled, remove location.hash when clicking on dropdown
-// to allow it to be minimized (since :target pseudo-class is stubborn)
-const catchHashChange = () => {
-    // Clear hash when toggling checkbox
-    if (location.hash) {
-        const checkbox = document.getElementById(location.hash.substring(1)).parentElement.nextSibling;
-        checkbox.addEventListener("change", () => {
-            // Force close the checkbox content & remove hash
-            checkbox.checked = false;
-            location.hash = "_";
-        }, { "once": true });
-    }
+// Reopen whatever projects are in the hash
+const refocusHash = () => {
+    const btn = (location.hash == "") ? document.getElementById("featured")
+        : document.getElementById(location.hash.substring(1));
+    if (btn && btn.getAttribute("aria-expanded") === "false")
+        btn.click();
 };
 
 // Bind event listeners
-window.addEventListener("hashchange", catchHashChange);
 document.addEventListener("DOMContentLoaded", () => {
-    catchHashChange(); // Manage hash changes
+    for (const wrap of document.getElementsByTagName("section")) {
+        // Bind click evts
+        const projWrap = wrap.nextElementSibling;
+        const btn = wrap.querySelector("button");
+        console.log(btn);
+        let timeout = null;
+
+        const toggleFocus = () => {
+            // Skip if already animating
+            if (timeout !== null) return;
+
+            // Toggle class
+            const icon = btn.lastElementChild;
+            if (btn.getAttribute("aria-expanded") !== "true") {
+                projWrap.classList.add("animate-in");
+                btn.setAttribute("aria-expanded", "true");
+                projWrap.hidden = false;
+
+                // Trigger animation
+                timeout = setTimeout(() => {
+                    projWrap.classList.remove("animate-in");
+                    projWrap.classList.add("active");
+                    timeout = null;
+                }, 150);
+            } else {
+                projWrap.classList.remove("active");
+                projWrap.classList.add("animate-out");
+                btn.setAttribute("aria-expanded", "false");
+                projWrap.hidden = true;
+
+                // Trigger animation
+                timeout = setTimeout(() => {
+                    projWrap.classList.remove("animate-out");
+                    timeout = null;
+                }, 120);
+            }
+        };
+
+        // Bind event listeners
+        btn.addEventListener("click", e => toggleFocus());
+    }
 
     // Focus Featured content if nothing else is focused
-    if (location.hash == "")
-        document.getElementsByTagName("input")[0].checked = true;
+    refocusHash();
+
+    // Bind project open to hash change
+    window.addEventListener("hashchange", () => refocusHash());
 });

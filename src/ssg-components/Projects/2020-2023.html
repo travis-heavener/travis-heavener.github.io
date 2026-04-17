@@ -2,13 +2,15 @@
     <a href="#2020-2023" aria-label="Link to 2020 through 2023 section">
         <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
     </a>
-    <h2 id="2020-2023">&lt; 2023</h2>
-    <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">
-    <label for="2023-2020-toggle"></label>
+    <h2>
+        <button id="2020-2023" aria-expanded="false" aria-controls="2020-2023-content">
+            &lt; 2023
+            <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
+        </button>
+    </h2>
 </section>
 
-<input id="2023-2020-toggle" type="checkbox" hidden>
-<ul class="card-row hidden">
+<ul id="2020-2023-content" class="card-row" aria-labelledby="2020-2023" hidden>
     <!-- Cornhole v5.0 -->
     <li class="card-div">
         <article>

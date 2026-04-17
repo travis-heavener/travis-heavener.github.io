@@ -2,13 +2,15 @@
     <a href="#featured" aria-label="Link to Featured section">
         <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
     </a>
-    <h2 id="featured">Featured</h2>
-    <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">
-    <label for="featured-toggle"></label>
+    <h2>
+        <button id="featured" aria-expanded="false" aria-controls="featured-content">
+            Featured
+            <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
+        </button>
+    </h2>
 </section>
 
-<input id="featured-toggle" type="checkbox" hidden>
-<ul class="card-row">
+<ul id="featured-content" class="card-row" aria-labelledby="featured" hidden>
     <!-- TPU3 -->
     <li class="card-div">
         <article>

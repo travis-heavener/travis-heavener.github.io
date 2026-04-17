@@ -2,13 +2,15 @@
     <a href="#2026" aria-label="Link to 2026 section">
         <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
     </a>
-    <h2 id="2026">2026</h2>
-    <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="Dropdown icon." tabindex="0">
-    <label for="2026-toggle"></label>
+    <h2>
+        <button id="2026" aria-expanded="false" aria-controls="2026-content">
+            2026
+            <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
+        </button>
+    </h2>
 </section>
 
-<input id="2026-toggle" type="checkbox" hidden>
-<ul class="card-row hidden">
+<ul id="2026-content" class="card-row" aria-labelledby="2026" hidden>
     <!-- Lectus -->
     <li class="card-div">
         <article>
