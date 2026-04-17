@@ -119,7 +119,10 @@ section.right > picture { height: 21.25rem; }
     column-gap: 2.5rem;
 }
 
-#contact > section > a { display: block }
+#contact > section > a {
+    display: block;
+    font-size: 0;
+}
 
 .contact-img {
     --diameter: 5.25rem;
@@ -155,8 +158,8 @@ section.right > picture { height: 21.25rem; }
     #contact > section:nth-of-type(2) .contact-img {
         --hover-shadow-color: #0367a1;
         --active-shadow-color: #004166;
-        margin-top: 1rem;
     }
+    #contact > section:nth-of-type(2) { margin-top: 1rem }
     .contact-img:hover {
         box-shadow: 0 0 1.25rem var(--hover-shadow-color);
         filter: brightness(1);
