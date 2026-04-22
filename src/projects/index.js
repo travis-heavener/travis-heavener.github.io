@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Bind click evts
         const projWrap = wrap.nextElementSibling;
         const btn = wrap.querySelector("button");
-        console.log(btn);
         let timeout = null;
 
         const toggleFocus = () => {
