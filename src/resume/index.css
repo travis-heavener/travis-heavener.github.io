@@ -93,7 +93,6 @@ main p { color: var(--text-base) }
 }
 
 @media screen and (orientation: portrait) {
-    main > a,
     h3.certs { text-align: center }
 
     section {

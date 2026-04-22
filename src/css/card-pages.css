@@ -98,6 +98,7 @@ section > a > img {
 @media screen and (orientation: portrait) {
     main { padding: 3vh 8% }
 
+    main > a,
     h1 { text-align: center }
     h2 { font-size: 2.33rem }
 
