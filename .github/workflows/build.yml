@@ -33,6 +33,7 @@ jobs:
           path: public/
 
   Deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     needs: Build
     permissions:
       pages: write
