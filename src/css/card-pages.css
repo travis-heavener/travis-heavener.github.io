@@ -1,3 +1,13 @@
+h1 { margin-bottom: 0.5rem }
+
+/* Align to dot margin-left */
+main > a {
+    display: block;
+    margin-left: 0.25rem;
+}
+
+main p, main a { font: 300 1.15rem/1.5em var(--Open-Sans); }
+
 h2,
 h2 > button {
     color: var(--text-base);
