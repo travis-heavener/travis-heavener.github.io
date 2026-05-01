@@ -25,34 +25,8 @@ From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
 
 2. Now that Python is installed, open a terminal window and navigate to the same directory as this README.md file (the root of the project).
 
-3. Run `python3 generator/main.py` to build the website from the source (in the `src` directory) to the `public` directory.
+3. Clone the site generator via `git clone https://github.com/travis-heavener/stylus.git generator`.
 
-4. To view the website, use an HTTP server like Apache or Nginx on this `public` directory.
+4. Run `python3 generator/src/main.py -vcf --config config.stylus.json` to build the website from the source (in the `src` directory) to the `public` directory.
 
-### Generator Script Options
-
-The `generator/main.py` Python script has a few command-line arguments that it can be passed:
-
-| Argument | Usage                          | Description                                                                                   |
-|----------|--------------------------------|-----------------------------------------------------------------------------------------------|
-| -f       | `python3 generator/main.py -f` | Copy all files freshly from `src` to `public` instead of only ones modified since last build. |
-| -v       | `python3 generator/main.py -v` | Prints additional debug info to the terminal.                                                 |
-| -c       | `python3 generator/main.py -c` | Uses color for printing information to the terminal.                                          |
-| -x       | `python3 generator/main.py -x` | Skips minification for all assets.                                                            |
-
-Note: to use multiple arguments, combine them (ex: `-vcf` will print verbose logs with colored output and force-rebuilds all assets)
-
-## Special URLs
-The following URLs will redirect you to where you need to go ;)
-
-| Name      | URL                                                            |
-|-----------|----------------------------------------------------------------|
-| LinkedIn  | [wowtravis.com/my/linkedin](https://wowtravis.com/my/linkedin) |
-| GitHub    | [wowtravis.com/my/github](https://wowtravis.com/my/github)     |
-| This Repo | [wowtravis.com/this](https://wowtravis.com/this)               |
-
-## Credits
-
-This portfolio is made possible by the following sources:
-
-- `robots.txt` is automatically fetched from https://github.com/ai-robots-txt/ai.robots.txt (see [licenses/ai_robots_txt_LICENSE.txt](licenses/ai_robots_txt_LICENSE.txt)).
+5. To view the website, use an HTTP server like Apache or Nginx on this `public` directory.

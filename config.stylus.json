@@ -1,0 +1,19 @@
+{
+    "inputDir": "../src",
+    "outputDir": "../public",
+    "componentsDir": "../ssg-components/",
+    "textFilesDir": ".",
+
+    "buildExtensions": [ ".html", ".htm" ],
+    "sitemapExtensions": [ ".html", ".htm" ],
+    "indexFiles": [ "index.html", "index.htm" ],
+
+    "generateSitemap": true,
+    "truncateSitemapIndexFiles": true,
+    "sitemapIgnore": [ "/404.html" ],
+
+    "baseAddress": "https://wowtravis.com/",
+
+    "canonicalIgnore": [ "/404.html" ],
+    "htmlLang": "en"
+}
