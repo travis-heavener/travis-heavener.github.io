@@ -82,7 +82,7 @@ h3.certs {
     padding: 1.25rem 1.5rem;
     background: var(--g-dark);
     border-radius: 12px;
-    box-shadow: 0.1rem 0.4rem 0.7rem #0008;
+    box-shadow: 0.1rem 0.6rem 0.7rem #000a;
 }
 
 #education-stats div {
