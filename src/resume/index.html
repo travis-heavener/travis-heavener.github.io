@@ -22,18 +22,58 @@
         <$ Header />
         <main id="main-content">
             <h1>Travis Heavener</h1>
-            <a href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
-            <a href="/Travis_Heavener_Resume.pdf?v=5">View resume as PDF</a>
-            <$ Dots />
-            
-            <section>
-                <a href="#education" aria-label="Link to Education section">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2 id="education">Education</h2>
-            </section>
+            <p id="tagline">
+                IT & Web Science Student <span class="inline-dot hide-mobile">&#x2022;</span><br class="show-mobile">
+                Developer <span class="inline-dot">&#x2022;</span> Systems Enthusiast
+            </p>
+            <p id="details">
+                <span class="detail-group">
+                    <svg style="margin-top:0.22rem" aria-hidden="true"><use href="/res/resume/icons.svg#mail"></use></svg>
+                    <a href="mailto:travis@wowtravis.com">travis@wowtravis.com</a>
+                </span>
+                <span class="hide-mobile">&nbsp;|&nbsp;</span>
+                <span class="show-mobile"><br></span>
+                <span class="detail-group">
+                    <svg style="aspect-ratio:12/19" aria-hidden="true"><use href="/res/resume/icons.svg#paperclip"></use></svg>
+                    <a href="/Travis_Heavener_Resume.pdf?v=5">Resume PDF</a>
+                </span>
+            </p>
 
-            <$ Resume.Education />
+            <$ GrayDivider />
+
+            <div id="education-wrapper">
+                <section id="education">
+                    <h2>Rensselaer Polytechnic Institute</h2>
+                    <p>Building a strong foundation in technology, innovation, and problem solving.</p>
+                    <div id="education-stats">
+                        <div>
+                            <p><svg aria-hidden="true"><use href="/res/resume/icons.svg#cap"></use></svg>B.Sc. in Information Technology & Web Science</p>
+                            <p><svg aria-hidden="true"><use href="/res/resume/icons.svg#calendar"></use></svg>Expected Graduation: May 2027</p>
+                        </div>
+                        <img src="/res/resume/rpi-logo.svg" alt="RPI logo">
+                    </div>
+                </section>
+                <section id="education-highlights">
+                    <h3>
+                        <svg aria-hidden="true"><use href="/res/resume/icons.svg#star"></use></svg>
+                        Highlights
+                    </h3>
+                    <ul>
+                        <li>
+                            <svg aria-hidden="true"><use href="/res/resume/icons.svg#monitor"></use></svg>
+                            <span>Focused on web development, systems design, and user experience.</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true"><use href="/res/resume/icons.svg#bulb"></use></svg>
+                            <span>Hands-on experience through projects, coursework, and real-world applications.</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true"><use href="/res/resume/icons.svg#handshake"></use></svg>
+                            <span>Collaborative learning and leadership in a community of innovators.</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
             <section>
                 <a href="#experience" aria-label="Link to Experience section">

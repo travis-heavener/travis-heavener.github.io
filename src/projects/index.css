@@ -63,7 +63,6 @@ section button {
     object-fit: cover;
     overflow: hidden;
     object-position: 50% 33%;
-    border-bottom: calc(0.75 * var(--border-width)) solid var(--accent-liter);
 }
 
 /* Project image slideshows */

@@ -11,6 +11,142 @@ h3.certs {
     text-underline-offset: 2px;
 }
 
+#details { flex-wrap: wrap }
+
+#details,
+#details span.detail-group {
+    display: flex;
+    align-items: center;
+}
+
+#details a { margin-left: 0.35em }
+
+#details svg {
+    max-width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+#tagline, #details {
+    margin-bottom: 0.75rem;
+    font-weight: 350;
+}
+
+@media screen and (orientation: landscape) { #tagline, #details { margin-left: 0.25rem } }
+
+/* Education banner */
+
+#education-wrapper { width: 100% }
+
+#education {
+    --overflow-x: 7rem;
+    margin: 0 calc(-1 * var(--overflow-x));
+    padding: 3rem var(--overflow-x) 2.5rem var(--overflow-x);
+
+    width: calc(100% + 2 * var(--overflow-x));
+    background: no-repeat center 55% url("/res/resume/education-background.jpg"), #000b;
+    background-blend-mode: darken;
+    background-size: cover;
+
+    border-radius: 12px;
+    box-shadow: 0 0.1rem 0.7rem #0006;
+}
+
+#education > h2 { font-size: 3.5rem }
+#education > p {
+    margin-bottom: 1em;
+    font-weight: 375;
+    font-size: 1.3rem;
+    text-shadow: 0.15em 0.1em 0.05em #0006;
+}
+
+#education-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    width: fit-content;
+
+    padding: 1.25rem 1.5rem;
+    background: var(--g-dark);
+    border-radius: 12px;
+    box-shadow: 0.1rem 0.4rem 0.7rem #0008;
+}
+
+#education-stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+#education-stats p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 375;
+    text-shadow: 0.1em 0.08em 0.03em #0006;
+}
+
+#education-stats p > svg {
+    max-width: 2.75rem;
+    max-height: 2.75rem;
+    object-fit: contain;
+}
+
+#education-stats img {
+    width: auto;
+    height: 6rem;
+    object-fit: contain;
+}
+
+#education-highlights { width: 100% }
+
+#education-highlights h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.33rem;
+    margin: 1.25rem 0;
+
+    color: var(--text-base);
+    font: 400 1.8rem var(--Anton);
+    text-shadow: 0.08em 0.06em 0.03em #0003;
+    letter-spacing: 0.02em;
+}
+
+#education-highlights h3 > svg {
+    max-width: 1.75rem;
+    max-height: 1.75rem;
+    object-fit: contain;
+}
+
+#education-highlights ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#education-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#education-highlights span {
+    width: fit-content;
+    color: var(--text-base);
+    font: 375 1.075rem/1.2 var(--Open-Sans);
+}
+
+#education-highlights li > svg {
+    width: auto;
+    height: 3.5rem;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
 /* Content row styling */
 
 .card-row { --height: 16rem }
@@ -35,30 +171,27 @@ h3.certs {
     height: auto;
     aspect-ratio: 2.2;
     overflow: hidden;
-    border-bottom: calc(0.75 * var(--border-width)) solid var(--accent-liter);
     object-fit: cover;
 }
 
 .card-div img {
     width: 100%;
     max-height: 100%;
-    border: none;
 }
 
 .broken-text-fixed {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.broken-text-fixed {
     margin: 0.5rem 0;
-    align-items: center;
 }
 .broken-text-fixed > *:first-child { max-width: 60%; }
 .broken-text-fixed > *:last-child { max-width: 40%; }
 
-main p { color: var(--text-base) }
+.broken-text-fixed p {
+    color: var(--text-base);
+    font-weight: 300;
+}
 
 .icon-list {
     display: flex;
@@ -94,6 +227,35 @@ main p { color: var(--text-base) }
 
 @media screen and (orientation: portrait) {
     h3.certs { text-align: center }
+
+    #details span.detail-group {
+        margin: 0.125rem 0;
+        justify-content: center;
+        width: 100%;
+    }
+    #tagline, #details { text-align: center }
+
+    #education {
+        --overflow-x: 8vw;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    #education h2 {
+        font-size: 2.33rem;
+        text-align: center;
+    }
+    #education > p {
+        margin-bottom: 0.75em;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    #education-stats {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    #education-stats img { height: 5.5rem }
+    #education-highlights h3 { justify-content: center }
+    #education-highlights ul { flex-direction: column }
 
     section {
         width: fit-content;

@@ -15,8 +15,8 @@ html, body {
 }
 
 :root {
-    --g-dark: #292422;
-    --g-lite: #3b3735;
+    --g-dark: #1f1b1b;
+    --g-lite: #292422;
 
     --accent-darkest2: #a55c0f;
     --accent-darkest: #b86914;
@@ -25,10 +25,6 @@ html, body {
     --accent-base: #ec9a42;
     --accent-lite: #fcb468;
     --accent-liter: #ffc281;
-
-    --anchor-dark: #3f73d3;
-    --anchor-base: #77a6fb;
-    --anchor-lite: #abc8ff;
 
     --text-base: #e9e9e9;
     --text-lite: #fbfbfb;
@@ -60,9 +56,9 @@ h1 {
     text-shadow: 0.08em 0.06em 0.03em #0006;
 }
 
-a { color: var(--anchor-base); transition: 0.1s color }
-a:hover { color: var(--anchor-lite) }
-a:active { color: var(--anchor-dark) }
+a { color: var(--accent-dark); transition: 0.1s color; font-weight: bolder; }
+a:hover { color: var(--accent-base) }
+a:active { color: var(--accent-darker) }
 
 li { list-style: none }
 
@@ -100,6 +96,12 @@ li { list-style: none }
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.gray-divider {
+    margin: 1.5rem 0;
+    width: 100%;
+    border-top: 2px solid var(--g-lite);
 }
 
 /**************** Header styling ****************/
@@ -167,9 +169,11 @@ footer p {
     text-align: center;
 }
 
+footer a { font-weight: 400 }
+
 footer p { color: #f3f3f3 }
 
-/* connect dot styling */
+/* Content dot styling */
 
 #dot-wrapper { margin: 1rem 0; }
 
@@ -184,6 +188,12 @@ footer p { color: #f3f3f3 }
 
 #dot-wrapper > div:not(:first-of-type) {
     margin-left: 0.5rem;
+}
+
+.inline-dot {
+    padding: 0 0.2em;
+    color: var(--accent-dark);
+    font-weight: 700;
 }
 
 /* Responsive styles */
