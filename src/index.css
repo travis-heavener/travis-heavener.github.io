@@ -53,7 +53,7 @@ section.right > picture { height: 21.25rem; }
     object-fit: cover;
 
     border-radius: 0.25rem;
-    background: var(--accent-base);
+    background: var(--accent-darker);
 
     box-shadow: 0.125rem 0.125rem 1.5rem #0009;
 }
@@ -88,7 +88,7 @@ section.right > picture { height: 21.25rem; }
     margin-top: 0.75em;
     padding: 0.4em 1.1em 0.5em 1.1em;
 
-    background: var(--accent-darkest);
+    background: var(--accent-darker);
     border-radius: 2em;
     box-shadow: var(--shadow-size) #0004;
 
@@ -98,16 +98,17 @@ section.right > picture { height: 21.25rem; }
     text-shadow: 0.075em 0.025em 0.1em #0005;
 
     cursor: pointer;
-    transition: 0.15s background, 0.15s box-shadow;
+    transition: 0.15s background, 0.15s box-shadow, 0.15s text-shadow;
 }
 
 #read-more-anchor:hover {
-    background: var(--accent-darker);
+    background: var(--accent-dark);
     box-shadow: var(--shadow-size) #0002;
+    text-shadow: 0.085em 0.033em 0.1em #0007;
 }
 
 #read-more-anchor:active {
-    background: var(--accent-darkest2);
+    background: var(--accent-darkest);
     box-shadow: var(--shadow-size) #0006;
 }
 
