@@ -125,22 +125,12 @@ section.right > picture { height: 21.25rem; }
 
 .contact-img {
     --diameter: 5.25rem;
-    --hover-shadow-color: #fff9;
-    --active-shadow-color: #fff3;
-
     width: var(--diameter);
     height: var(--diameter);
-    background: #fff;
+    background: var(--g-dark);
     border-radius: 50%;
     box-shadow: 0 0.1rem 1.25rem #0005;
     cursor: pointer;
-}
-
-#gh-icon { background: #1b1f23 }
-
-#linkedin-icon {
-    padding: calc(0.1 * var(--diameter));
-    background: #007ebb;
 }
 
 /* Responsive styles */
@@ -154,19 +144,24 @@ section.right > picture { height: 21.25rem; }
         filter: brightness(0.9);
         transition: 0.15s filter, 0.15s box-shadow;
     }
-    #contact > section:nth-of-type(2) .contact-img {
-        --hover-shadow-color: #0367a1;
-        --active-shadow-color: #004166;
-    }
     #contact > section:nth-of-type(2) { margin-top: 1rem }
     .contact-img:hover {
-        box-shadow: 0 0 1.25rem var(--hover-shadow-color);
+        box-shadow: 0 0 3.25rem #0007;
         filter: brightness(1);
     }
     .contact-img:active {
-        box-shadow: 0 0 1rem var(--active-shadow-color);
+        box-shadow: 0 0 2rem #0009;
         filter: brightness(0.8);
     }
+
+    .contact-img * { transition: 0.1s fill }
+
+    #gh-icon:hover rect { fill: var(--g-lite) }
+    #gh-icon:hover path { fill: #e8e8e8 }
+    #linkedin-icon:hover path:first-of-type { fill: #e8e8e8 }
+    #linkedin-icon:hover path:last-of-type { fill: var(--g-lite) }
+    #mail-icon:hover rect { fill: #e8e8e8 }
+    #mail-icon:hover path:last-of-type { fill: var(--g-lite) }
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) and (pointer: coarse) {
