@@ -88,12 +88,12 @@ section.right > picture { height: 21.25rem; }
     margin-top: 0.75em;
     padding: 0.4em 1.1em 0.5em 1.1em;
 
-    background: var(--accent-darker);
+    background: var(--accent-darkest);
     border-radius: 2em;
     box-shadow: var(--shadow-size) #0004;
 
     color: #fdfdfd;
-    font: 500 1.25rem var(--Open-Sans);
+    font: 550 1.25rem var(--Open-Sans);
     text-decoration: none;
     text-shadow: 0.075em 0.025em 0.1em #0005;
 
@@ -102,13 +102,13 @@ section.right > picture { height: 21.25rem; }
 }
 
 #read-more-anchor:hover {
-    background: var(--accent-dark);
+    background: var(--accent-darker);
     box-shadow: var(--shadow-size) #0002;
     text-shadow: 0.085em 0.033em 0.1em #0007;
 }
 
 #read-more-anchor:active {
-    background: var(--accent-darkest);
+    background: var(--accent-darkest2);
     box-shadow: var(--shadow-size) #0006;
 }
 
