@@ -42,14 +42,25 @@ h3.certs {
     --overflow-x: 7rem;
     margin: 0 calc(-1 * var(--overflow-x));
     padding: 3rem var(--overflow-x) 2.5rem var(--overflow-x);
-
+    position: relative;
     width: calc(100% + 2 * var(--overflow-x));
-    background: no-repeat center 55% url("/res/resume/education-background.jpg"), #000b;
-    background-blend-mode: darken;
-    background-size: cover;
+}
+
+#education-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     border-radius: 12px;
     box-shadow: 0 0.1rem 0.7rem #0006;
+    filter: brightness(0.55) saturate(0.8);
+    object-fit: cover;
+    object-position: center 45%;
+    z-index: -1;
 }
 
 #education > h2 { font-size: 3.5rem }
