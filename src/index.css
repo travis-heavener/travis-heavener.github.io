@@ -179,7 +179,7 @@ section.right > picture { height: 21.25rem; }
 @media screen and (orientation: portrait) {
     main {
         --row-gap: 1.25rem;
-        padding: 3vh 8% 14vh 8%;
+        padding: 3vh 8% 8vh 8%;
     }
 
     #content-upper { flex-direction: column-reverse }
@@ -265,7 +265,7 @@ section.right > picture { height: 21.25rem; }
         text-decoration: underline;
     }
     .contact-img {
-        --diameter: 3.5rem;
+        --diameter: 3.25rem;
         border-width: 0.125rem;
         cursor: default;
     }
