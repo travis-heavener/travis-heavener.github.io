@@ -31,12 +31,10 @@ section.left {
 }
 
 #job-title {
-    color: #d3d3d3;
+    color: var(--accent-dark);
     font: 400 4.25rem/1.2em var(--Anton);
     text-shadow: 0.08em 0.06em 0.03em #0006;
 }
-
-#dot-wrapper { margin: 0; }
 
 section.right {
     display: flex;
@@ -197,10 +195,7 @@ section.right > picture { height: 21.25rem; }
         text-align: center;
     }
 
-    #dot-wrapper { display: none; }
-
     #job-title {
-        color: var(--accent-dark);
         font-size: 2rem;
         letter-spacing: 0.025em;
         text-align: center;

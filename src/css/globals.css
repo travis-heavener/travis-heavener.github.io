@@ -23,6 +23,7 @@ html, body {
     --accent-darker: #ca771e;
     --accent-dark: #de8629;
     --accent-base: #ec9a42;
+    --accent-light: #fab264;
 
     --text-base: #e9e9e9;
     --text-lite: #fbfbfb;
@@ -80,6 +81,7 @@ li { list-style: none }
     position: absolute;
     top: -40px;
     left: 0;
+    color: var(--accent-light);
 }
 
 .skip-link:focus { top: 0 }
@@ -184,9 +186,7 @@ footer p { color: #f3f3f3 }
     border-radius: 50%;
 }
 
-#dot-wrapper > div:not(:first-of-type) {
-    margin-left: 0.5rem;
-}
+#dot-wrapper > div:not(:first-of-type) { margin-left: 0.5rem }
 
 .inline-dot {
     padding: 0 0.2em;
