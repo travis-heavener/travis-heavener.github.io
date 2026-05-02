@@ -224,6 +224,7 @@ h3.certs {
     aspect-ratio: 1;
     object-fit: contain;
     border-radius: 0.67rem;
+    overflow: hidden;
 }
 
 .icon-list.large img,
