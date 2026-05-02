@@ -238,7 +238,9 @@ section.right > picture { height: 21.25rem; }
     #contact {
         flex-direction: column;
         row-gap: 0.75rem;
+        margin: 0 auto;
         padding: 0 5%;
+        width: fit-content;
     }
 
     #contact > section > a {
@@ -259,7 +261,7 @@ section.right > picture { height: 21.25rem; }
     }
     .contact-text {
         display: inline-block;
-        font: 300 1.1875rem var(--Open-Sans);
+        font: 375 1.1875rem var(--Open-Sans);
         text-decoration: underline;
     }
     .contact-img {
