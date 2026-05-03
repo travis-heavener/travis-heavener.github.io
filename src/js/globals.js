@@ -57,8 +57,8 @@ const startBackgroundAnimation = () => {
         const dpr = window.devicePixelRatio || 1;
         canvas.width = wrapper.clientWidth * dpr;
         canvas.height = wrapper.clientHeight * dpr;
-        canvas.style.width = wrapper.clientWidth * dpr + "px";
-        canvas.style.height = wrapper.clientHeight * dpr + "px";
+        canvas.style.width = wrapper.clientWidth + "px";
+        canvas.style.height = wrapper.clientHeight + "px";
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     window.updateDims();
