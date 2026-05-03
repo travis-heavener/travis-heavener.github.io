@@ -1,16 +1,5 @@
 h2 { margin: 0.5rem 0 }
 
-h3.certs {
-    margin: .5rem 0;
-    color: var(--text-base);
-    font: 400 1.75rem / 1.25em var(--Anton);
-    text-shadow: .08em .06em .03em #0006;
-    text-decoration-color: #b0b0b0;
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 2px;
-}
-
 #details { flex-wrap: wrap }
 
 #details,
@@ -238,8 +227,6 @@ h3.certs {
 }
 
 @media screen and (orientation: portrait) {
-    h3.certs { text-align: center }
-
     #details span.detail-group {
         margin: 0.125rem 0;
         justify-content: center;
