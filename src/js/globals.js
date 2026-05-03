@@ -59,7 +59,7 @@ const startBackgroundAnimation = () => {
     window.addEventListener("resize", updateDims);
 
     // Particle setup
-    const NUM_PARTICLES = 120;
+    const NUM_PARTICLES = window.innerWidth < 768 ? 75 : 120;
     const MAX_DIST = 120;
 
     const particles = Array.from({ length: NUM_PARTICLES }, () => ({
