@@ -40,10 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Starts the background canvas animation
 const startBackgroundAnimation = () => {
-    // Check for reduced motion
-    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (query.matches) return;
-
     // Add background canvas
     const main = document.getElementById("main-content");
     const canvas = document.createElement("CANVAS");
@@ -51,28 +47,27 @@ const startBackgroundAnimation = () => {
     canvas.id = "background-canvas";
     main.insertBefore(canvas, main.firstElementChild);
 
-    // Animation resetter
-    const MAX_DIST = 120;
-    let particles;
-    let nextFrameID = null;
-    const resetAnimation = () => {
-        if (nextFrameID !== null) {
-            cancelAnimationFrame(nextFrameID);
-            nextFrameID = null;
-        }
-
-        // Reset particles
-        const NUM_PARTICLES = Math.round(120 * window.innerHeight / 1080);
-        particles = Array.from({ length: NUM_PARTICLES }, () => ({
-            x: Math.random() * canvas.clientWidth,
-            y: Math.random() * canvas.clientHeight,
-            vx: (Math.random() - 0.5) * 0.3,
-            vy: (Math.random() - 0.5) * 0.3
-        }));
-
-        // Start animation
-        animate();
+    // Update width/height on dimension change
+    const updateDims = () => {
+        // Force drawing in CSS pixels
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = canvas.clientWidth * dpr;
+        canvas.height = canvas.clientHeight * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
+    updateDims();
+    window.addEventListener("resize", updateDims);
+
+    // Particle setup
+    const NUM_PARTICLES = Math.round(120 * canvas.clientHeight / 1080);
+    const MAX_DIST = 120;
+
+    const particles = Array.from({ length: NUM_PARTICLES }, () => ({
+        x: Math.random() * canvas.clientWidth,
+        y: Math.random() * canvas.clientHeight,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3
+    }));
 
     // Animation handler
     const animate = () => {
@@ -81,7 +76,8 @@ const startBackgroundAnimation = () => {
 
         // Move particles
         for (let p of particles) {
-            p.x += p.vx, p.y += p.vy;
+            p.x += p.vx;
+            p.y += p.vy;
 
             // Wrap edges
             if (p.x < 0) p.x += canvas.clientWidth;
@@ -96,7 +92,7 @@ const startBackgroundAnimation = () => {
             for (let j = i + 1; j < particles.length; j++) {
                 const dx = particles[i].x - particles[j].x;
                 const dy = particles[i].y - particles[j].y;
-                const dist = Math.hypot(dx, dy);
+                const dist = Math.sqrt(dx * dx + dy * dy);
 
                 if (dist < MAX_DIST) {
                     const alpha = 1 - dist / MAX_DIST;
@@ -118,22 +114,9 @@ const startBackgroundAnimation = () => {
         }
 
         // Request next frame
-        nextFrameID = requestAnimationFrame(animate);
+        requestAnimationFrame(animate);
     };
 
-    // Update width/height on dimension change
-    const updateDims = () => {
-        // Force drawing in CSS pixels
-        const dpr = window.devicePixelRatio || 1;
-        canvas.width = canvas.clientWidth * dpr;
-        canvas.height = canvas.clientHeight * dpr;
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-        // Restart animation
-        resetAnimation();
-    };
-    window.addEventListener("resize", updateDims);
-
-    // Start animation by updating dimensions
-    updateDims();
+    // Start
+    animate();
 };
