@@ -42,24 +42,31 @@ document.addEventListener("DOMContentLoaded", () => {
 const startBackgroundAnimation = () => {
     // Add background canvas
     const main = document.getElementById("main-content");
+    const wrapper = document.createElement("DIV");
+    wrapper.id = "background-canvas-wrapper";
+    main.insertBefore(wrapper, main.firstElementChild);
+
     const canvas = document.createElement("CANVAS");
     const ctx = canvas.getContext("2d");
     canvas.id = "background-canvas";
-    main.insertBefore(canvas, main.firstElementChild);
+    wrapper.appendChild(canvas);
 
     // Update width/height on dimension change
-    const updateDims = () => {
+    window.updateDims = () => {
         // Force drawing in CSS pixels
         const dpr = window.devicePixelRatio || 1;
-        canvas.width = canvas.clientWidth * dpr;
-        canvas.height = canvas.clientHeight * dpr;
+        canvas.width = wrapper.clientWidth * dpr;
+        canvas.height = wrapper.clientHeight * dpr;
+        canvas.style.width = wrapper.clientWidth * dpr + "px";
+        canvas.style.height = wrapper.clientHeight * dpr + "px";
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
-    updateDims();
-    window.addEventListener("resize", updateDims);
+    window.updateDims();
+    window.addEventListener("resize", window.updateDims);
 
-    // Particle setup
-    const NUM_PARTICLES = window.innerWidth < 768 ? 75 : 120;
+    // Particle setup (produces ~100 particles on a 1920x1080 screen)
+    const NUM_PARTICLES = Math.round(canvas.clientWidth * canvas.clientHeight / 14576 * (window.devicePixelRatio || 1));
+    console.log(NUM_PARTICLES);
     const MAX_DIST = 120;
 
     const particles = Array.from({ length: NUM_PARTICLES }, () => ({

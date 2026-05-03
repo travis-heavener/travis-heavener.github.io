@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 timeout = setTimeout(() => {
                     projWrap.classList.remove("animate-in");
                     projWrap.classList.add("active");
+
+                    // Resize animation canvas
+                    if (window.updateDims) window.updateDims();
+
                     timeout = null;
                 }, 150);
             } else {
@@ -40,6 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Trigger animation
                 timeout = setTimeout(() => {
                     projWrap.classList.remove("animate-out");
+
+                    // Resize animation canvas
+                    if (window.updateDims) window.updateDims();
+
                     timeout = null;
                 }, 120);
             }
