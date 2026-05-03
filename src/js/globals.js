@@ -65,7 +65,8 @@ const startBackgroundAnimation = () => {
     window.addEventListener("resize", window.updateDims);
 
     // Particle setup (produces ~100 particles on a 1920x1080 screen)
-    const NUM_PARTICLES = Math.round(canvas.clientWidth * canvas.clientHeight / 14576 / (window.devicePixelRatio || 1));
+    const NUM_PARTICLES = Math.round(canvas.clientWidth * canvas.clientHeight / 14576);
+    console.log(NUM_PARTICLES);
     const MAX_DIST = 120;
 
     const particles = Array.from({ length: NUM_PARTICLES }, () => ({
