@@ -248,12 +248,12 @@ h3.certs {
     #tagline, #details { text-align: center }
 
     #education {
-        --overflow-x: 8vw;
+        --overflow-x: 4vw;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
     }
     #education h2 {
-        font-size: 2.33rem;
+        font-size: 2rem;
         text-align: center;
     }
     #education > p {
@@ -263,8 +263,10 @@ h3.certs {
     }
     #education-stats {
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1rem;
     }
+    #education-stats div { gap: 0.75rem }
+    #education-stats p { font-size: 1.05rem }
     #education-stats img { height: 5.5rem }
     #education-highlights h3 { justify-content: center }
     #education-highlights ul { flex-direction: column }
