@@ -53,24 +53,24 @@ const startBackgroundAnimation = () => {
 
     // Update width/height on dimension change
     window.updateDims = () => {
-        // Force drawing in CSS pixels
         const dpr = window.devicePixelRatio || 1;
-        canvas.width = wrapper.clientWidth * dpr;
-        canvas.height = wrapper.clientHeight * dpr;
-        canvas.style.width = wrapper.clientWidth + "px";
-        canvas.style.height = wrapper.clientHeight + "px";
+        // Use window inner dimensions instead of wrapper's scroll height
+        canvas.width = window.innerWidth * dpr;
+        canvas.height = window.innerHeight * dpr;
+        canvas.style.width = window.innerWidth + "px";
+        canvas.style.height = window.innerHeight + "px";
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     window.updateDims();
     window.addEventListener("resize", window.updateDims);
 
     // Particle setup (produces ~100 particles on a 1920x1080 screen)
-    const NUM_PARTICLES = Math.round(canvas.clientWidth * canvas.clientHeight / 14576);
+    const NUM_PARTICLES = Math.round((window.innerWidth * window.innerHeight) / 14576);
     const MAX_DIST = 120;
 
     const particles = Array.from({ length: NUM_PARTICLES }, () => ({
-        x: Math.random() * canvas.clientWidth,
-        y: Math.random() * canvas.clientHeight,
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
         vx: (Math.random() - 0.5) * 0.3,
         vy: (Math.random() - 0.5) * 0.3
     }));
@@ -78,7 +78,7 @@ const startBackgroundAnimation = () => {
     // Animation handler
     const animate = () => {
         // Clear canvas
-        ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
         // Move particles
         for (let p of particles) {
@@ -86,10 +86,10 @@ const startBackgroundAnimation = () => {
             p.y += p.vy;
 
             // Wrap edges
-            if (p.x < 0) p.x += canvas.clientWidth;
-            if (p.x > canvas.clientWidth) p.x -= canvas.clientWidth;
-            if (p.y < 0) p.y += canvas.clientHeight;
-            if (p.y > canvas.clientHeight) p.y -= canvas.clientHeight;
+            if (p.x < 0) p.x += window.innerWidth;
+            if (p.x > window.innerWidth) p.x -= window.innerWidth;
+            if (p.y < 0) p.y += window.innerHeight;
+            if (p.y > window.innerHeight) p.y -= window.innerHeight;
         }
 
         // Draw connections
