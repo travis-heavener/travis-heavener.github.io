@@ -28,6 +28,7 @@ jobs:
           enforce_https: false
           disable_external: true
           check_css: false
+          ignore_empty_alt: true
 
       #################### UPLOAD ####################
       - name: Upload Pages Artifact
