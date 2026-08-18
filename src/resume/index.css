@@ -280,20 +280,44 @@ div.section:has(#education) { flex-wrap: wrap }
     }
 }
 
-/* Content row styling */
+/*******************************************/
+/*********** Activites and Honors **********/
+/*******************************************/
 
-.broken-text-fixed {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0.5rem 0;
-}
-.broken-text-fixed > *:first-child { max-width: 60%; }
-.broken-text-fixed > *:last-child { max-width: 40%; }
+#activities-honors {
+    flex: 1;
 
-.broken-text-fixed p {
-    color: var(--text-base);
-    font-weight: 300;
+    & div.group-content {
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        & ul {
+            display: flex;
+            gap: 0.5rem 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            & li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.33rem;
+                width: 10rem;
+                height: 5rem;
+
+                & > p:first-child {
+                    color: var(--text-lite);
+                    font: 400 1rem/1.3 var(--Open-Sans);
+                    text-align: center;
+                }
+
+                & > p:last-child {
+                    color: var(--text-base);
+                    font: 400 0.9rem/1.3 var(--Open-Sans);
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 /* Mobile portrait styles */
@@ -315,11 +339,6 @@ div.section:has(#education) { flex-wrap: wrap }
             gap: 1rem;
             & span { text-align: left }
         }
-    }
-
-    section > a {
-        width: 1.75rem;
-        left: -1.75rem;
     }
 
     #details span.detail-group {
@@ -352,6 +371,11 @@ div.section:has(#education) { flex-wrap: wrap }
                 }
             }
         }
+
+        & ul {
+            margin: 0 auto;
+            width: fit-content;
+        }
     }
 
     #skills svg { height: 64px !important }
@@ -378,10 +402,7 @@ div.section:has(#education) { flex-wrap: wrap }
         }
 
         & div.job-title { text-align: center }
-        & div.job-title > p {
-            margin-left: auto;
-            margin-right: auto;
-        }
+        & div.job-title > p { margin-left: auto; margin-right: auto }
     }
 }
 
@@ -398,9 +419,6 @@ div.section:has(#education) { flex-wrap: wrap }
         }
 
         & div.job-title { text-align: center }
-        & div.job-title > p {
-            margin-left: auto;
-            margin-right: auto;
-        }
+        & div.job-title > p { margin-left: auto; margin-right: auto }
     }
 }
