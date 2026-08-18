@@ -7,17 +7,9 @@ Travis Heavener's official interactive web portfolio.
 [![Build](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/travis-heavener/travis-heavener.github.io/actions/workflows/build.yml)
 
 ## About
-Travis Heavener (HEAVE-nur) is currently a third year student at Rensselaer Polytechnic Institute majoring in IT & Web Science. In his spare time, Travis often works on independent programming projects or spends his time with friends. Travis is a modest car enthusiast and a longtime swimmer, with a passion for full stack and collaborative project development.
+Travis Heavener (HEAVE-nur) is a fourth-year ITWS student at Rensselaer Polytechnic Institute. Travis often spends time outdoors and working on various programming projects. He is an amateur photographer, experienced developer, and avid PC enthusiast, applying his diverse range of skills wherever possible.
 
-From [LinkedIn](https://www.linkedin.com/in/travis-heavener/):
-
-> I'm a third-year student at Rensselaer Polytechnic Institute studying IT & Web Science, with a strong interest in building performant, scalable software systems. I've been programming since age twelve and have pursued both academic and independent projects across full-stack development, server programming, and systems engineering.
-> 
-> I'm the developer of Mercury, a cross-platform, RFC-compliant HTTP server written in C++, and BinGo, a gamified Android application built with React Native that encourages physical activity through reward-driven progression. While my primary focus is web and backend development, I actively seek out low-level and systems-oriented projects to broaden my skill set.
-> 
-> Beyond software development, I've gained professional experience through IT internships with Next Phase Solutions and Services in 2023 and 2025, where I worked with cloud infrastructure, networking, and cybersecurity. Earlier roles in customer-facing environments helped shape my communication, leadership, and problem-solving skills.
-> 
-> Outside of work, I'm a longtime swimmer, amateur photographer, and computer enthusiast who enjoys learning by building.
+Connect with Travis on [LinkedIn](https://www.linkedin.com/in/travis-heavener/).
 
 ## Instructions
 
