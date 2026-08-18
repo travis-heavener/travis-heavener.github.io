@@ -27,7 +27,7 @@ jobs:
           directory: ./public/
           enforce_https: false
           disable_external: true
-          ignore_empty_alt: true
+          check_css: false
 
       #################### UPLOAD ####################
       - name: Upload Pages Artifact
