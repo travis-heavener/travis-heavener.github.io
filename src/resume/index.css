@@ -1,7 +1,5 @@
 h1 { margin-bottom: 0.5rem }
 
-h2 { margin: 0.5rem 0 }
-
 main p, main a { font: 400 1.15rem/1.5em var(--Open-Sans) }
 main a { color: #fff }
 
@@ -60,12 +58,12 @@ div.group-title {
     display: flex;
     flex-direction: row;
     gap: 1.25rem;
-    margin: 0.33rem 1.5rem;
+    margin: 0.5rem 1.5rem;
+    padding-bottom: 0.33rem;
 
     border-bottom: 1px solid #fff1;
 
     & > svg {
-        margin-top: 0.45rem;
         width: calc( var(--font-size) * var(--line-height) );
         height: calc( var(--font-size) * var(--line-height) );
     }
@@ -241,6 +239,47 @@ div.section:has(#education) { flex-wrap: wrap }
     }
 }
 
+/*******************************************/
+/****************** Skills *****************/
+/*******************************************/
+
+#skills {
+    flex: 1;
+
+    & div.group-content {
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        & > ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+
+            & > li {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                font: 400 1rem / 1.3 var(--Open-Sans);
+                text-align: center;
+                list-style: none;
+
+                & > svg {
+                    height: 80px;
+                    aspect-ratio: 1;
+                    object-fit: contain;
+                    border-radius: 0.67rem;
+                    overflow: hidden;
+
+                    &.skill-pad-white {
+                        background: #fff;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Content row styling */
 
 .broken-text-fixed {
@@ -257,48 +296,15 @@ div.section:has(#education) { flex-wrap: wrap }
     font-weight: 300;
 }
 
-.icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.75rem 1.5rem;
-    margin: 1rem 0;
-    width: 100%;
-}
-
-.icon-list > li {
-    display: flex;
-    list-style: none;
-}
-
-.icon-list img,
-.icon-list svg {
-    height: 80px;
-    aspect-ratio: 1;
-    object-fit: contain;
-    border-radius: 0.67rem;
-    overflow: hidden;
-}
-
-.icon-list.large img,
-.icon-list.large svg {
-    height: 128px;
-}
-
-.skill-pad-white {
-    background: #fff;
-    padding: 8px;
-}
-
-/* Portrait styles */
-@media screen and (orientation: portrait) {
+/* Mobile portrait styles */
+@media screen and (orientation: portrait) and (max-width: 900px) {
     main { padding: 3vh 8% }
 
     main > a,
     h1 { text-align: center }
-    h2 { font-size: 2.33rem }
 
     div.section { flex-direction: column }
+    div.group-title { --font-size: 2.05rem }
 
     #education > div.group-content > img { display: none }
     #education-highlights > div.group-content > ul {
@@ -337,22 +343,22 @@ div.section:has(#education) { flex-wrap: wrap }
                 & img { border-bottom-left-radius: 10px }
             }
 
-            & div.job-title { text-align: center }
-            & div.job-title > p {
-                margin-left: auto;
-                margin-right: auto;
+            & div.job-title {
+                min-width: 50%;
+                text-align: center;
+                & > p {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
         }
     }
 
+    #skills svg { height: 64px !important }
+
     section {
         width: fit-content;
         margin: 0 auto;
-    }
-
-    .icon-list {
-        --num-cols: 2;
-        justify-content: center;
     }
 }
 
@@ -363,6 +369,26 @@ div.section:has(#education) { flex-wrap: wrap }
 
 /* Square-ish landscape screens */
 @media (orientation: landscape) and (max-aspect-ratio: 3 / 2) {
+    #experience div.job-heading {
+        flex-wrap: wrap;
+
+        & picture {
+            width: 100% !important;
+            & img { border-bottom-left-radius: 10px }
+        }
+
+        & div.job-title { text-align: center }
+        & div.job-title > p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* Vertical tablet orientations */
+@media screen and (orientation: portrait) and (min-width: 901px) {
+    .hide-mobile { display: revert !important }
+
     #experience div.job-heading {
         flex-wrap: wrap;
 
