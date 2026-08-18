@@ -180,9 +180,10 @@ div.section:has(#education) { flex-wrap: wrap }
             & div.job-heading {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
 
                 & picture {
-                    width: 42.5%;
+                    width: 11rem;
                     height: auto;
                     aspect-ratio: 2.2;
                     overflow: hidden;
@@ -191,14 +192,17 @@ div.section:has(#education) { flex-wrap: wrap }
                     & img {
                         width: 100%;
                         max-height: 100%;
-                        border-bottom-right-radius: 10px; /* Match parent */
+                        border-radius: 10px; /* Match parent */
                     }
                 }
 
                 & div.job-title {
+                    display: flex;
                     flex: 1;
                     padding: 0.25rem 0.75rem 0 0.75rem;
                     text-shadow: 0.15em 0.1em 0.05em #0006;
+                    flex-direction: column;
+                    align-items: center;
 
                     & h3 {
                         color: var(--text-lite);
@@ -225,7 +229,7 @@ div.section:has(#education) { flex-wrap: wrap }
             }
 
             & ul {
-                padding: 0.75rem 0.75rem 0.5rem 1rem;
+                padding: 0.75rem 0.75rem 0.75rem 1rem;
 
                 & li {
                     list-style: inside;
@@ -321,11 +325,18 @@ div.section:has(#education) { flex-wrap: wrap }
 }
 
 /* Mobile portrait styles */
-@media screen and (orientation: portrait) and (max-width: 900px) {
+@media screen and (orientation: portrait) {
     main { padding: 3vh 8% }
 
     main > a,
     h1 { text-align: center }
+
+    #details span.detail-group {
+        margin: 0.125rem 0;
+        justify-content: center;
+        width: 100%;
+    }
+    #tagline, #details { text-align: center }
 
     div.section { flex-direction: column }
     div.group-title { --font-size: 2.05rem }
@@ -341,42 +352,8 @@ div.section:has(#education) { flex-wrap: wrap }
         }
     }
 
-    #details span.detail-group {
-        margin: 0.125rem 0;
-        justify-content: center;
-        width: 100%;
-    }
-    #tagline, #details { text-align: center }
-
     #education-highlights h3 { justify-content: center }
     #education-highlights ul { flex-direction: column }
-
-    #experience div.group-content {
-        flex-direction: column;
-
-        & div.job-heading {
-            flex-wrap: wrap;
-
-            & picture {
-                width: 60% !important;
-                & img { border-bottom-left-radius: 10px }
-            }
-
-            & div.job-title {
-                min-width: 50%;
-                text-align: center;
-                & > p {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-
-        & ul {
-            margin: 0 auto;
-            width: fit-content;
-        }
-    }
 
     #skills svg { height: 64px !important }
 
@@ -391,34 +368,26 @@ div.section:has(#education) { flex-wrap: wrap }
     main { padding: 6vh 7% 15vh 7% }
 }
 
-/* Square-ish landscape screens */
-@media (orientation: landscape) and (max-aspect-ratio: 3 / 2) {
-    #experience div.job-heading {
-        flex-wrap: wrap;
+/* Mobile portrait tablet screens */
+@media screen and (orientation: portrait) and (max-width: 672px) {
+    #experience div.group-content {
+        flex-direction: column;
 
-        & picture {
-            width: 100% !important;
-            & img { border-bottom-left-radius: 10px }
+        & div.job-heading {
+            flex-wrap: wrap;
+
+            & picture { width: 60% !important }
+
+            & div.job-title {
+                min-width: 50%;
+                text-align: center;
+                & > p { margin-left: auto; margin-right: auto }
+            }
         }
 
-        & div.job-title { text-align: center }
-        & div.job-title > p { margin-left: auto; margin-right: auto }
-    }
-}
-
-/* Vertical tablet orientations */
-@media screen and (orientation: portrait) and (min-width: 901px) {
-    .hide-mobile { display: revert !important }
-
-    #experience div.job-heading {
-        flex-wrap: wrap;
-
-        & picture {
-            width: 100% !important;
-            & img { border-bottom-left-radius: 10px }
+        & ul {
+            margin: 0 auto;
+            width: fit-content;
         }
-
-        & div.job-title { text-align: center }
-        & div.job-title > p { margin-left: auto; margin-right: auto }
     }
 }
