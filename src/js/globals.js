@@ -54,7 +54,6 @@ const startBackgroundAnimation = () => {
     // Update width/height on dimension change
     window.updateDims = () => {
         const dpr = window.devicePixelRatio || 1;
-        // Use window inner dimensions instead of wrapper's scroll height
         canvas.width = window.innerWidth * dpr;
         canvas.height = window.innerHeight * dpr;
         canvas.style.width = window.innerWidth + "px";
@@ -64,16 +63,52 @@ const startBackgroundAnimation = () => {
     window.updateDims();
     window.addEventListener("resize", window.updateDims);
 
-    // Particle setup (produces ~100 particles on a 1920x1080 screen)
+    // Particle setup & Session Storage restoration
+    const STORAGE_KEY = "bg_canvas_particles_state";
     const NUM_PARTICLES = Math.round((window.innerWidth * window.innerHeight) / 14576);
     const MAX_DIST = 120;
 
-    const particles = Array.from({ length: NUM_PARTICLES }, () => ({
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3
-    }));
+    let particles;
+    const savedStateJSON = sessionStorage.getItem(STORAGE_KEY);
+
+    if (savedStateJSON) {
+        try {
+            const savedState = JSON.parse(savedStateJSON);
+            // Check if viewport dimensions match
+            if (
+                savedState.width === window.innerWidth &&
+                savedState.height === window.innerHeight &&
+                Array.isArray(savedState.particles) &&
+                savedState.particles.length > 0
+            ) {
+                particles = savedState.particles;
+            }
+        } catch (e) {
+            console.error("Failed to parse background particle state from sessionStorage", e);
+        }
+    }
+
+    // Initialize new particles if no valid saved state exists
+    if (!particles) {
+        particles = Array.from({ length: NUM_PARTICLES }, () => ({
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            vx: (Math.random() - 0.5) * 0.3,
+            vy: (Math.random() - 0.5) * 0.3
+        }));
+    }
+
+    // Helper to save current state before leaving/unloading
+    const saveState = () => {
+        const state = {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particles: particles
+        };
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    };
+
+    window.addEventListener("beforeunload", saveState);
 
     // Animation handler
     const animate = () => {
