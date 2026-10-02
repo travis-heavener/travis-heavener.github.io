@@ -22,3 +22,12 @@ Connect with Travis on [LinkedIn](https://www.linkedin.com/in/travis-heavener/).
 4. Run `python3 generator/src/main.py -cf --config config.stylus.json` to build the website from the source (in the `src` directory) to the `public` directory.
 
 5. To view the website, use an HTTP server like Apache or Nginx on this `public` directory.
+
+### Important!!!
+
+To ensure that the latest Stylus generator is pulled, run the following to configure a Git hook to pull the latest SSG changes on commit:
+
+```sh
+git config core.hooksPath .githooks
+chmod +x .githooks/*
+```
