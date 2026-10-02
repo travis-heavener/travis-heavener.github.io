@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Updating nested generator repo..."
+
+# Navigate to generator directory
+cd generator || exit 1
+
+# Pull latest changes
+git pull origin main || { echo "Failed to pull generator updates"; exit 1; }
+
+# Return to main repo root
+cd ..
