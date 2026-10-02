@@ -19,6 +19,6 @@ Connect with Travis on [LinkedIn](https://www.linkedin.com/in/travis-heavener/).
 
 3. Clone the site generator via `git clone https://github.com/travis-heavener/stylus.git generator`.
 
-4. Run `python3 generator/src/main.py -vcf --config config.stylus.json` to build the website from the source (in the `src` directory) to the `public` directory.
+4. Run `python3 generator/src/main.py -cf --config config.stylus.json` to build the website from the source (in the `src` directory) to the `public` directory.
 
 5. To view the website, use an HTTP server like Apache or Nginx on this `public` directory.
