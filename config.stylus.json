@@ -1,8 +1,8 @@
 {
-    "inputDir": "../src",
-    "outputDir": "../public",
-    "componentsDir": "../ssg-components/",
-    "textFilesDir": ".",
+    "inputDir": "src",
+    "outputDir": "public",
+    "componentsDir": "ssg-components",
+    "textFilesDir": "text-components",
 
     "buildExtensions": [ ".html", ".htm" ],
     "sitemapExtensions": [ ".html", ".htm" ],

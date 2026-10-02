@@ -18,7 +18,9 @@ jobs:
         run: git clone https://github.com/travis-heavener/stylus.git generator
 
       - name: Make Static Files
-        run: python3 generator/src/main.py -f --config config.stylus.json
+        run: |
+          mkdir text-components
+          python3 generator/src/main.py -f --config config.stylus.json
 
       #################### VALIDATE ####################
       - name: W3 Validate HTML
