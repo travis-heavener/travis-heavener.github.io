@@ -22,6 +22,14 @@ jobs:
           mkdir text-components
           python3 generator/src/main.py -f --config config.stylus.json
 
+      #################### MINIFY ####################
+      - name: Minify
+        run: |
+          npm i -g html-minifier-terser lightningcss terser
+          for f in ./public/**/*.js; do npx terser "$f" -c -m -o "$f"; done
+          find ./public -name "*.css" -exec sh -c 'npx lightningcss-cli --minify "$1" --output-dir "$(dirname "$1")"' _ {} \;
+          npx html-minifier-terser --input-dir ./public --output-dir ./public --file-ext html --collapse-whitespace --remove-comments --minify-js true --minify-css true --process-scripts "application/ld+json"
+
       #################### VALIDATE ####################
       - name: W3 Validate HTML
         uses: anishathalye/proof-html@v2
