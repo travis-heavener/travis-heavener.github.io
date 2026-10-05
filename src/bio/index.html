@@ -20,42 +20,53 @@
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <$ Header />
         <main id="main-content">
-            <h1>About</h1>
-            <$ Dots />
-            <section aria-labelledby="about-intro">
-                <h2 id="about-intro" class="visually-hidden">Introduction</h2>
-                <$ Bio.Paragraph1 />
-                <figure id="slideshow-2">
-                    <picture class="show-mobile">
-                        <source media="(max-width: 389px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
-                        <source media="(max-width: 1919px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
-                        <source media="(max-width: 2559px)" srcset="/res/bio/bio-2/380-585.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x, /res/bio/bio-2/1000-1538.webp?v=2 4x">
-                        <source media="(max-width: 5599px)" srcset="/res/bio/bio-2/500-769.webp?v=2 1x, /res/bio/bio-2/1000-1538.webp?v=2 2x">
-                        <source media="(min-width: 5600px)" srcset="/res/bio/bio-2/1000-1538.webp?v=2">
-                        <img class="bio-img" src="/res/bio/bio-2/1000-1538.webp?v=2" alt="Travis Heavener smiling in a white polo and green sweater">
-                    </picture>
-                    <picture aria-hidden="true">
+            <header class="page-heading">
+                <h1>About</h1>
+                <$ Dots />
+            </header>
+
+            <section class="bio-panel bio-panel--intro" aria-labelledby="about-intro">
+                <div class="bio-copy">
+                    <div class="section-heading">
+                        <span class="section-number" aria-hidden="true">01</span>
+                        <h2 id="about-intro">Introduction</h2>
+                    </div>
+                    <$ Bio.Paragraph1 />
+                </div>
+
+                <figure class="bio-portrait">
+                    <picture>
                         <source media="(max-width: 389px)" srcset="/res/bio/bio-1/280-431.webp?v=2 1x, /res/bio/bio-1/500-769.webp?v=2 2x">
                         <source media="(max-width: 1919px)" srcset="/res/bio/bio-1/280-431.webp?v=2 1x, /res/bio/bio-1/500-769.webp?v=2 2x">
                         <source media="(max-width: 2559px)" srcset="/res/bio/bio-1/380-585.webp?v=2 1x, /res/bio/bio-1/500-769.webp?v=2 2x, /res/bio/bio-1/1000-1538.webp?v=2 4x">
                         <source media="(max-width: 5599px)" srcset="/res/bio/bio-1/500-769.webp?v=2 1x, /res/bio/bio-1/1000-1538.webp?v=2 2x">
                         <source media="(min-width: 5600px)" srcset="/res/bio/bio-1/1000-1538.webp?v=2">
-                        <img class="bio-img" src="/res/bio/bio-1/1000-1538.webp?v=2" alt="Travis Heavener in a black tux and tie">
+                        <img class="bio-img" src="/res/bio/bio-1/1000-1538.webp?v=2" alt="Travis Heavener in a black tux and tie" loading="lazy" decoding="async">
                     </picture>
-                    <figcaption class="visually-hidden">Photos of Travis Heavener</figcaption>
+                    <figcaption>Travis Heavener</figcaption>
                 </figure>
             </section>
-            <section aria-labelledby="about-experience">
-                <h2 id="about-experience" class="visually-hidden">Projects and experience</h2>
-                <picture class="hide-mobile" aria-hidden="true">
-                    <source media="(max-width: 389px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
-                    <source media="(max-width: 1919px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
-                    <source media="(max-width: 2559px)" srcset="/res/bio/bio-2/380-585.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x, /res/bio/bio-2/1000-1538.webp?v=2 4x">
-                    <source media="(max-width: 5599px)" srcset="/res/bio/bio-2/500-769.webp?v=2 1x, /res/bio/bio-2/1000-1538.webp?v=2 2x">
-                    <source media="(min-width: 5600px)" srcset="/res/bio/bio-2/1000-1538.webp?v=2">
-                    <img class="bio-img" src="/res/bio/bio-2/1000-1538.webp?v=2" alt="Travis Heavener smiling in a white polo and green sweater">
-                </picture>
-                <$ Bio.Paragraph2 />
+
+            <section class="bio-panel bio-panel--experience" aria-labelledby="about-experience">
+                <figure class="bio-portrait bio-portrait--secondary">
+                    <picture>
+                        <source media="(max-width: 389px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
+                        <source media="(max-width: 1919px)" srcset="/res/bio/bio-2/280-431.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x">
+                        <source media="(max-width: 2559px)" srcset="/res/bio/bio-2/380-585.webp?v=2 1x, /res/bio/bio-2/500-769.webp?v=2 2x, /res/bio/bio-2/1000-1538.webp?v=2 4x">
+                        <source media="(max-width: 5599px)" srcset="/res/bio/bio-2/500-769.webp?v=2 1x, /res/bio/bio-2/1000-1538.webp?v=2 2x">
+                        <source media="(min-width: 5600px)" srcset="/res/bio/bio-2/1000-1538.webp?v=2">
+                        <img class="bio-img" src="/res/bio/bio-2/1000-1538.webp?v=2" alt="Travis Heavener smiling in a white polo and green sweater" decoding="async">
+                    </picture>
+                    <figcaption>Travis Heavener</figcaption>
+                </figure>
+
+                <div class="bio-copy">
+                    <div class="section-heading">
+                        <span class="section-number" aria-hidden="true">02</span>
+                        <h2 id="about-experience">Projects &amp; Experience</h2>
+                    </div>
+                    <$ Bio.Paragraph2 />
+                </div>
             </section>
         </main>
         <$ Footer />
