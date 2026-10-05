@@ -137,7 +137,7 @@
 
 /* Responsive layout */
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (max-width: 600px) {
     main { padding: 3vh 8% }
 
     .page-heading h1 { text-align: center }
@@ -157,22 +157,52 @@
 
     .section-heading h2 { font-size: 1.75rem }
 
+    /* Compact inset portraits instead of full-width, full-height panels. */
     .bio-portrait,
     .bio-portrait--secondary {
-        min-height: 23rem;
-        border-radius: 0;
+        width: min(13rem, calc(100% - 2rem));
+        min-height: 0;
+        margin: 0.25rem auto 1rem;
+        padding: 0.5rem 0 0;
+        border: 1px solid var(--primary-light);
+        border-radius: 10px;
+    }
+
+    .bio-portrait picture {
+        width: 100%;
+        height: 200px;
+        height: clamp(160px, 30svh, 220px);
+        min-height: 0;
+    }
+
+    .bio-img {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: contain;
     }
 
     .bio-portrait--secondary { order: 2 }
     .bio-copy { order: 1 }
-    .bio-portrait figcaption { bottom: 0.6rem }
+
+    .bio-portrait figcaption {
+        position: static;
+        padding: 0.5rem;
+        color: var(--text-base);
+        font-size: 1rem;
+        text-align: center;
+        background: var(--primary-base);
+        border: 0;
+        border-radius: 0;
+        backdrop-filter: none;
+    }
 
     .bio-prose > p { font-size: 1rem }
 }
 
 /* Mobile horizontal screens */
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (min-width: 601px) and (max-width: 900px) {
     main { padding: 6vh 7% 15vh 7% }
 
     .bio-panel,
