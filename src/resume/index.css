@@ -286,43 +286,120 @@ div.section:has(#education) { flex-wrap: wrap }
 }
 
 /*******************************************/
-/*********** Activites and Honors **********/
+/*********** Activities and Honors *********/
 /*******************************************/
 
+/* Years run along a shared axis; bars are positioned from --s/--e (end year is exclusive) */
 #activities-honors {
+    --min: 2018;
+    --max: 2027; /* right edge; "Present" bars run to it */
+    --pad: 0.75rem;
+    --gap: 1.25rem;
+    --label: 13rem;
+    --pct: calc(100% / (var(--max) - var(--min)));
+
     flex: 1;
 
-    & div.group-content {
-        padding: 0 1.5rem 1rem 1.5rem;
+    & div.group-content { padding: 0 1.5rem 1rem 1.5rem }
 
-        & ul {
-            display: flex;
-            gap: 0.5rem 3rem;
-            justify-content: center;
-            flex-wrap: wrap;
+    & .axis,
+    & .timeline li {
+        display: grid;
+        grid-template-columns: var(--label) 1fr;
+        column-gap: var(--gap);
+    }
 
-            & li {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 0.33rem;
-                width: 10rem;
-                height: 5rem;
+    & .axis {
+        position: relative;
+        display: block;
+        height: 1.25rem;
+        margin: 0.25rem var(--pad) 0 calc(var(--pad) + var(--label) + var(--gap));
 
-                & > p:first-child {
-                    color: var(--text-lite);
-                    font: 400 1rem/1.3 var(--Open-Sans);
-                    text-align: center;
-                }
+        & span {
+            position: absolute;
+            left: calc((var(--y) - var(--min)) * var(--pct));
+            translate: -50% 0;
+            color: var(--text-base);
+            font: 400 0.85rem/1.25rem var(--Open-Sans);
+            opacity: 0.7;
 
-                & > p:last-child {
-                    color: var(--text-base);
-                    font: 400 0.9rem/1.3 var(--Open-Sans);
-                    text-align: center;
-                }
-            }
+            &:first-child { translate: 0 0 }
         }
     }
+
+    & .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        & li {
+            align-items: center;
+            padding: 0.5rem var(--pad);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            transition: 0.15s background, 0.15s border-color;
+
+            &:hover { background: #fff1; border-color: #fff1 }
+        }
+
+        & .name {
+            color: var(--text-lite);
+            font: 400 1rem/1.3 var(--Open-Sans);
+        }
+
+        & .dates {
+            color: var(--text-base);
+            font: 400 0.9rem/1.3 var(--Open-Sans);
+            opacity: 0.8;
+        }
+
+        & .ongoing .dates { color: var(--accent-light); opacity: 1 }
+
+        & .track {
+            position: relative;
+            height: 1.1rem;
+            background:
+                linear-gradient(to right, #fff1 1px, transparent 1px) 0 0 / calc(2 * var(--pct)) 100%,
+                #0003;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        & .bar {
+            position: absolute;
+            top: 0.25rem;
+            bottom: 0.25rem;
+            left: calc((var(--s) - var(--min)) * var(--pct));
+            width: calc((var(--e) - var(--s)) * var(--pct));
+            background: var(--accent-darkest2);
+            border-radius: 999px;
+            transform-origin: left;
+            transition: 0.15s filter;
+        }
+
+        & .ongoing .bar {
+            background: linear-gradient(90deg, var(--accent-darker), var(--accent-light));
+            box-shadow: 0 0 0.6rem #de862966;
+        }
+
+        & li:hover .bar { filter: brightness(1.2) }
+    }
+}
+
+/* Bars grow in when scrolled into view (index.js adds .js / .in); visible by default without JS */
+.js #activities-honors .bar { transform: scaleX(0) }
+.js #activities-honors .timeline.in .bar {
+    transform: none;
+    transition: 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) transform, 0.15s filter;
+}
+.js #activities-honors .timeline.in li:nth-child(2) .bar { transition-delay: 0.08s, 0s }
+.js #activities-honors .timeline.in li:nth-child(3) .bar { transition-delay: 0.16s, 0s }
+.js #activities-honors .timeline.in li:nth-child(4) .bar { transition-delay: 0.24s, 0s }
+.js #activities-honors .timeline.in li:nth-child(5) .bar { transition-delay: 0.32s, 0s }
+
+@media (prefers-reduced-motion: reduce) {
+    .js #activities-honors .bar { transform: none }
+    #activities-honors .bar, #activities-honors li { transition: none }
 }
 
 /* Mobile portrait styles */
@@ -357,6 +434,12 @@ div.section:has(#education) { flex-wrap: wrap }
     #education-highlights ul { flex-direction: column }
 
     #skills svg { height: 64px !important }
+
+    #activities-honors {
+        & .timeline li { grid-template-columns: 1fr; row-gap: 0.4rem }
+        & .axis { margin-left: var(--pad) }
+        & div.group-content { padding: 0 1rem 1rem 1rem }
+    }
 
     section {
         width: fit-content;
