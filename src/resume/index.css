@@ -433,7 +433,7 @@ div.section:has(#education) { flex-wrap: wrap }
     #education-highlights h3 { justify-content: center }
     #education-highlights ul { flex-direction: column }
 
-    #skills svg { height: 64px !important }
+    #skills ul svg { height: 64px !important }
 
     #activities-honors {
         & .timeline li { grid-template-columns: 1fr; row-gap: 0.4rem }
