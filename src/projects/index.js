@@ -1,65 +1,54 @@
-// Reopen whatever projects are in the hash
-const refocusHash = () => {
-    const btn = (location.hash == "") ? document.getElementById("featured")
-        : document.getElementById(location.hash.substring(1));
-    if (btn && btn.getAttribute("aria-expanded") === "false")
-        btn.click();
-};
+// Filters the project tiles by category or "featured". Without JS the page
+// simply shows every group (the filter bar stays hidden).
+(() => {
+    const bar = document.getElementById("filters");
+    if (!bar) return;
 
-// Bind event listeners
-document.addEventListener("DOMContentLoaded", () => {
-    for (const wrap of document.getElementsByTagName("section")) {
-        // Bind click evts
-        const projWrap = wrap.nextElementSibling;
-        const btn = wrap.querySelector("button");
-        let timeout = null;
+    const buttons = [...bar.querySelectorAll("button")];
+    const groups = [...document.querySelectorAll(".group")];
+    const status = document.getElementById("project-status");
+    const valid = new Set(buttons.map(b => b.dataset.filter));
 
-        const toggleFocus = () => {
-            // Skip if already animating
-            if (timeout !== null) return;
+    // Old hash links (#infrastructure, #simulation-ai, #tools) still land somewhere sensible
+    const ALIASES = { infrastructure: "web", "simulation-ai": "simulation", tools: "systems" };
 
-            // Toggle class
-            const icon = btn.lastElementChild;
-            if (btn.getAttribute("aria-expanded") !== "true") {
-                projWrap.classList.add("animate-in");
-                btn.setAttribute("aria-expanded", "true");
-                projWrap.hidden = false;
+    const fromHash = () => {
+        const h = location.hash.slice(1);
+        const f = ALIASES[h] ?? h;
+        return valid.has(f) ? f : "all";
+    };
 
-                // Trigger animation
-                timeout = setTimeout(() => {
-                    projWrap.classList.remove("animate-in");
-                    projWrap.classList.add("active");
+    const apply = filter => {
+        let shown = 0;
 
-                    // Resize animation canvas
-                    if (window.updateDims) window.updateDims();
-
-                    timeout = null;
-                }, 150);
-            } else {
-                projWrap.classList.remove("active");
-                projWrap.classList.add("animate-out");
-                btn.setAttribute("aria-expanded", "false");
-                projWrap.hidden = true;
-
-                // Trigger animation
-                timeout = setTimeout(() => {
-                    projWrap.classList.remove("animate-out");
-
-                    // Resize animation canvas
-                    if (window.updateDims) window.updateDims();
-
-                    timeout = null;
-                }, 120);
+        for (const group of groups) {
+            let any = false;
+            for (const item of group.querySelectorAll(".project")) {
+                const match = filter === "all"
+                    || (filter === "featured" ? item.hasAttribute("data-featured") : group.id === filter);
+                item.hidden = !match;
+                if (match) { any = true; shown++; }
             }
-        };
+            group.hidden = !any;
+        }
 
-        // Bind event listeners
-        btn.addEventListener("click", e => toggleFocus());
-    }
+        for (const b of buttons)
+            b.setAttribute("aria-pressed", String(b.dataset.filter === filter));
 
-    // Focus Featured content if nothing else is focused
-    refocusHash();
+        status.textContent = `Showing ${shown} project${shown === 1 ? "" : "s"}.`;
+    };
 
-    // Bind project open to hash change
-    window.addEventListener("hashchange", () => refocusHash());
-});
+    bar.addEventListener("click", e => {
+        const btn = e.target.closest("button");
+        if (!btn) return;
+        const filter = btn.dataset.filter;
+        apply(filter);
+        // replaceState (not location.hash) so filtering doesn't jump-scroll or flood history
+        history.replaceState(null, "", filter === "all" ? location.pathname : `#${filter}`);
+    });
+
+    window.addEventListener("hashchange", () => apply(fromHash()));
+
+    bar.hidden = false;
+    apply(fromHash());
+})();

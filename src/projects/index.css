@@ -1,88 +1,274 @@
-/* Section header styles */
+h1 { margin-bottom: 0.5rem }
 
-section { cursor: pointer }
+main p, main a { font: 400 1.15rem/1.5em var(--Open-Sans) }
+main a { color: #fff }
 
-/* Dropdown icon styles */
+/* "View more on GitHub" – aligned to the dot margin */
+main > a { display: block; margin-bottom: 0.25rem }
+@media screen and (orientation: landscape) { main > a { margin-left: 0.25rem } }
 
-.dropdown-icon {
-    margin-left: 1.75rem;
-    height: 2rem;
+/*******************************************/
+/***************** Filters *****************/
+/*******************************************/
 
-    cursor: pointer;
-    filter: drop-shadow(-0.19rem 0 0.05rem #0006);
-    transform: rotate(-90deg);
-    transition: 0.15s transform, 0.15s filter;
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    &[hidden] { display: none }
+
+    & button {
+        padding: 0.4em 0.9em;
+        color: var(--text-base);
+        font: 500 1rem/1.2 var(--Open-Sans); /* constant weight: no layout shift on toggle */
+        background: #fff2;
+        border: 1px solid #fff1;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.15s background, 0.15s color, 0.15s border-color;
+
+        &:hover { background: #fff3 }
+
+        &[aria-pressed="true"] {
+            color: var(--g-dark);
+            background: var(--accent-dark);
+            border-color: var(--accent-dark);
+        }
+    }
 }
 
-section:has(button[aria-expanded="true"]) .dropdown-icon {
-    filter: drop-shadow(0.19rem 0 0.05rem #0006);
-    transform: rotate(90deg);
+@media (pointer: coarse) { .filters button { min-height: 2.75rem } }
+
+/*******************************************/
+/************** Category panels ************/
+/*******************************************/
+
+.group {
+    margin-bottom: 1rem;
+    background: var(--primary-base);
+    border: 1px solid var(--primary-light);
+    border-radius: 12px;
+    box-shadow:  6px 8px 20px #0003,
+                -6px 8px 20px #0003;
+    animation: rise 0.3s ease backwards;
+
+    &[hidden] { display: none }
 }
 
-section h2,
-section img { pointer-events: none }
+.group-title {
+    --font-size: 2rem;
+    --line-height: 1.4;
 
-section button {
     display: flex;
     align-items: center;
-    margin-top: 0.67rem;
-    width: 100%;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    pointer-events: all;
+    gap: 1rem;
+    margin: 0.5rem 1.5rem;
+    padding-bottom: 0.33rem;
+    border-bottom: 1px solid #fff1;
+
+    & > svg {
+        flex: none;
+        width: calc( var(--font-size) * var(--line-height) );
+        height: calc( var(--font-size) * var(--line-height) );
+    }
+
+    & > h2 {
+        color: var(--text-base);
+        font: 400 var(--font-size)/var(--line-height) var(--Anton);
+        text-shadow: 0.08em 0.06em 0.03em #0006;
+        text-decoration-color: var(--accent-dark); /* Safari fix for shorthand text-decoration */
+        text-decoration-line: underline;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 2px;
+    }
 }
 
-/* Content card styles */
+/*******************************************/
+/**************** Project tiles ************/
+/*******************************************/
 
-.card-row { --height: 20rem; display: none }
-.card-row.active, .card-row.animate-in, .card-row.animate-out { display: flex }
-.card-row.animate-in { animation: 150ms ease 0s 1 projectsFadeIn; }
-.card-row.animate-out { animation: 150ms ease 0s 1 projectsFadeIn reverse; }
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 0.75rem;
+    padding: 0 1.5rem 1.25rem 1.5rem;
+}
 
-.card-div { --width: 16rem }
+.project {
+    position: relative; /* anchors the stretched link */
+    border: 1px solid #fff1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.15s background, 0.15s border-color, 0.15s transform;
+    animation: rise 0.3s ease backwards;
+
+    &[hidden] { display: none }
+
+    & > article {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    /* Only tiles with a link react */
+    &:has(a):hover {
+        background: #fff1;
+        border-color: var(--accent-darker);
+        transform: translateY(-2px);
+    }
+
+    &:has(a:focus-visible) { outline: 2px solid #fff }
+}
+
+/* Whole tile is the click target; one link per tile for assistive tech */
+.project a {
+    color: inherit;
+    font: inherit;
+    text-decoration-color: var(--accent-base);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    &:focus-visible { outline: none !important } /* ring is drawn on the tile instead */
+    &::after { content: ""; position: absolute; inset: 0 }
+}
+
+/* Thumbnails */
+
+.thumb {
+    --dur: 9s;
+
+    position: relative;
+    flex: none;
+    width: 7rem;
+    aspect-ratio: 384 / 294;
+    background: #0003;
+    border-radius: 7px;
+    overflow: hidden;
+
+    & img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 33%;
+        transition: 0.3s transform;
+    }
+
+    /* Extra screenshots stay hidden until the tile is hovered/focused */
+    & img:nth-child(n+2) { opacity: 0 }
+}
+
+.project:hover .thumb img { transform: scale(1.06) }
+
+@media (prefers-reduced-motion: no-preference) {
+    .project:is(:hover, :has(a:focus-visible)) .thumb:has(img:nth-child(2)) img {
+        animation: cycle var(--dur) infinite;
+
+        &:nth-child(2) { animation-delay: calc(2 * var(--dur) / -3) }
+        &:nth-child(3) { animation-delay: calc(var(--dur) / -3) }
+    }
+}
+
+/* Text */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    min-width: 0;
+
+    & h3 {
+        color: var(--text-lite);
+        font: 700 1.15rem/1.3 var(--Open-Sans);
+        text-shadow: 0.1em 0.05em 0 #0006;
+    }
+
+    & p {
+        color: #dadada;
+        font: 350 0.95rem/1.4 var(--Open-Sans);
+    }
+}
+
+/* Featured marker; the text after the slash is its accessible name */
+.project[data-featured] h3::after {
+    content: " \2605";
+    content: " \2605" / " (Featured)";
+    color: var(--accent-base);
+    font-size: 0.9em;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+
+    & li {
+        padding: 0.05em 0.5em;
+        color: var(--text-base);
+        font: 400 0.8rem/1.4 var(--Open-Sans);
+        background: #fff2;
+        border: 1px solid #fff1;
+        border-radius: 8px;
+    }
+}
+
+/*******************************************/
+/***************** Motion ******************/
+/*******************************************/
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(8px) }
+    to { opacity: 1; transform: none }
+}
+
+@keyframes cycle {
+     0%, 30%, 100% { opacity: 1 }
+    36%, 94% { opacity: 0 }
+}
 
 @media (prefers-reduced-motion: reduce) {
-    .animate-in, .animate-out { animation: none; transition: none }
+    .group, .project { animation: none }
+    .project, .thumb img, .filters button { transition: none }
+    .project:hover { transform: none }
+    .project:hover .thumb img { transform: none }
 }
 
-@keyframes projectsFadeIn {
-    from { opacity: 0; height: 0 }
-    to { opacity: 1; height: var(--height) }
+/*******************************************/
+/************** Responsive layout **********/
+/*******************************************/
+
+/* Mobile portrait */
+@media screen and (orientation: portrait) {
+    main { padding: 3vh 8% }
+
+    main > a,
+    h1 { text-align: center }
+
+    #dot-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    #dot-wrapper > div:first-child { margin-left: 0 }
+
+    .filters { justify-content: center }
+
+    .group-title {
+        --font-size: 1.75rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .project-list { padding: 0 1rem 1rem 1rem }
+    .thumb { width: 5.5rem }
 }
 
-.card-div a,
-.card-div h3 {
-    margin: 0.25rem 0.5rem;
-    line-height: 1.5;
-}
-
-.card-img {
-    width: var(--width);
-    aspect-ratio: 1.31;
-    object-fit: cover;
-    overflow: hidden;
-    object-position: 50% 33%;
-}
-
-/* Project image slideshows */
-
-.slideshow-3 {
-    position: relative;
-    width: var(--width);
-    aspect-ratio: 1.31;
-}
-
-.slideshow-3 .card-img {
-    --anim-dur: 15s;
-    position: absolute;
-    animation: var(--anim-dur) slideshow3 0s infinite;
-}
-
-.slideshow-3 .card-img:nth-child(2) { animation-delay: calc(2 * var(--anim-dur) / -3); }
-.slideshow-3 .card-img:nth-child(3) { animation-delay: calc(var(--anim-dur) / -3); }
-
-@keyframes slideshow3 {
-     0%, 30%, 100% { opacity: 1; pointer-events: all; }
-    33%, 97% { opacity: 0; pointer-events: none; }
+/* Mobile horizontal screens */
+@media screen and (orientation: landscape) and (max-width: 900px) {
+    main { padding: 6vh 7% 15vh 7% }
 }

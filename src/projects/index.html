@@ -11,16 +11,7 @@
 
         <title>Projects - Travis Heavener</title>
 
-        <link rel="stylesheet" $stylus-cache-bust-href="/css/card-pages.css">
         <link rel="stylesheet" $stylus-cache-bust-href="index.css">
-        <noscript>
-            <style>
-                /* Conditional formatting for browsers w/o JavaScript enabled */
-                section > label { cursor: default !important }
-                .dropdown-icon { display: none }
-                .card-row { display: flex }
-            </style>
-        </noscript>
         <script $stylus-cache-bust-src="index.js" defer></script>
 
         <!-- WebSchema for SEO/GEO -->
@@ -31,118 +22,70 @@
         <$ Header />
         <main id="main-content">
             <h1>Projects</h1>
-            <a href="http://wowtravis.com/my/github">View more on GitHub</a>
+            <a href="https://wowtravis.com/my/github">View more on GitHub</a>
             <$ Dots />
 
-            <!-- Featured Projects -->
-            <section>
-                <a href="#featured" aria-label="Link to Featured section">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="featured" aria-expanded="false" aria-controls="featured-content">
-                        Featured
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
-            </section>
-            <ul id="featured-content" class="card-row" aria-labelledby="featured" hidden>
-                <$ Projects.Mercury />
-                <$ Projects.AccurionWebsite />
-                <$ Projects.MiniServer2 />
-                <$ Projects.TPU3 />
-                <$ Projects.BinGo />
-            </ul>
+            <!-- Filters: revealed by index.js (they do nothing without it) -->
+            <div id="filters" class="filters" role="group" aria-label="Filter projects" hidden>
+                <button type="button" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" data-filter="featured" aria-pressed="false">Featured</button>
+                <button type="button" data-filter="systems" aria-pressed="false">Systems &amp; Tools</button>
+                <button type="button" data-filter="web" aria-pressed="false">Web &amp; Infrastructure</button>
+                <button type="button" data-filter="simulation" aria-pressed="false">Simulation &amp; Graphics</button>
+                <button type="button" data-filter="games" aria-pressed="false">Games &amp; Apps</button>
+            </div>
+            <p id="project-status" class="visually-hidden" role="status"></p>
 
-            <!-- Full-Stack & Infrastructure -->
-            <section>
-                <a href="#infrastructure" aria-label="Link to Infrastructure projects">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="infrastructure" aria-expanded="false" aria-controls="infrastructure-content">
-                        Infrastructure
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
+            <section id="systems" class="group" aria-labelledby="systems-title">
+                <div class="group-title">
+                    <svg aria-hidden="true"><use $stylus-cache-bust-href="/res/resume/icons.svg#code"></use></svg>
+                    <h2 id="systems-title">Systems &amp; Tools</h2>
+                </div>
+                <ul class="project-list">
+                    <$ Projects.Mercury />
+                    <$ Projects.TPU3 />
+                    <$ Projects.TPU2 />
+                    <$ Projects.Lectus />
+                </ul>
             </section>
-            <ul id="infrastructure-content" class="card-row" aria-labelledby="infrastructure" hidden>
-                <$ Projects.AccurionWebsite />
-                <$ Projects.MiniServer2 />
-                <$ Projects.MangoManager />
-                <$ Projects.DigitalPortfolio />
-            </ul>
 
-            <!-- Systems -->
-            <section>
-                <a href="#systems" aria-label="Link to Systems projects">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="systems" aria-expanded="false" aria-controls="systems-content">
-                        Systems
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
+            <section id="web" class="group" aria-labelledby="web-title">
+                <div class="group-title">
+                    <svg aria-hidden="true"><use $stylus-cache-bust-href="/res/resume/icons.svg#monitor"></use></svg>
+                    <h2 id="web-title">Web &amp; Infrastructure</h2>
+                </div>
+                <ul class="project-list">
+                    <$ Projects.AccurionWebsite />
+                    <$ Projects.MiniServer2 />
+                    <$ Projects.MangoManager />
+                    <$ Projects.DigitalPortfolio />
+                </ul>
             </section>
-            <ul id="systems-content" class="card-row" aria-labelledby="systems" hidden>
-                <$ Projects.Mercury />
-                <$ Projects.TPU3 />
-                <$ Projects.TPU2 />
-            </ul>
 
-            <!-- Simulation & AI -->
-            <section>
-                <a href="#simulation-ai" aria-label="Link to Simulation & AI projects">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="simulation-ai" aria-expanded="false" aria-controls="simulation-ai-content">
-                        Simulation & AI
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
+            <section id="simulation" class="group" aria-labelledby="simulation-title">
+                <div class="group-title">
+                    <svg aria-hidden="true"><use $stylus-cache-bust-href="/res/resume/icons.svg#bulb"></use></svg>
+                    <h2 id="simulation-title">Simulation &amp; Graphics</h2>
+                </div>
+                <ul class="project-list">
+                    <$ Projects.RLDS />
+                    <$ Projects.OrbitalSim />
+                    <$ Projects.CookieGL />
+                </ul>
             </section>
-            <ul id="simulation-ai-content" class="card-row" aria-labelledby="simulation-ai" hidden>
-                <$ Projects.RLDS />
-                <$ Projects.OrbitalSim />
-            </ul>
 
-            <!-- Games -->
-            <section>
-                <a href="#games" aria-label="Link to Games projects">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="games" aria-expanded="false" aria-controls="games-content">
-                        Games
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
+            <section id="games" class="group" aria-labelledby="games-title">
+                <div class="group-title">
+                    <svg aria-hidden="true"><use $stylus-cache-bust-href="/res/resume/icons.svg#trophy"></use></svg>
+                    <h2 id="games-title">Games &amp; Apps</h2>
+                </div>
+                <ul class="project-list">
+                    <$ Projects.BinGo />
+                    <$ Projects.Cornhole5 />
+                    <$ Projects.UF4 />
+                    <$ Projects.2048JS />
+                </ul>
             </section>
-            <ul id="games-content" class="card-row" aria-labelledby="games" hidden>
-                <$ Projects.BinGo />
-                <$ Projects.Cornhole5 />
-                <$ Projects.UF4 />
-                <$ Projects.2048JS />
-            </ul>
-
-            <!-- Tools -->
-            <section>
-                <a href="#tools" aria-label="Link to Tools projects">
-                    <img src="/res/icons/hyperlink.svg" alt="" aria-hidden="true">
-                </a>
-                <h2>
-                    <button id="tools" aria-expanded="false" aria-controls="tools-content">
-                        Tools
-                        <img class="dropdown-icon no-select" src="/res/icons/dropdown.svg" alt="" aria-hidden="true">
-                    </button>
-                </h2>
-            </section>
-            <ul id="tools-content" class="card-row" aria-labelledby="tools" hidden>
-                <$ Projects.Lectus />
-                <$ Projects.CookieGL />
-            </ul>
         </main>
         <$ Footer />
     </body>
