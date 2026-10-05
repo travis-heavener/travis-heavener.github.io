@@ -1,5 +1,4 @@
-// Flags JS support (for no-JS fallbacks) and grows the timeline bars once they scroll into view.
-document.documentElement.classList.add("js");
+// Grows the timeline bars once they scroll into view.
 
 document.addEventListener("DOMContentLoaded", () => {
     const timeline = document.querySelector("#activities-honors .timeline");

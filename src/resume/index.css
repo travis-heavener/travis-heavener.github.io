@@ -291,11 +291,12 @@ div.section:has(#education) { flex-wrap: wrap }
 
 /* Years run along a shared axis; bars are positioned from --s/--e (end year is exclusive) */
 #activities-honors {
-    --min: 2018;
+    --min: 2021;
     --max: 2027; /* right edge; "Present" bars run to it */
     --pad: 0.75rem;
     --gap: 1.25rem;
     --label: 13rem;
+    --step: 1; /* years between gridlines */
     --pct: calc(100% / (var(--max) - var(--min)));
 
     flex: 1;
@@ -339,7 +340,6 @@ div.section:has(#education) { flex-wrap: wrap }
             border-radius: 10px;
             transition: 0.15s background, 0.15s border-color;
 
-            &:hover { background: #fff1; border-color: #fff1 }
         }
 
         & .name {
@@ -359,7 +359,7 @@ div.section:has(#education) { flex-wrap: wrap }
             position: relative;
             height: 1.1rem;
             background:
-                linear-gradient(to right, #fff1 1px, transparent 1px) 0 0 / calc(2 * var(--pct)) 100%,
+                linear-gradient(to right, #fff1 1px, transparent 1px) 0 0 / calc(var(--step) * var(--pct)) 100%,
                 #0003;
             border-radius: 999px;
             overflow: hidden;
@@ -382,8 +382,12 @@ div.section:has(#education) { flex-wrap: wrap }
             box-shadow: 0 0 0.6rem #de862966;
         }
 
-        & li:hover .bar { filter: brightness(1.2) }
     }
+}
+
+@media (hover: hover) {
+    #activities-honors .timeline li:hover { background: #fff1; border-color: #fff1 }
+    #activities-honors .timeline li:hover .bar { filter: brightness(1.2) }
 }
 
 /* Bars grow in when scrolled into view (index.js adds .js / .in); visible by default without JS */
@@ -433,9 +437,12 @@ div.section:has(#education) { flex-wrap: wrap }
     #education-highlights h3 { justify-content: center }
     #education-highlights ul { flex-direction: column }
 
-    #skills ul svg { height: 64px !important }
+    #skills svg { height: 64px !important }
 
     #activities-honors {
+        --step: 2;
+
+        & .axis span:nth-child(even) { display: none }
         & .timeline li { grid-template-columns: 1fr; row-gap: 0.4rem }
         & .axis { margin-left: var(--pad) }
         & div.group-content { padding: 0 1rem 1rem 1rem }
