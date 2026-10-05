@@ -49,6 +49,8 @@ div.group {
     border-radius: 12px;
     box-shadow:  6px 8px 20px #0003,
                 -6px 8px 20px #0003;
+
+    animation: rise 0.3s ease backwards;
 }
 
 div.group-title {
@@ -390,6 +392,19 @@ div.section:has(#education) { flex-wrap: wrap }
     #activities-honors .timeline li:hover .bar { filter: brightness(1.2) }
 }
 
+/* Match the on-load panel entrance used on Projects and Bio. */
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 /* Bars grow in when scrolled into view (index.js adds .js / .in); visible by default without JS */
 .js #activities-honors .bar { transform: scaleX(0) }
 .js #activities-honors .timeline.in .bar {
@@ -402,6 +417,7 @@ div.section:has(#education) { flex-wrap: wrap }
 .js #activities-honors .timeline.in li:nth-child(5) .bar { transition-delay: 0.32s, 0s }
 
 @media (prefers-reduced-motion: reduce) {
+    div.group { animation: none }
     .js #activities-honors .bar { transform: none }
     #activities-honors .bar, #activities-honors li { transition: none }
 }

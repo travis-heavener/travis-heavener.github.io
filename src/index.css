@@ -356,12 +356,27 @@ footer {
 
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #background-canvas-wrapper {
-        display: none;
+/* Match the other pages: each content section enters once as a unit. */
+.hero,
+.contact-panel {
+    animation: rise 0.3s ease backwards;
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
     }
 
-    main a {
-        transition: none;
+    to {
+        opacity: 1;
+        transform: none;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero,
+    .contact-panel { animation: none }
+    #background-canvas-wrapper { display: none }
+    main a { transition: none }
 }
