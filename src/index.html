@@ -19,56 +19,45 @@
     <body id="top">
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <$ Header />
-        <main id="main-content">
-            <div id="content-upper">
-                <section class="left">
-                    <h1 id="name">TRAVIS<br class="hide-mobile"><span class="show-mobile">&nbsp;</span>HEAVENER</h1>
-                    <h2 id="job-title">Full-Stack Engineer</h2>
-                </section>
-                <section class="right">
-                    <picture>
-                        <source media="(max-width: 389px)" srcset="/res/headshot/128-147.webp 1x, /res/headshot/250-288.webp 2x, /res/headshot/400-460.webp 3x">
-                        <source media="(max-width: 1919px)" srcset="/res/headshot/250-288.webp 1x, /res/headshot/400-460.webp 2x, /res/headshot/499-575.webp 3x">
-                        <source media="(max-width: 2559px)" srcset="/res/headshot/290-333.webp, /res/headshot/400-460.webp 2x, /res/headshot/499-575.webp 3x">
-                        <source media="(max-width: 3199px)" srcset="/res/headshot/400-460.webp, /res/headshot/499-575.webp 2x, /res/headshot/499-575.webp 3x">
-                        <source media="(min-width: 3200px)" srcset="/res/headshot/499-575.webp">
-                        <img
-                            id="headshot-img"
-                            src="/res/headshot/499-575.webp" fetchpriority="high"
-                            alt="Portrait of Travis Heavener"
-                            aria-describedby="headshot-caption"
-                        >
-                    </picture>
-                    <a id="headshot-caption" href="mailto:travis@wowtravis.com" aria-label="Email Travis Heavener at travis@wowtravis.com">travis@wowtravis.com</a>
-                </section>
-            </div>
-            <div id="content-lower">
-                <div id="tagline" role="region" aria-labelledby="tagline-text">
-                    <p id="tagline-text">Full-stack developer with systems and cloud infrastructure experience.</p>
-                    <a id="read-more-anchor" href="/bio/" aria-label="Read full biography of Travis Heavener">Read full bio</a>
+        <main id="main-content" tabindex="-1">
+            <section class="hero" aria-labelledby="name">
+                <div class="hero-copy">
+                    <p class="eyebrow">Code, systems &amp; curiosity</p>
+                    <h1 id="name">Travis <span>Heavener</span></h1>
+                    <p id="job-title">Full-Stack Engineer</p>
+                    <p class="intro">Full-stack developer with systems and cloud infrastructure experience.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="/projects/">Explore projects <span aria-hidden="true">&nearr;</span></a>
+                        <a class="button button-secondary" href="/resume/">View resume <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                    <a class="bio-link" href="/bio/"><span class="bio-link-label">Read full bio</span> <span aria-hidden="true">&rarr;</span></a>
                 </div>
-                <div id="contact" role="region" aria-labelledby="contact-heading">
-                    <h3 id="contact-heading" class="show-mobile">Get in Touch!</h3>
-                    <section>
-                        <a href="https://github.com/travis-heavener" aria-label="Travis Heavener on GitHub">
-                            <$ SVGs.GitHub />
-                            <span class="contact-text show-mobile">@travis-heavener</span>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="https://www.linkedin.com/in/travis-heavener" aria-label="Travis Heavener on LinkedIn">
-                            <$ SVGs.LinkedIn />
-                            <span class="contact-text show-mobile">@travis-heavener</span>
-                        </a>
-                    </section>
-                    <section>
-                        <a href="mailto:travis@wowtravis.com" aria-label="Email Travis Heavener at travis@wowtravis.com" title="travis@wowtravis.com via Email">
-                            <$ SVGs.Mail />
-                            <span class="contact-text show-mobile">travis@wowtravis.com</span>
-                        </a>
-                    </section>
+                <div class="portrait">
+                    <div class="portrait-image">
+                        <img id="headshot-img" src="/res/headshot/499-575.webp"
+                            srcset="/res/headshot/250-288.webp 250w, /res/headshot/400-460.webp 400w, /res/headshot/499-575.webp 499w"
+                            sizes="(max-width: 760px) 190px, (orientation: landscape) 300px, 290px"
+                            width="499" height="575" fetchpriority="high"
+                            alt="Portrait of Travis Heavener">
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="contact-panel" aria-labelledby="contact-heading">
+                <div class="contact-intro">
+                    <h2 id="contact-heading">Let&rsquo;s connect.</h2>
+                </div>
+                <ul class="contact-links" role="list">
+                    <li><a href="https://github.com/travis-heavener">
+                        <$ SVGs.GitHub /><span>GitHub</span><span class="link-arrow" aria-hidden="true">&nearr;</span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/travis-heavener">
+                        <$ SVGs.LinkedIn /><span>LinkedIn</span><span class="link-arrow" aria-hidden="true">&nearr;</span>
+                    </a></li>
+                    <li><a href="mailto:travis@wowtravis.com">
+                        <$ SVGs.Mail /><span>travis@wowtravis.com</span><span class="link-arrow" aria-hidden="true">&nearr;</span>
+                    </a></li>
+                </ul>
+            </section>
         </main>
         <$ Footer />
     </body>
